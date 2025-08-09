@@ -117,43 +117,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Search & Categories */}
-      <section className="py-12 bg-white border-b border-gray-200">
-        <div className="container-custom">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-            {/* Search */}
-            <div className="relative max-w-md flex-1">
-              <Search size={16} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-              <input
-                type="text"
-                placeholder="Tìm kiếm dịch vụ..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-              />
-            </div>
-
-            {/* Categories */}
-            <div className="flex flex-wrap gap-3">
-              {categories.map((category) => (
-                <button
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    selectedCategory === category.id
-                      ? 'bg-primary-600 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-primary-50'
-                  }`}
-                >
-                  {typeof category.name === 'object' ? category.name[currentLanguage] : category.name} 
-                  ({category.count})
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Grid */}
       <section className="py-20 bg-white">
         <div className="container-custom">

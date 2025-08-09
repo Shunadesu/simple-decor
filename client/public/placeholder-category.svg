@@ -1,0 +1,11 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="200" height="100" rx="8" fill="#e5e7eb"/>
+  <circle cx="100" cy="85" r="15" fill="#9ca3af"/>
+  <rect x="130" y="75" width="80" height="8" rx="4" fill="#9ca3af"/>
+  <rect x="130" y="90" width="60" height="6" rx="3" fill="#d1d5db"/>
+  <rect x="70" y="120" width="40" height="6" rx="3" fill="#9ca3af"/>
+  <rect x="130" y="120" width="50" height="6" rx="3" fill="#9ca3af"/>
+  <rect x="200" y="120" width="30" height="6" rx="3" fill="#9ca3af"/>
+  <text x="150" y="175" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12">Category Image</text>
+</svg>
