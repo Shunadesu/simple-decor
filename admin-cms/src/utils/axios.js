@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Cấu hình base URL cho API
 const api = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://simple-decor.onrender.com',
   timeout: 10000,
 });
 
