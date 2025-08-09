@@ -80,5 +80,32 @@
     "wishlist": "위시리스트",
     "freeShipping": "무료 배송",
     "securePayment": "안전한 결제"
+  },
+  "cart": {
+    "title": "장바구니"
+  },
+  "auth": {
+    "login": "로그인"
+  },
+  "customerSatisfaction": {
+    "title": "고객 만족이 최우선입니다",
+    "subtitle": "최고의 제품과 서비스를 제공하기 위해 최선을 다하고 있습니다",
+    "features": {
+      "qualityControl": {
+        "title": "품질 관리",
+        "subtitle": "프리미엄 품질",
+        "description": "모든 제품은 엄격한 품질 관리 과정을 거쳐 우수성과 내구성을 보장합니다."
+      },
+      "shippingOptimization": {
+        "title": "배송 최적화",
+        "subtitle": "빠르고 안전",
+        "description": "세심한 포장과 최적화된 배송 프로세스로 제품이 안전하고 정시에 도착하도록 보장합니다."
+      },
+      "productRange": {
+        "title": "제품 범위",
+        "subtitle": "다양한 선택",
+        "description": "모든 인테리어 디자인 요구사항을 충족하는 다양한 천연 홈 데코 제품을 제공합니다."
+      }
+    }
   }
 } 

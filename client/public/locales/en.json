@@ -9,6 +9,12 @@
     "blog": "Blog",
     "enquiry": "Enquiry Cart"
   },
+  "cart": {
+    "title": "Cart"
+  },
+  "auth": {
+    "login": "Login"
+  },
   "home": {
     "hero": {
       "title": "The Minimalist Inspiration",
@@ -521,6 +527,27 @@
     },
     "success": "Quote request sent successfully!",
     "error": "An error occurred. Please try again."
+  },
+  "customerSatisfaction": {
+    "title": "Customer satisfaction comes first",
+    "subtitle": "We are committed to providing the best products and services",
+    "features": {
+      "qualityControl": {
+        "title": "Quality Control",
+        "subtitle": "Premium Quality",
+        "description": "Every product undergoes strict quality control processes to ensure excellence and durability."
+      },
+      "shippingOptimization": {
+        "title": "Shipping Optimization",
+        "subtitle": "Fast & Secure",
+        "description": "Optimized shipping processes with careful packaging to ensure products arrive safely and on time."
+      },
+      "productRange": {
+        "title": "Product Range",
+        "subtitle": "Diverse Selection",
+        "description": "Wide variety of natural home decor products to meet all your interior design needs."
+      }
+    }
   },
   "common": {
     "loading": "Loading...",

@@ -80,5 +80,32 @@
     "wishlist": "お気に入り",
     "freeShipping": "送料無料",
     "securePayment": "安全な支払い"
+  },
+  "cart": {
+    "title": "カート"
+  },
+  "auth": {
+    "login": "ログイン"
+  },
+  "customerSatisfaction": {
+    "title": "顧客満足が最優先です",
+    "subtitle": "最高の製品とサービスを提供することをお約束します",
+    "features": {
+      "qualityControl": {
+        "title": "品質管理",
+        "subtitle": "プレミアム品質",
+        "description": "すべての製品は厳格な品質管理プロセスを経て、優秀性と耐久性を保証しています。"
+      },
+      "shippingOptimization": {
+        "title": "配送最適化",
+        "subtitle": "迅速かつ安全",
+        "description": "慎重な梱包と最適化された配送プロセスで、製品が安全かつ時間通りに到着することを保証します。"
+      },
+      "productRange": {
+        "title": "製品レンジ",
+        "subtitle": "多様な選択肢",
+        "description": "すべてのインテリアデザインニーズを満たす天然ホームデコ製品の豊富な種類をご提供します。"
+      }
+    }
   }
 } 

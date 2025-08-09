@@ -80,5 +80,32 @@
     "wishlist": "愿望清单",
     "freeShipping": "免费送货",
     "securePayment": "安全支付"
+  },
+  "cart": {
+    "title": "购物车"
+  },
+  "auth": {
+    "login": "登录"
+  },
+  "customerSatisfaction": {
+    "title": "客户满意度是我们的首要任务",
+    "subtitle": "我们致力于提供最好的产品和服务",
+    "features": {
+      "qualityControl": {
+        "title": "质量控制",
+        "subtitle": "优质品质",
+        "description": "每个产品都经过严格的质量控制流程，确保卓越性和耐久性。"
+      },
+      "shippingOptimization": {
+        "title": "运输优化",
+        "subtitle": "快速安全",
+        "description": "优化的运输流程和精心包装，确保产品安全准时到达。"
+      },
+      "productRange": {
+        "title": "产品系列",
+        "subtitle": "多样选择",
+        "description": "丰富多样的天然家居装饰产品，满足您所有的室内设计需求。"
+      }
+    }
   }
 } 

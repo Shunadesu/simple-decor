@@ -9,6 +9,12 @@
     "blog": "Blog",
     "enquiry": "Giỏ Yêu Cầu"
   },
+  "cart": {
+    "title": "Giỏ hàng"
+  },
+  "auth": {
+    "login": "Đăng nhập"
+  },
   "home": {
     "hero": {
       "title": "Cảm Hứng Tối Giản",
@@ -521,6 +527,27 @@
     },
     "success": "Yêu cầu báo giá đã được gửi thành công!",
     "error": "Có lỗi xảy ra. Vui lòng thử lại."
+  },
+  "customerSatisfaction": {
+    "title": "Sự hài lòng của khách hàng là ưu tiên hàng đầu",
+    "subtitle": "Chúng tôi cam kết mang đến sản phẩm và dịch vụ tốt nhất",
+    "features": {
+      "qualityControl": {
+        "title": "Kiểm Soát Chất Lượng",
+        "subtitle": "Chất Lượng Cao Cấp",
+        "description": "Mỗi sản phẩm đều trải qua quy trình kiểm soát chất lượng nghiêm ngặt để đảm bảo sự xuất sắc và độ bền."
+      },
+      "shippingOptimization": {
+        "title": "Tối Ưu Vận Chuyển",
+        "subtitle": "Nhanh Chóng & An Toàn",
+        "description": "Quy trình vận chuyển tối ưu với đóng gói cẩn thận để đảm bảo sản phẩm đến tay khách hàng an toàn và đúng hẹn."
+      },
+      "productRange": {
+        "title": "Đa Dạng Sản Phẩm",
+        "subtitle": "Lựa Chọn Phong Phú",
+        "description": "Đa dạng các sản phẩm trang trí nội thất từ vật liệu tự nhiên để đáp ứng mọi nhu cầu thiết kế của bạn."
+      }
+    }
   },
   "common": {
     "loading": "Đang tải...",
