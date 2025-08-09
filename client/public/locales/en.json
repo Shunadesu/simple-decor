@@ -31,6 +31,21 @@
     "mapPlaceholder": "Interactive map showing our global partner network",
     "mapDescription": "Connecting with partners worldwide to bring you the best products and services"
   },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our collection of natural home decor products",
+    "showing": "Showing {{count}} of {{total}} products",
+    "viewDetails": "View Details",
+    "addToCart": "Add to Cart",
+    "noProducts": "No products found",
+    "loadMore": "Load More",
+    "filterBy": "Filter by",
+    "sortBy": "Sort by",
+    "categories": "Categories",
+    "priceRange": "Price Range",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock"
+  },
   "about": {
     "title": "About Us",
     "subtitle": "Discover the story and mission of Simple Decor",

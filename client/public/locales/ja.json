@@ -18,5 +18,20 @@
   "partners": {
     "title": "私たちのパートナー",
     "subtitle": "世界中の信頼できるパートナーとの強固な関係を構築"
+  },
+  "products": {
+    "title": "私たちの製品",
+    "subtitle": "天然ホームデコ製品のコレクションをご覧ください",
+    "showing": "{{total}}件中{{count}}件の製品を表示",
+    "viewDetails": "詳細を見る",
+    "addToCart": "カートに追加",
+    "noProducts": "製品が見つかりません",
+    "loadMore": "さらに読み込む",
+    "filterBy": "フィルター",
+    "sortBy": "並び替え",
+    "categories": "カテゴリー",
+    "priceRange": "価格帯",
+    "inStock": "在庫あり",
+    "outOfStock": "在庫切れ"
   }
 }

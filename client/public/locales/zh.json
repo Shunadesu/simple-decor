@@ -18,5 +18,20 @@
   "partners": {
     "title": "我们的合作伙伴",
     "subtitle": "与全球可信赖的合作伙伴建立牢固关系"
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "探索我们的天然家居装饰产品系列",
+    "showing": "显示 {{count}} / {{total}} 个产品",
+    "viewDetails": "查看详情",
+    "addToCart": "添加到购物车",
+    "noProducts": "未找到产品",
+    "loadMore": "加载更多",
+    "filterBy": "筛选",
+    "sortBy": "排序",
+    "categories": "分类",
+    "priceRange": "价格范围",
+    "inStock": "有库存",
+    "outOfStock": "缺货"
   }
 }

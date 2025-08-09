@@ -31,6 +31,21 @@
     "mapPlaceholder": "Bản đồ tương tác hiển thị mạng lưới đối tác toàn cầu",
     "mapDescription": "Kết nối với các đối tác trên toàn thế giới để mang đến sản phẩm và dịch vụ tốt nhất"
   },
+  "products": {
+    "title": "Sản Phẩm Của Chúng Tôi",
+    "subtitle": "Khám phá bộ sưu tập sản phẩm trang trí nội thất từ vật liệu tự nhiên",
+    "showing": "Hiển thị {{count}} trong tổng số {{total}} sản phẩm",
+    "viewDetails": "Xem Chi Tiết",
+    "addToCart": "Thêm Vào Giỏ",
+    "noProducts": "Không tìm thấy sản phẩm",
+    "loadMore": "Tải Thêm",
+    "filterBy": "Lọc theo",
+    "sortBy": "Sắp xếp theo",
+    "categories": "Danh Mục",
+    "priceRange": "Khoảng Giá",
+    "inStock": "Còn Hàng",
+    "outOfStock": "Hết Hàng"
+  },
   "about": {
     "title": "Giới Thiệu",
     "subtitle": "Khám phá câu chuyện và sứ mệnh của Simple Decor",
