@@ -29,7 +29,51 @@
     "globalNetworkTitle": "Mạng Lưới Toàn Cầu",
     "globalNetworkSubtitle": "Đối tác của chúng tôi trải dài khắp các châu lục",
     "mapPlaceholder": "Bản đồ tương tác hiển thị mạng lưới đối tác toàn cầu",
-    "mapDescription": "Kết nối với các đối tác trên toàn thế giới để mang đến sản phẩm và dịch vụ tốt nhất"
+    "mapDescription": "Kết nối với các đối tác trên toàn thế giới để mang đến sản phẩm và dịch vụ tốt nhất",
+    "list": {
+      "globalImport": {
+        "name": "Công Ty Nhập Khẩu Toàn Cầu",
+        "country": "Thương Mại Quốc Tế",
+        "description": "Đối tác thương mại quốc tế hàng đầu chuyên về sản phẩm bền vững",
+        "years": "Hợp tác 5+ năm"
+      },
+      "europeanDecor": {
+        "name": "European Decor Ltd.",
+        "country": "Thị Trường Châu Âu",
+        "description": "Nhà phân phối trang trí nội thất châu Âu cao cấp với mạng lưới rộng khắp",
+        "years": "Hợp tác 3+ năm"
+      },
+      "asiaPacific": {
+        "name": "Asia Pacific Trading",
+        "country": "Khu Vực Châu Á-Thái Bình Dương",
+        "description": "Nhà phân phối khu vực bao phủ các thị trường châu Á chính",
+        "years": "Hợp tác 4+ năm"
+      },
+      "nordicHome": {
+        "name": "Nordic Home Design",
+        "country": "Các Nước Bắc Âu",
+        "description": "Chuyên gia thiết kế Scandinavian với mạng lưới bán lẻ cao cấp",
+        "years": "Hợp tác 2+ năm"
+      }
+    },
+    "benefits": {
+      "longTerm": {
+        "title": "Hợp Tác Dài Hạn",
+        "description": "Xây dựng mối quan hệ bền vững với lợi ích độc quyền và hỗ trợ ưu tiên"
+      },
+      "globalNetwork": {
+        "title": "Truy Cập Mạng Lưới Toàn Cầu",
+        "description": "Kết nối với mạng lưới nhà cung cấp và phân phối trên toàn thế giới"
+      },
+      "qualityAssurance": {
+        "title": "Đảm Bảo Chất Lượng",
+        "description": "Chất lượng sản phẩm được đảm bảo với kiểm tra và chứng nhận toàn diện"
+      },
+      "support": {
+        "title": "Hỗ Trợ 24/7",
+        "description": "Quản lý tài khoản chuyên dụng và hỗ trợ kỹ thuật 24/7"
+      }
+    }
   },
   "products": {
     "title": "Sản Phẩm Của Chúng Tôi",

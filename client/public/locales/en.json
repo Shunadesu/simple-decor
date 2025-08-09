@@ -29,7 +29,51 @@
     "globalNetworkTitle": "Global Network",
     "globalNetworkSubtitle": "Our partners span across continents",
     "mapPlaceholder": "Interactive map showing our global partner network",
-    "mapDescription": "Connecting with partners worldwide to bring you the best products and services"
+    "mapDescription": "Connecting with partners worldwide to bring you the best products and services",
+    "list": {
+      "globalImport": {
+        "name": "Global Import Co.",
+        "country": "International Trading",
+        "description": "Leading international trade partner specializing in sustainable products",
+        "years": "5+ years partnership"
+      },
+      "europeanDecor": {
+        "name": "European Decor Ltd.",
+        "country": "European Markets",
+        "description": "Premium European home decor distributor with extensive network",
+        "years": "3+ years partnership"
+      },
+      "asiaPacific": {
+        "name": "Asia Pacific Trading",
+        "country": "Asia-Pacific Region",
+        "description": "Regional distributor covering major Asian markets",
+        "years": "4+ years partnership"
+      },
+      "nordicHome": {
+        "name": "Nordic Home Design",
+        "country": "Nordic Countries",
+        "description": "Scandinavian design specialist with premium retail network",
+        "years": "2+ years partnership"
+      }
+    },
+    "benefits": {
+      "longTerm": {
+        "title": "Long-term Partnership",
+        "description": "Build lasting relationships with exclusive benefits and priority support"
+      },
+      "globalNetwork": {
+        "title": "Global Network Access",
+        "description": "Connect with our worldwide network of suppliers and distributors"
+      },
+      "qualityAssurance": {
+        "title": "Quality Assurance",
+        "description": "Guaranteed product quality with comprehensive testing and certification"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Dedicated account management and round-the-clock technical support"
+      }
+    }
   },
   "products": {
     "title": "Our Products",
