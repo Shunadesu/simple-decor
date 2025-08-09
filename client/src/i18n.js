@@ -89,7 +89,7 @@ i18n
     
     // Backend config for loading translation files
     backend: {
-      loadPath: '/locales/{{lng}}.json',
+      loadPath: '/locales/{{lng}}.json?v=' + Date.now(),
       crossDomain: true,
       withCredentials: false,
       requestOptions: {
@@ -103,12 +103,14 @@ i18n
           console.log('Loading translation file:', url);
           const parsed = JSON.parse(data);
           console.log('Translation data loaded successfully for:', url);
-          return parsed;
+          console.log('Sample keys:', Object.keys(parsed).slice(0, 5));
+          // Wrap in translation namespace for i18next
+          return { translation: parsed };
         } catch (e) {
           console.error('Failed to parse translation file:', url, e);
           // Return fallback for current language
           const lng = url.match(/\/([a-z]{2})\.json/)?.[1] || 'en';
-          return fallbackTranslations[lng] || fallbackTranslations.en || {};
+          return { translation: fallbackTranslations[lng] || fallbackTranslations.en || {} };
         }
       }
     },
