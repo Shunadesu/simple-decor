@@ -1,0 +1,37 @@
+services:
+  # Backend API Server
+  - type: web
+    name: zuna-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install && npm run build
+    startCommand: cd server && npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        fromDatabase:
+          name: zuna-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: CLIENT_URL
+        value: https://zuna-client.vercel.app
+      - key: ADMIN_URL
+        value: https://zuna-admin.vercel.app
+    autoDeploy: true
+
+databases:
+  - name: zuna-db
+    databaseName: zuna_simple_decor
+    user: zuna_user
+    plan: free

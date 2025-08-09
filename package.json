@@ -1,0 +1,55 @@
+{
+  "name": "zuna-simple-decor",
+  "version": "1.0.0",
+  "description": "Zuna Simple Decor - Complete MERN Stack Website with Admin CMS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\" \"npm run dev:admin\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev:admin": "cd admin-cms && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install && cd ../admin-cms && npm install",
+    "build": "cd client && npm run build && cd ../admin-cms && npm run build",
+    "build:client": "cd client && npm run build",
+    "build:admin": "cd admin-cms && npm run build",
+    "build:server": "cd server && npm run build",
+    "start": "cd server && npm start",
+    "start:prod": "NODE_ENV=production cd server && npm start",
+    "test": "echo \"No tests specified\" && exit 0",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "deploy:render": "git push origin main",
+    "deploy:vercel:client": "cd client && vercel --prod",
+    "deploy:vercel:admin": "cd admin-cms && vercel --prod"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "admin",
+    "cms",
+    "multilingual",
+    "ecommerce"
+  ],
+  "author": "Zuna Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuna-team/zuna-simple-decor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zuna-team/zuna-simple-decor/issues"
+  },
+  "homepage": "https://github.com/zuna-team/zuna-simple-decor#readme"
+} 

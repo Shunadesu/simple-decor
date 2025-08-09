@@ -1,0 +1,97 @@
+# <type>(<scope>): <subject>
+
+#
+
+# <body>
+
+#
+
+# <footer>
+
+# Type should be one of the following:
+
+# \* feat: A new feature
+
+# \* fix: A bug fix
+
+# \* docs: Documentation only changes
+
+# \* style: Changes that do not affect the meaning of the code
+
+# \* refactor: A code change that neither fixes a bug nor adds a feature
+
+# \* perf: A code change that improves performance
+
+# \* test: Adding missing tests or correcting existing tests
+
+# \* build: Changes that affect the build system or external dependencies
+
+# \* ci: Changes to our CI configuration files and scripts
+
+# \* chore: Other changes that don't modify src or test files
+
+# \* revert: Reverts a previous commit
+
+# Scope should be one of the following:
+
+# \* client: Changes to the client/frontend
+
+# \* admin: Changes to the admin-cms
+
+# \* server: Changes to the server/backend
+
+# \* api: Changes to API endpoints
+
+# \* db: Changes to database models or migrations
+
+# \* config: Changes to configuration files
+
+# \* deps: Changes to dependencies
+
+# \* docker: Changes to Docker configuration
+
+# \* deploy: Changes to deployment configuration
+
+# Subject line should:
+
+# \* Use imperative mood ("add" not "added" or "adding")
+
+# \* Be 50 characters or less
+
+# \* Not end with a period
+
+# Body should:
+
+# \* Explain what and why vs. how
+
+# \* Wrap at 72 characters
+
+# \* Use imperative mood
+
+# Footer should contain:
+
+# \* Breaking changes (BREAKING CHANGE: description)
+
+# \* Issue references (Closes #123, Fixes #456)
+
+# Examples:
+
+# feat(client): add user authentication modal
+
+# fix(server): resolve CORS issue with admin endpoints
+
+# docs(api): update API documentation for products
+
+# style(admin): improve dashboard layout responsiveness
+
+# refactor(server): extract email service to separate module
+
+# perf(client): optimize image loading with lazy loading
+
+# test(api): add unit tests for user service
+
+# build(docker): update Node.js to version 18
+
+# ci: add automated deployment workflow
+
+# chore(deps): update dependencies to latest versions
