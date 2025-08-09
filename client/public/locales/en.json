@@ -3,37 +3,11 @@
     "home": "Home",
     "products": "Products",
     "services": "Services",
-    "about": "About Us",
+    "about": "About",
     "partners": "Partners",
     "contact": "Contact",
     "blog": "Blog",
-    "enquiry": "Enquiry Cart"
-  },
-  "cart": {
-    "title": "Cart"
-  },
-  "auth": {
-    "login": "Login"
-  },
-  "home": {
-    "hero": {
-      "title": "The Minimalist Inspiration",
-      "subtitle": "With the desire to create products suitable for the modern world from natural materials, we want to share unique ideas at an affordable cost.",
-      "cta": "DOWNLOAD CATALOGUE PDF"
-    },
-    "vision": {
-      "title": "Vision & Mission",
-      "description": "We strive to provide sustainable, high-quality products that enhance modern living spaces."
-    },
-    "services": {
-      "title": "Our Services",
-      "consultation": "Product Consultation on Demand",
-      "weeklyQuote": "Weekly Quote Service",
-      "exportDocs": "Export Documentation Support",
-      "shipping": "Shipping Booking Support",
-      "inspection": "Quality Inspection & Monitoring",
-      "afterSales": "After-Sales Service"
-    }
+    "enquiry": "Quote Request"
   },
   "about": {
     "title": "About Us",
@@ -48,7 +22,7 @@
     },
     "stats": {
       "experience": "Years of Experience",
-      "countries": "Export Countries", 
+      "countries": "Export Countries",
       "customers": "Satisfied Customers",
       "naturalProducts": "Natural Products"
     },
@@ -58,7 +32,7 @@
         "description": "Committed to using natural and environmentally friendly materials"
       },
       "quality": {
-        "title": "Quality", 
+        "title": "Quality",
         "description": "Ensuring the highest quality in all products"
       },
       "customer": {
@@ -70,463 +44,6 @@
         "description": "Serving customers worldwide"
       }
     }
-  },
-  "products": {
-    "title": "Products",
-    "categories": "Categories",
-    "showing": "Showing {{count}} of {{total}} products",
-    "viewDetails": "View Details",
-    "addToCart": "Add to Cart",
-    "details": {
-      "technicalSpecs": "Technical Specifications",
-      "material": "Material",
-      "specifications": "Specifications",
-      "moisture": "Moisture Content",
-      "packaging": "Packaging Method",
-      "requestQuote": "Request Quote"
-    }
-  },
-  "productDetail": {
-    "backToProducts": "Back to Products",
-    "error": "Error",
-    "notFound": "Product not found",
-    "reviews": "reviews",
-    "inStock": "In Stock",
-    "outOfStock": "Out of Stock",
-    "quantity": "Quantity",
-    "addToCart": "Add to Cart",
-    "addedToCart": "Added to cart successfully",
-    "removedFromWishlist": "Removed from wishlist",
-    "addedToWishlist": "Added to wishlist",
-    "loginRequired": "Please log in to continue",
-    "specifications": "Specifications",
-    "material": "Material",
-    "dimensions": "Dimensions",
-    "weight": "Weight",
-    "color": "Color",
-    "moisture": "Moisture",
-    "packaging": "Packaging",
-    "writeReview": "Write a Review",
-    "editReview": "Edit Review",
-    "rating": "Rating",
-    "reviewTitle": "Review Title",
-    "reviewComment": "Review Comment",
-    "submitReview": "Submit Review",
-    "updateReview": "Update Review",
-    "cancel": "Cancel",
-    "saving": "Saving...",
-    "reviewSubmitted": "Review submitted successfully",
-    "reviewUpdated": "Review updated successfully",
-    "reviewDeleted": "Review deleted successfully",
-    "helpfulUpdated": "Helpful status updated",
-    "noReviews": "No reviews yet",
-    "beFirstToReview": "Be the first to review this product",
-    "helpful": "helpful"
-  },
-  "contact": {
-    "title": "Contact Us",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "whatsapp": "WhatsApp",
-      "country": "Country",
-      "interestedProduct": "Product of Interest",
-      "submit": "Send Message"
-    },
-    "info": {
-      "phone": "Phone",
-      "email": "Email",
-      "address": "Address"
-    }
-  },
-
-  "quickView": {
-    "title": "Quick View",
-    "description": "Description",
-    "specifications": "Specifications",
-    "dimensions": "Dimensions",
-    "weight": "Weight",
-    "material": "Material",
-    "quantity": "Quantity",
-    "available": "available",
-    "addToCart": "Add to Cart",
-    "wishlist": "Wishlist",
-    "freeShipping": "Free Shipping",
-    "securePayment": "Secure Payment"
-  },
-  "profile": {
-    "loginRequired": "Login Required",
-    "loginRequiredDesc": "Please log in to access your profile.",
-    "login": "Login",
-    "logout": "Logout",
-    "tabs": {
-      "profile": "Profile",
-      "orders": "Orders",
-      "wishlist": "Wishlist",
-      "addresses": "Addresses",
-      "settings": "Settings"
-    },
-    "edit": "Edit",
-    "save": "Save",
-    "saving": "Saving...",
-    "cancel": "Cancel",
-    "add": "Add",
-    "personalInfo": "Personal Information",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email",
-    "phone": "Phone",
-    "changePassword": "Change Password",
-    "currentPassword": "Current Password",
-    "newPassword": "New Password",
-    "confirmPassword": "Confirm Password",
-    "noOrders": "No Orders Yet",
-    "noOrdersDesc": "You haven't placed any orders yet. Start shopping to see your order history here.",
-    "noWishlist": "No Wishlist Items",
-    "noWishlistDesc": "You haven't added any products to your wishlist yet. Start browsing to add your favorite products.",
-    "browseProducts": "Browse Products",
-    "order": "Order",
-    "orderStatus": {
-      "pending": "Pending",
-      "processing": "Processing",
-      "shipped": "Shipped",
-      "delivered": "Delivered",
-      "completed": "Completed",
-      "cancelled": "Cancelled"
-    },
-    "addAddress": "Add Address",
-    "addNewAddress": "Add New Address",
-    "addressType": "Address Type",
-    "addressTypes": {
-      "home": "Home",
-      "work": "Work",
-      "other": "Other"
-    },
-    "isDefault": "Set as Default",
-    "default": "Default",
-    "address": "Address",
-    "city": "City",
-    "state": "State",
-    "zipCode": "ZIP Code",
-    "country": "Country",
-    "notifications": "Notifications",
-    "emailNotifications": "Email Notifications",
-    "smsNotifications": "SMS Notifications",
-    "pushNotifications": "Push Notifications",
-    "updateSuccess": "Profile updated successfully",
-    "updateError": "Failed to update profile",
-    "addressAddedSuccess": "Address added successfully",
-    "addressRemovedSuccess": "Address removed successfully",
-    "wishlistRemovedSuccess": "Product removed from wishlist",
-    "wishlistRemovedError": "Failed to remove from wishlist",
-    "fetchOrdersError": "Failed to fetch orders"
-  },
-  "wishlist": {
-    "title": "Wishlist",
-    "items": "items",
-    "emptyTitle": "Your wishlist is empty",
-    "emptyDescription": "Start adding products to your wishlist to save them for later.",
-    "browseProducts": "Browse Products",
-    "selectAll": "Select All",
-    "deselectAll": "Deselect All",
-    "removeSelected": "Remove Selected",
-    "clearAll": "Clear All",
-    "clearConfirm": "Are you sure you want to clear your entire wishlist?",
-    "select": "Select",
-    "addToCart": "Add to Cart",
-    "remove": "Remove"
-  },
-  "search": {
-    "placeholder": "Search products...",
-    "searching": "Searching...",
-    "noResults": "No products found",
-    "viewAllResults": "View all results",
-    "recentSearches": "Recent searches",
-    "clearAll": "Clear all",
-    "productsFound": "products found"
-  },
-  "cart": {
-    "title": "Shopping Cart",
-    "empty": "Cart is empty",
-    "emptyDescription": "You have no items in your cart",
-    "continueShopping": "Continue Shopping",
-    "checkout": "Checkout",
-    "total": "Total",
-    "subtotal": "Subtotal",
-    "shipping": "Shipping",
-    "tax": "Tax",
-    "items": "items",
-    "quantity": "Quantity",
-    "price": "Price",
-    "remove": "Remove",
-    "update": "Update",
-    "clear": "Clear cart",
-    "clearConfirm": "Are you sure you want to remove all items from your cart?"
-  },
-  "checkout": {
-    "title": "Checkout",
-    "steps": {
-      "shipping": "Shipping Information",
-      "payment": "Payment",
-      "review": "Review Order"
-    },
-    "shippingInfo": "Shipping Information",
-    "billingInfo": "Billing Information",
-    "sameAsShipping": "Same as shipping",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email",
-    "phone": "Phone Number",
-    "address": "Address",
-    "city": "City",
-    "state": "State",
-    "zipCode": "ZIP Code",
-    "country": "Country",
-    "paymentMethod": "Payment Method",
-    "creditCard": "Credit Card",
-    "bankTransfer": "Bank Transfer",
-    "cod": "Cash on Delivery",
-    "orderSummary": "Order Summary",
-    "orderTotal": "Order Total",
-    "freeShipping": "Free shipping",
-    "freeShippingOver": "Free shipping on orders over",
-    "placeOrder": "Place Order",
-    "orderPlaced": "Order placed successfully",
-    "orderNumber": "Order number",
-    "thankYou": "Thank you for your order!",
-    "continue": "Continue",
-    "back": "Back",
-    "processing": "Processing...",
-    "required": "Required",
-    "orderError": "An error occurred while placing the order. Please try again."
-  },
-  "footer": {
-    "followUs": "Follow Us",
-    "contactUs": "Contact Us",
-    "companyDescription": "Specializing in providing interior decoration products from natural materials, environmentally friendly. We are committed to bringing high quality products at reasonable prices.",
-    "newsletter": {
-      "title": "Subscribe to Newsletter",
-      "description": "Get updates on new products, special offers and green interior design trends",
-      "placeholder": "Enter your email...",
-      "subscribe": "Subscribe",
-      "subscribing": "Processing...",
-      "success": "Thank you for subscribing to our newsletter!",
-      "error": "An error occurred. Please try again!"
-    },
-    "quickLinks": "Quick Links",
-    "aboutUs": "About Us",
-    "ourStory": "Our Story",
-    "ourSolutions": "Our Solutions",
-    "careers": "Careers",
-    "wishlist": "Wishlist",
-    "partners": "Partners",
-    "connectWithUs": "Connect With Us",
-    "ourLocation": "Our Location",
-    "getDirections": "Get Directions",
-    "mapPlaceholder": "Interactive map",
-    "hotline": "Hotline",
-    "support247": "24/7 Support",
-    "customerService": "Customer Service",
-    "address": "Address",
-    "addressDetails": "Van Boi Village, Nhat Tuu Commune<br />Kim Bang District, Ha Nam Province<br />Vietnam",
-    "madeWithLove": "Made with",
-    "inVietnam": "in Vietnam",
-    "allRightsReserved": "All rights reserved",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "shippingPolicy": "Shipping Policy",
-    "returnPolicy": "Return Policy",
-    "scrollToTop": "Scroll to top"
-  },
-  "language": {
-    "switchTo": "Switch to",
-    "current": "Current",
-    "vietnamese": "Tiếng Việt",
-    "english": "English",
-    "korean": "한국어",
-    "chinese": "中文",
-    "japanese": "日本語"
-  },
-  "currency": {
-    "vnd": "Vietnamese Dong",
-    "usd": "US Dollar",
-    "eur": "Euro"
-  },
-  "auth": {
-    "login": "Login",
-    "register": "Register",
-    "logout": "Logout",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm Password",
-    "forgotPassword": "Forgot Password?",
-    "rememberMe": "Remember Me",
-    "loginSuccess": "Login successful",
-    "registerSuccess": "Registration successful",
-    "loginRequired": "Please log in",
-    "invalidCredentials": "Invalid credentials",
-    "emailExists": "Email already exists",
-    "weakPassword": "Password too weak",
-    "passwordMismatch": "Passwords don't match"
-  },
-  "partners": {
-    "title": "Partners",
-    "subtitle": "Trusted partners worldwide",
-    "strategicPartnersTitle": "Strategic Partners",
-    "strategicPartnersSubtitle": "We are proud to collaborate with reputable partners around the world",
-    "list": {
-      "globalImport": {
-        "name": "Global Import Co.",
-        "country": "United States",
-        "description": "Main export partner in the US market",
-        "years": "5+ years of cooperation"
-      },
-      "europeanDecor": {
-        "name": "European Decor Ltd.",
-        "country": "Germany", 
-        "description": "Exclusive distributor in Europe",
-        "years": "3+ years of cooperation"
-      },
-      "asiaPacific": {
-        "name": "Asia Pacific Trading",
-        "country": "Singapore",
-        "description": "Strategic partner in Asia region",
-        "years": "4+ years of cooperation"
-      },
-      "nordicHome": {
-        "name": "Nordic Home Solutions",
-        "country": "Sweden",
-        "description": "Trade partner in Northern Europe",
-        "years": "2+ years of cooperation"
-      }
-    },
-    "benefitsTitle": "Partnership Benefits",
-    "benefitsSubtitle": "The values we bring to our partners",
-    "benefits": {
-      "longTerm": {
-        "title": "Long-term Partnership",
-        "description": "Building sustainable partner relationships"
-      },
-      "globalNetwork": {
-        "title": "Global Network",
-        "description": "Access to international markets"
-      },
-      "qualityAssurance": {
-        "title": "Quality Assurance",
-        "description": "Commitment to high product quality"
-      },
-      "support": {
-        "title": "Dedicated Support",
-        "description": "24/7 customer service"
-      }
-    },
-    "becomePartnerTitle": "Become a Partner",
-    "becomePartnerSubtitle": "Would you like to become our partner? Contact us to learn more",
-    "contactNow": "Contact Now",
-    "downloadBrochure": "Download Brochure",
-    "globalNetworkTitle": "Global Partner Network",
-    "globalNetworkSubtitle": "We are present in over 50 countries worldwide",
-    "mapPlaceholder": "Partner map will be integrated here",
-    "mapDescription": "Showing partner locations worldwide"
-  },
-  "ourStory": {
-    "title": "Our Story",
-    "subtitle": "Discover the journey that led us to become a leading natural home decor company",
-    "storyTitle": "Our Journey",
-    "storyParagraph1": "Simple Decor began as a small family business with a passionate commitment to sustainable living and natural beauty. We believed that every home deserves beautiful, eco-friendly decor that tells a story.",
-    "storyParagraph2": "Over the years, we've grown from a local workshop to an international brand, but our core values remain unchanged. We continue to handcraft each piece with care, using traditional techniques passed down through generations.",
-    "storyParagraph3": "Today, we're proud to serve customers worldwide, bringing the warmth and authenticity of Vietnamese craftsmanship to homes across the globe.",
-    "factoryImageAlt": "Our manufacturing facility",
-    "milestonesTitle": "Our Journey Through the Years",
-    "coreValuesTitle": "Our Core Values",
-    "values": {
-      "sustainability": {
-        "title": "Sustainability",
-        "description": "Committed to eco-friendly practices and sustainable materials"
-      },
-      "quality": {
-        "title": "Quality",
-        "description": "Ensuring excellence in every product we create"
-      },
-      "customer": {
-        "title": "Customer Focus",
-        "description": "Putting our customers' needs and satisfaction first"
-      },
-      "global": {
-        "title": "Global Reach",
-        "description": "Bringing Vietnamese craftsmanship to the world"
-      }
-    },
-    "milestones": {
-      "2014": {
-        "title": "Company Founded",
-        "description": "Simple Decor was established with a vision to create beautiful home products from natural materials."
-      },
-      "2016": {
-        "title": "First Export",
-        "description": "Expanded internationally, bringing Vietnamese craftsmanship to global markets."
-      },
-      "2018": {
-        "title": "Quality Certification",
-        "description": "Achieved international quality certifications and established sustainable manufacturing processes."
-      },
-      "2020": {
-        "title": "Team Expansion",
-        "description": "Grew our team of skilled artisans and designers to meet increasing global demand."
-      },
-      "2024": {
-        "title": "Innovation & Growth",
-        "description": "Launched new product lines and embraced digital transformation for better customer experience."
-      }
-    }
-  },
-  "blog": {
-    "title": "Blog",
-    "readMore": "Read More",
-    "latestPosts": "Latest Posts",
-    "noResults": "No blog posts found",
-    "searchPlaceholder": "Search blog posts...",
-    "categories": "Categories",
-    "tags": "Tags",
-    "author": "Author",
-    "publishedDate": "Published",
-    "backToList": "Back to Blog"
-  },
-  "customerSatisfaction": {
-    "title": "Customer satisfaction comes first",
-    "subtitle": "We are committed to providing the best products and services",
-    "features": {
-      "qualityControl": {
-        "title": "Quality Control",
-        "subtitle": "Premium Quality",
-        "description": "Every product undergoes strict quality control processes to ensure excellence and durability."
-      },
-      "shippingOptimization": {
-        "title": "Shipping Optimization", 
-        "subtitle": "Fast & Secure",
-        "description": "Optimized shipping processes with careful packaging to ensure products arrive safely and on time."
-      },
-      "productRange": {
-        "title": "Product Range",
-        "subtitle": "Diverse Selection",
-        "description": "Wide variety of natural home decor products to meet all your interior design needs."
-      }
-    }
-  },
-  "quote": {
-    "title": "Get Free Quote",
-    "subtitle": "Fill in the information to receive detailed quotes for our products",
-    "form": {
-      "name": "Full Name",
-      "email": "Email",
-      "phone": "Phone Number",
-      "company": "Company",
-      "message": "Message/Requirements",
-      "submit": "Send Quote Request",
-      "submitting": "Sending..."
-    },
-    "success": "Quote request sent successfully!",
-    "error": "An error occurred. Please try again."
   },
   "customerSatisfaction": {
     "title": "Customer satisfaction comes first",
@@ -549,46 +66,31 @@
       }
     }
   },
-  "common": {
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "warning": "Warning",
-    "info": "Info",
-    "confirm": "Confirm",
-    "cancel": "Cancel",
-    "ok": "OK",
-    "yes": "Yes",
-    "no": "No",
-    "save": "Save",
-    "edit": "Edit",
-    "delete": "Delete",
-    "add": "Add",
-    "remove": "Remove",
-    "update": "Update",
-    "submit": "Submit",
-    "reset": "Reset",
-    "search": "Search",
-    "filter": "Filter",
-    "sort": "Sort",
-    "view": "View",
-    "show": "Show",
-    "hide": "Hide",
-    "more": "More",
-    "less": "Less",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "clear": "Clear",
-    "close": "Close",
-    "open": "Open",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "page": "Page",
-    "of": "of",
-    "total": "Total",
-    "items": "items",
-    "item": "item"
+  "footer": {
+    "followUs": "Follow Us",
+    "contactUs": "Contact Us",
+    "companyDescription": "Specializing in providing interior decoration products from natural materials, environmentally friendly. We are committed to bringing high quality products at reasonable prices.",
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "description": "Get updates on new products, special offers and green interior design trends",
+      "placeholder": "Enter your email...",
+      "subscribe": "Subscribe",
+      "subscribing": "Processing...",
+      "success": "Thank you for subscribing to our newsletter!",
+      "error": "An error occurred. Please try again!"
+    },
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "ourStory": "Our Story",
+    "ourSolutions": "Our Solutions",
+    "careers": "Careers",
+    "wishlist": "Wishlist",
+    "partners": "Partners",
+    "connectWithUs": "Connect With Us",
+    "hotline": "Hotline",
+    "support247": "24/7 Support",
+    "customerService": "Customer Service",
+    "address": "Address",
+    "addressDetails": "Van Boi Village, Nhat Tuu Commune<br />Kim Bang District, Ha Nam Province<br />Vietnam"
   }
-} 
+}

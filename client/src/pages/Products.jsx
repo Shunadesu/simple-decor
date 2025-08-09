@@ -14,7 +14,18 @@ import productsApi from '../services/productsApi';
 import categoriesApi from '../services/categoriesApi';
 
 const Products = () => {
-  const { t } = useTranslation();
+  const { t, i18n, ready } = useTranslation();
+  
+  // Debug logging  
+  console.log('Products - i18n ready:', ready);
+  console.log('Products - Title translation:', t('products.title'));
+  
+  // Show loading if translations not ready
+  if (!ready) {
+    return <div className="min-h-screen flex items-center justify-center">
+      <div className="text-xl">Loading translations...</div>
+    </div>;
+  }
   const location = useLocation();
   const { isAuthenticated } = useAuthStore();
   const { addToWishlist, removeFromWishlist, items: wishlistItems } = useWishlistStore();

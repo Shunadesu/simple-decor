@@ -3,7 +3,20 @@ import { useTranslation } from 'react-i18next';
 import {  Globe, Award, Users } from 'lucide-react';
 
 const Partners = () => {
-  const { t } = useTranslation();
+  const { t, i18n, ready } = useTranslation();
+  
+  // Debug logging
+  console.log('Partners - i18n ready:', ready);
+  console.log('Partners - Current language:', i18n.language);  
+  console.log('Partners - Title translation:', t('partners.title'));
+  console.log('Partners - Has title key?', i18n.exists('partners.title'));
+  
+  // Show loading if translations not ready
+  if (!ready) {
+    return <div className="min-h-screen flex items-center justify-center">
+      <div className="text-xl">Loading translations...</div>
+    </div>;
+  }
 
   const partners = [
     {
