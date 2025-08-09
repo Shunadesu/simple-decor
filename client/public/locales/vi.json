@@ -15,6 +15,22 @@
   "auth": {
     "login": "Đăng nhập"
   },
+  "partners": {
+    "title": "Đối Tác Của Chúng Tôi",
+    "subtitle": "Xây dựng mối quan hệ bền vững với các đối tác tin cậy trên toàn thế giới",
+    "strategicPartnersTitle": "Đối Tác Chiến Lược",
+    "strategicPartnersSubtitle": "Các công ty hàng đầu mà chúng tôi hợp tác trên toàn cầu",
+    "benefitsTitle": "Lợi Ích Đối Tác",
+    "benefitsSubtitle": "Những gì chúng tôi mang đến cho các đối tác quý giá",
+    "becomePartnerTitle": "Trở Thành Đối Tác",
+    "becomePartnerSubtitle": "Tham gia mạng lưới đối tác toàn cầu đáng tin cậy của chúng tôi",
+    "contactNow": "Liên Hệ Ngay",
+    "downloadBrochure": "Tải Brochure",
+    "globalNetworkTitle": "Mạng Lưới Toàn Cầu",
+    "globalNetworkSubtitle": "Đối tác của chúng tôi trải dài khắp các châu lục",
+    "mapPlaceholder": "Bản đồ tương tác hiển thị mạng lưới đối tác toàn cầu",
+    "mapDescription": "Kết nối với các đối tác trên toàn thế giới để mang đến sản phẩm và dịch vụ tốt nhất"
+  },
   "about": {
     "title": "Giới Thiệu",
     "subtitle": "Khám phá câu chuyện và sứ mệnh của Simple Decor",

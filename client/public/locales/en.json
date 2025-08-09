@@ -15,6 +15,22 @@
   "auth": {
     "login": "Login"
   },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Building strong relationships with trusted partners worldwide",
+    "strategicPartnersTitle": "Strategic Partners",
+    "strategicPartnersSubtitle": "Leading companies we work with globally",
+    "benefitsTitle": "Partnership Benefits",
+    "benefitsSubtitle": "What we offer to our valued partners",
+    "becomePartnerTitle": "Become Our Partner",
+    "becomePartnerSubtitle": "Join our global network of trusted partners",
+    "contactNow": "Contact Now",
+    "downloadBrochure": "Download Brochure",
+    "globalNetworkTitle": "Global Network",
+    "globalNetworkSubtitle": "Our partners span across continents",
+    "mapPlaceholder": "Interactive map showing our global partner network",
+    "mapDescription": "Connecting with partners worldwide to bring you the best products and services"
+  },
   "about": {
     "title": "About Us",
     "subtitle": "Discover the story and mission of Simple Decor",
