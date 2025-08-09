@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import Backend from 'i18next-http-backend';
+import { resources } from './i18n-resources';
 
 // Fallback translations để tránh lỗi load file
 const fallbackTranslations = {
@@ -63,7 +63,6 @@ const fallbackTranslations = {
 };
 
 i18n
-  .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
@@ -87,37 +86,8 @@ i18n
       escapeValue: false,
     },
     
-    backend: {
-      loadPath: '/locales/{{lng}}.json',
-      crossDomain: true,
-      withCredentials: false,
-      requestOptions: {
-        cache: 'no-cache',
-        mode: 'cors'
-      },
-      // Fallback khi load thất bại
-      allowMultiLoading: false,
-      parse: (data, url) => {
-        try {
-          console.log('Loading translation file:', url);
-          const parsed = JSON.parse(data);
-          console.log('Translation data loaded successfully for:', url);
-          return parsed;
-        } catch (e) {
-          console.error('Failed to parse translation file:', url, e);
-          return {};
-        }
-      }
-    },
-
-    // Loại bỏ resources để force load từ backend
-    // resources: {
-    //   en: { translation: fallbackTranslations.en },
-    //   vi: { translation: fallbackTranslations.vi },
-    //   ko: { translation: fallbackTranslations.ko },
-    //   zh: { translation: fallbackTranslations.zh },
-    //   ja: { translation: fallbackTranslations.ja }
-    // },
+    // Use imported resources directly for production reliability
+    resources,
 
     detection: {
       // Thứ tự ưu tiên phát hiện ngôn ngữ
