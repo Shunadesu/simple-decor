@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, CheckCircle, Loader2, ArrowLeft, Search, Grid, List, Star, Heart, ShoppingCart, Eye } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
+import { ArrowRight } from 'lucide-react';
 
 // Import components
 import CategoryCard from '../components/CategoryCard';
 import ProductCard from '../components/ProductCard';
 import CustomerSatisfaction from '../components/CustomerSatisfaction';
+
+// Import new Home components
+import HeroSwiper from '../components/Home/HeroSwiper';
+import HeroImage from '../components/Home/HeroImage';
+import FeaturedCategories from '../components/Home/FeaturedCategories';
+import ArticlesGrid from '../components/Home/ArticlesGrid';
+import WhyChooseUs from '../components/Home/WhyChooseUs';
+import InsightsSection from '../components/Home/InsightsSection';
 import { categoriesApi, productsApi } from '../services';
 import useAuthStore from '../stores/authStore';
 import useWishlistStore from '../stores/wishlistStore';
@@ -43,37 +45,7 @@ const Home = () => {
   const [viewMode, setViewMode] = useState('grid');
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
 
-  // Sample data for the swiper
-  const slides = [
-    {
-      id: 1,
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80',
-      title: 'Welcome to Simple Decor',
-      subtitle: 'Transform your space with elegant designs',
-      description: 'Discover our collection of beautiful home decor items that will make your space truly special.'
-    },
-    {
-      id: 2,
-      image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80',
-      title: 'Premium Quality Furniture',
-      subtitle: 'Crafted with care and attention to detail',
-      description: 'Our furniture pieces are designed to last, combining style with functionality for your perfect home.'
-    },
-    {
-      id: 3,
-      image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80',
-      title: 'Modern Interior Solutions',
-      subtitle: 'Contemporary designs for modern living',
-      description: 'From minimalist to luxurious, we offer a wide range of interior solutions to match your style.'
-    },
-    {
-      id: 4,
-      image: 'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      title: 'Expert Design Consultation',
-      subtitle: 'Professional guidance for your project',
-      description: 'Our team of experts is here to help you create the perfect space that reflects your personality.'
-    }
-  ];
+
 
   const fetchData = async () => {
     try {
@@ -299,75 +271,24 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Swiper */}
-      <section className="relative h-screen">
-        <Swiper
-          modules={[Autoplay, EffectFade]}
-          effect="fade"
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          className="h-full"
-        >
-          {slides.map((slide) => (
-            <SwiperSlide key={slide.id} className="relative">
-              {/* Background Image */}
-              <div 
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                  backgroundImage: `url(${slide.image})`,
-                }}
-              >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/40"></div>
-              </div>
-              
-              {/* Content */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <div className="text-center text-white px-4 max-w-4xl mx-auto">
-                  <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
-                    {slide.title}
-                  </h1>
-                  <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-200">
-                    {slide.subtitle}
-                  </h2>
-                  <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
-                    {slide.description}
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link
-                      to="/products"
-                      className="inline-flex items-center px-8 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300"
-                    >
-                      Explore Products
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-300"
-                    >
-                      Get Quote
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
+      {/* Hero Swiper Section */}
+      <HeroSwiper />
 
+     
+      {/* Featured Categories Section */}
+      <FeaturedCategories />
+ {/* Hero Image Section */}
+      <HeroImage />
 
       {/* Featured Products Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Featured Products
+              Sản Phẩm Nổi Bật
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Handpicked products that showcase our commitment to quality and design excellence.
+              Những sản phẩm được tuyển chọn kỹ lưỡng thể hiện cam kết của chúng tôi về chất lượng và thiết kế xuất sắc.
             </p>
           </div>
 
@@ -379,21 +300,30 @@ const Home = () => {
             </div>
           ) : (
             <div className="text-center py-8">
-              <p className="text-gray-600">No featured products available at the moment.</p>
+              <p className="text-gray-600">Hiện tại chưa có sản phẩm nổi bật nào.</p>
             </div>
           )}
 
           <div className="text-center mt-12">
             <Link
               to="/products"
-                              className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-300"
+              className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-300"
             >
-              View All Products
+              Xem Tất Cả Sản Phẩm
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* Articles Grid Section */}
+      <ArticlesGrid />
+
+      {/* Insights Section */}
+      <InsightsSection />
 
       {/* Customer Satisfaction Section */}
       <CustomerSatisfaction />

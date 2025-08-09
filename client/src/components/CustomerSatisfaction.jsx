@@ -10,6 +10,7 @@ const CustomerSatisfaction = () => {
   console.log('CustomerSatisfaction - Ready:', i18n.isInitialized);
   console.log('CustomerSatisfaction - Available resources:', Object.keys(i18n.store?.data || {}));
   console.log('CustomerSatisfaction - Current namespace data:', i18n.store?.data?.[i18n.language]?.translation ? Object.keys(i18n.store.data[i18n.language].translation).slice(0, 10) : 'No data');
+  console.log('CustomerSatisfaction - Full translation data sample:', i18n.store?.data?.[i18n.language]?.translation ? JSON.stringify(i18n.store.data[i18n.language].translation).substring(0, 300) : 'No data');
   console.log('CustomerSatisfaction - Title translation:', t('customerSatisfaction.title'));
   console.log('CustomerSatisfaction - Has title key?', i18n.exists('customerSatisfaction.title'));
   
