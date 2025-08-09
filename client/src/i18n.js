@@ -26,6 +26,39 @@ const fallbackTranslations = {
     'nav.blog': 'Blog',
     'cart.title': 'Giỏ hàng',
     'auth.login': 'Đăng nhập'
+  },
+  ko: {
+    'nav.home': '홈',
+    'nav.products': '제품', 
+    'nav.services': '서비스',
+    'nav.about': '소개',
+    'nav.partners': '파트너',
+    'nav.contact': '연락처',
+    'nav.blog': '블로그',
+    'cart.title': '장바구니',
+    'auth.login': '로그인'
+  },
+  zh: {
+    'nav.home': '首页',
+    'nav.products': '产品', 
+    'nav.services': '服务',
+    'nav.about': '关于',
+    'nav.partners': '合作伙伴',
+    'nav.contact': '联系',
+    'nav.blog': '博客',
+    'cart.title': '购物车',
+    'auth.login': '登录'
+  },
+  ja: {
+    'nav.home': 'ホーム',
+    'nav.products': '製品', 
+    'nav.services': 'サービス',
+    'nav.about': '概要',
+    'nav.partners': 'パートナー',
+    'nav.contact': 'お問い合わせ',
+    'nav.blog': 'ブログ',
+    'cart.title': 'カート',
+    'auth.login': 'ログイン'
   }
 };
 
@@ -37,32 +70,54 @@ i18n
     // Đảm bảo i18n được khởi tạo đúng cách
     react: {
       useSuspense: false,
+      bindI18n: 'languageChanged loaded',
+      bindI18nStore: 'added removed',
+      transEmptyNodeValue: '',
+      transSupportBasicHtmlNodes: true,
+      transKeepBasicHtmlNodesFor: ['br', 'strong', 'i'],
     },
     fallbackLng: 'en',
-    debug: process.env.NODE_ENV === 'development',
+    debug: process.env.NODE_ENV === 'development', // Chỉ debug trong development
+    
+    // Cấu hình namespace cho flat structure
+    ns: ['translation'],
+    defaultNS: 'translation',
+    
     interpolation: {
       escapeValue: false,
     },
-    // Fallback resources nếu load file thất bại
-    resources: fallbackTranslations,
+    
     backend: {
       loadPath: '/locales/{{lng}}.json',
       crossDomain: true,
       withCredentials: false,
       requestOptions: {
-        cache: 'no-cache'
+        cache: 'no-cache',
+        mode: 'cors'
       },
       // Fallback khi load thất bại
       allowMultiLoading: false,
       parse: (data, url) => {
         try {
-          return JSON.parse(data);
+          console.log('Loading translation file:', url);
+          const parsed = JSON.parse(data);
+          console.log('Translation data loaded successfully for:', url);
+          return parsed;
         } catch (e) {
-          console.warn('Failed to parse translation file:', url);
+          console.error('Failed to parse translation file:', url, e);
           return {};
         }
       }
     },
+
+    // Loại bỏ resources để force load từ backend
+    // resources: {
+    //   en: { translation: fallbackTranslations.en },
+    //   vi: { translation: fallbackTranslations.vi },
+    //   ko: { translation: fallbackTranslations.ko },
+    //   zh: { translation: fallbackTranslations.zh },
+    //   ja: { translation: fallbackTranslations.ja }
+    // },
 
     detection: {
       // Thứ tự ưu tiên phát hiện ngôn ngữ
@@ -105,5 +160,27 @@ i18n
       }
     },
   });
+
+// Log language changes
+i18n.on('languageChanged', (lng) => {
+  console.log('Language changed to:', lng);
+  console.log('Available resources:', Object.keys(i18n.options.resources || {}));
+});
+
+// Log initialization
+i18n.on('initialized', () => {
+  console.log('i18n initialized successfully');
+  console.log('Current language:', i18n.language);
+  console.log('Available languages:', Object.keys(i18n.options.resources || {}));
+  console.log('Translation store:', i18n.store.data);
+});
+
+i18n.on('loaded', (loaded) => {
+  console.log('Translations loaded:', loaded);
+});
+
+i18n.on('failedLoading', (lng, ns, msg) => {
+  console.error('Failed to load translations:', lng, ns, msg);
+});
 
 export default i18n; 

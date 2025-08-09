@@ -1,0 +1,1441 @@
+{
+  "metadata": {
+    "timestamp": "2025-08-09T10:23:07.766Z",
+    "database": "zuna-simpledecor",
+    "version": "1.0.0",
+    "totalCategories": 8,
+    "totalProducts": 17
+  },
+  "categories": [
+    {
+      "_id": "6896f4371d7bf3545d594fbd",
+      "name": {
+        "en": "Home Decor",
+        "vi": "Trang trí nội thất"
+      },
+      "description": {
+        "en": "Home decoration products and interior accessories",
+        "vi": "Các sản phẩm trang trí nội thất, phụ kiện trang trí nhà cửa"
+      },
+      "slug": "home-decor",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=400&fit=crop&q=80",
+        "alt": "Home Decor Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.593Z",
+      "updatedAt": "2025-08-09T07:09:43.593Z"
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fbe",
+      "name": {
+        "en": "Furniture",
+        "vi": "Nội thất"
+      },
+      "description": {
+        "en": "Furniture for home, office and living spaces",
+        "vi": "Đồ nội thất cho gia đình, văn phòng và không gian sống"
+      },
+      "slug": "furniture",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=400&fit=crop&q=80",
+        "alt": "Furniture Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.594Z",
+      "updatedAt": "2025-08-09T07:09:43.594Z"
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fbf",
+      "name": {
+        "en": "Kitchen & Dining",
+        "vi": "Nhà bếp & Phòng ăn"
+      },
+      "description": {
+        "en": "Kitchen utensils, dining items and cooking accessories",
+        "vi": "Dụng cụ nhà bếp, đồ dùng phòng ăn và phụ kiện nấu nướng"
+      },
+      "slug": "kitchen-dining",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop&q=80",
+        "alt": "Kitchen & Dining Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.594Z",
+      "updatedAt": "2025-08-09T07:09:43.594Z"
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fc0",
+      "name": {
+        "en": "Fashion Accessories",
+        "vi": "Phụ kiện thời trang"
+      },
+      "description": {
+        "en": "Fashion accessories, bags, watches and jewelry",
+        "vi": "Phụ kiện thời trang, túi xách, đồng hồ và trang sức"
+      },
+      "slug": "fashion-accessories",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=400&fit=crop&q=80",
+        "alt": "Fashion Accessories Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.594Z",
+      "updatedAt": "2025-08-09T07:09:43.594Z"
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fc1",
+      "name": {
+        "en": "Outdoor & Garden",
+        "vi": "Ngoài trời & Sân vườn"
+      },
+      "description": {
+        "en": "Outdoor items, garden decoration and plants",
+        "vi": "Đồ dùng ngoài trời, trang trí sân vườn và cây cảnh"
+      },
+      "slug": "outdoor-garden",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=400&fit=crop&q=80",
+        "alt": "Outdoor & Garden Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.594Z",
+      "updatedAt": "2025-08-09T07:09:43.594Z"
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fc2",
+      "name": {
+        "en": "Gift & Craft",
+        "vi": "Quà tặng & Thủ công"
+      },
+      "description": {
+        "en": "Gifts, handicraft products and handmade items",
+        "vi": "Đồ quà tặng, sản phẩm thủ công và đồ handmade"
+      },
+      "slug": "gift-craft",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1549465220-356e065b3ed8?w=800&h=400&fit=crop&q=80",
+        "alt": "Gift & Craft Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.594Z",
+      "updatedAt": "2025-08-09T07:09:43.594Z"
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fc3",
+      "name": {
+        "en": "Basket",
+        "vi": "Giỏ & Túi đựng"
+      },
+      "description": {
+        "en": "Storage baskets, fabric bags and storage products",
+        "vi": "Giỏ đựng đồ, túi vải và các sản phẩm lưu trữ"
+      },
+      "slug": "basket",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1563298723-dcfebaa392e3?w=800&h=400&fit=crop&q=80",
+        "alt": "Basket Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.594Z",
+      "updatedAt": "2025-08-09T07:09:43.594Z"
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fc4",
+      "name": {
+        "en": "Lighting",
+        "vi": "Đèn chiếu sáng"
+      },
+      "description": {
+        "en": "Decorative lights, lighting fixtures and illumination equipment",
+        "vi": "Đèn trang trí, đèn chiếu sáng và thiết bị ánh sáng"
+      },
+      "slug": "lighting",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&h=400&fit=crop&q=80",
+        "alt": "Lighting Category"
+      },
+      "parent": null,
+      "level": 0,
+      "order": 0,
+      "isActive": true,
+      "isFeatured": false,
+      "__v": 0,
+      "createdAt": "2025-08-09T07:09:43.594Z",
+      "updatedAt": "2025-08-09T07:09:43.594Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "6896f4371d7bf3545d594fc6",
+      "name": {
+        "en": "Minimalist Wall Art",
+        "vi": "Tranh treo tường minimalist"
+      },
+      "description": {
+        "en": "Minimalist wall art perfect for modern living spaces",
+        "vi": "Tranh treo tường phong cách tối giản, phù hợp với mọi không gian hiện đại"
+      },
+      "category": "6896f4371d7bf3545d594fbd",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1582037928769-181f2644ecb7?w=800&h=600&fit=crop&q=80",
+          "alt": "Minimalist Wall Art",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fc7"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?w=800&h=600&fit=crop&q=80",
+          "alt": "Wall Art Detail",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fc8"
+        }
+      ],
+      "material": "Canvas & khung gỗ",
+      "specifications": {
+        "dimensions": {
+          "length": 60,
+          "width": 40,
+          "height": 2,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 1.2,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 89.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "art",
+        "minimalist",
+        "modern",
+        "wall-decor"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.601Z",
+      "updatedAt": "2025-08-09T07:09:43.601Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fc9",
+      "name": {
+        "en": "Ceramic Flower Vase",
+        "vi": "Lọ hoa gốm sứ"
+      },
+      "description": {
+        "en": "Premium ceramic vase with elegant design for flower arrangements",
+        "vi": "Lọ hoa gốm sứ cao cấp, thiết kế tinh tế cho việc cắm hoa trang trí"
+      },
+      "category": "6896f4371d7bf3545d594fbd",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&h=600&fit=crop&q=80",
+          "alt": "Ceramic Vase",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fca"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&q=80",
+          "alt": "Vase with Flowers",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fcb"
+        }
+      ],
+      "material": "Gốm sứ",
+      "specifications": {
+        "dimensions": {
+          "length": 15,
+          "width": 15,
+          "height": 25,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.8,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 45.5,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "vase",
+        "ceramic",
+        "home-decor",
+        "flowers"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.603Z",
+      "updatedAt": "2025-08-09T07:09:43.603Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fcc",
+      "name": {
+        "en": "Natural Oak Dining Table",
+        "vi": "Bàn gỗ sồi tự nhiên"
+      },
+      "description": {
+        "en": "Solid natural oak dining table, durable and beautiful over time",
+        "vi": "Bàn ăn gỗ sồi tự nhiên, chắc chắn và bền đẹp theo thời gian"
+      },
+      "category": "6896f4371d7bf3545d594fbe",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&q=80",
+          "alt": "Oak Dining Table",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fcd"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop&q=80",
+          "alt": "Table Detail",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fce"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&h=600&fit=crop&q=80",
+          "alt": "Table in Room",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fcf"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1549497538-303791108f95?w=800&h=600&fit=crop&q=80",
+          "alt": "Table Surface Texture",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fd0"
+        }
+      ],
+      "material": "Gỗ sồi tự nhiên",
+      "specifications": {
+        "dimensions": {
+          "length": 180,
+          "width": 90,
+          "height": 75,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 45,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 599.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "furniture",
+        "dining",
+        "oak",
+        "natural"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.605Z",
+      "updatedAt": "2025-08-09T07:09:43.605Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fd1",
+      "name": {
+        "en": "Ergonomic Wooden Chair",
+        "vi": "Ghế gỗ ergonomic"
+      },
+      "description": {
+        "en": "Ergonomic wooden chair, comfortable for long working hours",
+        "vi": "Ghế gỗ thiết kế ergonomic, thoải mái cho việc làm việc lâu dài"
+      },
+      "category": "6896f4371d7bf3545d594fbe",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&q=80",
+          "alt": "Ergonomic Wooden Chair",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fd2"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1549497538-303791108f95?w=800&h=600&fit=crop&q=80",
+          "alt": "Chair Detail",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fd3"
+        }
+      ],
+      "material": "Gỗ beech và đệm vải",
+      "specifications": {
+        "dimensions": {
+          "length": 60,
+          "width": 60,
+          "height": 85,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 12,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 189.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "chair",
+        "ergonomic",
+        "office",
+        "comfort"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.605Z",
+      "updatedAt": "2025-08-09T07:09:43.605Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fd4",
+      "name": {
+        "en": "Pine Wood Bookshelf",
+        "vi": "Kệ sách gỗ thông"
+      },
+      "description": {
+        "en": "5-tier pine wood bookshelf with simple and practical design",
+        "vi": "Kệ sách gỗ thông 5 tầng, thiết kế đơn giản và tiện dụng"
+      },
+      "category": "6896f4371d7bf3545d594fbe",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop&q=80",
+          "alt": "Pine Wood Bookshelf",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fd5"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&q=80",
+          "alt": "Bookshelf with Books",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fd6"
+        }
+      ],
+      "material": "Gỗ thông",
+      "specifications": {
+        "dimensions": {
+          "length": 80,
+          "width": 30,
+          "height": 180,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 25,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 129.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "bookshelf",
+        "pine",
+        "storage",
+        "books"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.606Z",
+      "updatedAt": "2025-08-09T07:09:43.606Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fd7",
+      "name": {
+        "en": "Japanese Kitchen Knife Set",
+        "vi": "Bộ dao nhà bếp Nhật Bản"
+      },
+      "description": {
+        "en": "High-quality Japanese kitchen knife set, sharp and durable",
+        "vi": "Bộ dao nhà bếp chất lượng cao từ Nhật Bản, sắc bén và bền bỉ"
+      },
+      "category": "6896f4371d7bf3545d594fbf",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1594736797933-d0eeb3995342?w=800&h=600&fit=crop&q=80",
+          "alt": "Japanese Kitchen Knife Set",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fd8"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1583394838403-6c2cd83d10ad?w=800&h=600&fit=crop&q=80",
+          "alt": "Sharp Kitchen Knives",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fd9"
+        }
+      ],
+      "material": "Thép carbon Nhật Bản",
+      "specifications": {
+        "dimensions": {
+          "length": 35,
+          "width": 25,
+          "height": 5,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 1.5,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 299.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "knife",
+        "kitchen",
+        "japanese",
+        "cooking"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.606Z",
+      "updatedAt": "2025-08-09T07:09:43.606Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fda",
+      "name": {
+        "en": "Bat Trang Ceramic Dinnerware Set",
+        "vi": "Bộ chén bát gốm Bát Tràng"
+      },
+      "description": {
+        "en": "Traditional Bat Trang ceramic dinnerware set, exquisite and beautiful",
+        "vi": "Bộ chén bát gốm Bát Tràng truyền thống, tinh xảo và đẹp mắt"
+      },
+      "category": "6896f4371d7bf3545d594fbf",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&h=600&fit=crop&q=80",
+          "alt": "Bat Trang Ceramic Dinnerware",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fdb"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&q=80",
+          "alt": "Beautiful Ceramic Bowls",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fdc"
+        }
+      ],
+      "material": "Gốm Bát Tràng",
+      "specifications": {
+        "dimensions": {
+          "length": 25,
+          "width": 25,
+          "height": 15,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 3,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 89.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "dinnerware",
+        "ceramic",
+        "traditional",
+        "vietnam"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.607Z",
+      "updatedAt": "2025-08-09T07:09:43.607Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fdd",
+      "name": {
+        "en": "Handmade Genuine Leather Bag",
+        "vi": "Túi xách da thật handmade"
+      },
+      "description": {
+        "en": "Handmade genuine leather bag with elegant and sophisticated design",
+        "vi": "Túi xách da thật được làm thủ công, thiết kế elegant và tinh tế"
+      },
+      "category": "6896f4371d7bf3545d594fc0",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=600&fit=crop&q=80",
+          "alt": "Handmade Leather Bag",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fde"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&h=600&fit=crop&q=80",
+          "alt": "Leather Bag Details",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fdf"
+        }
+      ],
+      "material": "Da thật",
+      "specifications": {
+        "dimensions": {
+          "length": 35,
+          "width": 12,
+          "height": 25,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.8,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 159.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "bag",
+        "leather",
+        "handmade",
+        "fashion"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.607Z",
+      "updatedAt": "2025-08-09T07:09:43.607Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fe0",
+      "name": {
+        "en": "Handcraft Bamboo Watch",
+        "vi": "Đồng hồ gỗ tre thủ công"
+      },
+      "description": {
+        "en": "Watch made from natural bamboo wood, environmentally friendly",
+        "vi": "Đồng hồ làm từ gỗ tre tự nhiên, thân thiện với môi trường"
+      },
+      "category": "6896f4371d7bf3545d594fc0",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&h=600&fit=crop&q=80",
+          "alt": "Bamboo Wood Watch",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fe1"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&h=600&fit=crop&q=80",
+          "alt": "Eco-friendly Watch",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fe2"
+        }
+      ],
+      "material": "Gỗ tre tự nhiên",
+      "specifications": {
+        "dimensions": {
+          "length": 4,
+          "width": 4,
+          "height": 1,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.1,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 79.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "watch",
+        "bamboo",
+        "eco-friendly",
+        "handcraft"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.608Z",
+      "updatedAt": "2025-08-09T07:09:43.608Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fe3",
+      "name": {
+        "en": "Weather-Resistant Composite Planter",
+        "vi": "Chậu cây composite chống thời tiết"
+      },
+      "description": {
+        "en": "Weather-resistant composite planter, durable and beautiful for gardens",
+        "vi": "Chậu cây composite chống thời tiết, bền đẹp cho sân vườn"
+      },
+      "category": "6896f4371d7bf3545d594fc1",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&q=80",
+          "alt": "Weather-Resistant Planter",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fe4"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1599582909646-2fa29b7b88a8?w=800&h=600&fit=crop&q=80",
+          "alt": "Garden Planter with Plants",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fe5"
+        }
+      ],
+      "material": "Composite chống thời tiết",
+      "specifications": {
+        "dimensions": {
+          "length": 40,
+          "width": 40,
+          "height": 35,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 5,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 69.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "planter",
+        "garden",
+        "weather-resistant",
+        "outdoor"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.608Z",
+      "updatedAt": "2025-08-09T07:09:43.608Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fe6",
+      "name": {
+        "en": "Mini Garden Tool Set",
+        "vi": "Bộ dụng cụ làm vườn mini"
+      },
+      "description": {
+        "en": "Convenient mini garden tool set for plant care",
+        "vi": "Bộ dụng cụ làm vườn mini tiện dụng cho việc chăm sóc cây cảnh"
+      },
+      "category": "6896f4371d7bf3545d594fc1",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&q=80",
+          "alt": "Mini Garden Tool Set",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fe7"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=800&h=600&fit=crop&q=80",
+          "alt": "Gardening Tools",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fe8"
+        }
+      ],
+      "material": "Thép không gỉ và gỗ",
+      "specifications": {
+        "dimensions": {
+          "length": 25,
+          "width": 15,
+          "height": 3,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.5,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 29.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "tools",
+        "garden",
+        "mini",
+        "plant-care"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.609Z",
+      "updatedAt": "2025-08-09T07:09:43.609Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fe9",
+      "name": {
+        "en": "Vintage Handmade Gift Box",
+        "vi": "Hộp quà handmade vintage"
+      },
+      "description": {
+        "en": "Vintage style handmade gift box, perfect for special occasions",
+        "vi": "Hộp quà handmade phong cách vintage, hoàn hảo cho các dịp đặc biệt"
+      },
+      "category": "6896f4371d7bf3545d594fc2",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop&q=80",
+          "alt": "Vintage Handmade Gift Box",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fea"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1549465220-356e065b3ed8?w=800&h=600&fit=crop&q=80",
+          "alt": "Beautiful Gift Packaging",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594feb"
+        }
+      ],
+      "material": "Giấy kraft và vải vintage",
+      "specifications": {
+        "dimensions": {
+          "length": 20,
+          "width": 15,
+          "height": 8,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.3,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 19.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "gift-box",
+        "vintage",
+        "handmade",
+        "craft"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.609Z",
+      "updatedAt": "2025-08-09T07:09:43.609Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fec",
+      "name": {
+        "en": "Traditional Wooden Handcraft Doll",
+        "vi": "Búp bê gỗ thủ công truyền thống"
+      },
+      "description": {
+        "en": "Traditional wooden handcraft doll, meticulously detailed",
+        "vi": "Búp bê gỗ thủ công truyền thống, tỉ mỉ trong từng chi tiết"
+      },
+      "category": "6896f4371d7bf3545d594fc2",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop&q=80",
+          "alt": "Traditional Wooden Doll",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594fed"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&q=80",
+          "alt": "Handcraft Wooden Art",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594fee"
+        }
+      ],
+      "material": "Gỗ tự nhiên",
+      "specifications": {
+        "dimensions": {
+          "length": 8,
+          "width": 6,
+          "height": 15,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.2,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 35.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "doll",
+        "wooden",
+        "traditional",
+        "handcraft"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.609Z",
+      "updatedAt": "2025-08-09T07:09:43.609Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594fef",
+      "name": {
+        "en": "Natural Bamboo Woven Basket",
+        "vi": "Giỏ đan tre tự nhiên"
+      },
+      "description": {
+        "en": "Natural bamboo woven basket, eco-friendly and durable",
+        "vi": "Giỏ đan tre tự nhiên, thân thiện môi trường và bền đẹp"
+      },
+      "category": "6896f4371d7bf3545d594fc3",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&q=80",
+          "alt": "Natural Bamboo Basket",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594ff0"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&h=600&fit=crop&q=80",
+          "alt": "Woven Bamboo Storage",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594ff1"
+        }
+      ],
+      "material": "Tre tự nhiên",
+      "specifications": {
+        "dimensions": {
+          "length": 30,
+          "width": 20,
+          "height": 15,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.4,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 24.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "basket",
+        "bamboo",
+        "natural",
+        "storage"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.610Z",
+      "updatedAt": "2025-08-09T07:09:43.610Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594ff2",
+      "name": {
+        "en": "Multi-Purpose Canvas Bag",
+        "vi": "Túi vải canvas đa năng"
+      },
+      "description": {
+        "en": "Multi-purpose canvas bag, durable and fashionable",
+        "vi": "Túi vải canvas đa năng, bền chắc và thời trang"
+      },
+      "category": "6896f4371d7bf3545d594fc3",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=600&fit=crop&q=80",
+          "alt": "Multi-Purpose Canvas Bag",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594ff3"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&h=600&fit=crop&q=80",
+          "alt": "Durable Canvas Tote",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594ff4"
+        }
+      ],
+      "material": "Vải canvas",
+      "specifications": {
+        "dimensions": {
+          "length": 35,
+          "width": 10,
+          "height": 30,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.3,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 18.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "bag",
+        "canvas",
+        "multi-purpose",
+        "eco-friendly"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.610Z",
+      "updatedAt": "2025-08-09T07:09:43.610Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594ff5",
+      "name": {
+        "en": "Vintage Desk Lamp",
+        "vi": "Đèn bàn vintage"
+      },
+      "description": {
+        "en": "Vintage style desk lamp providing warm and classic lighting",
+        "vi": "Đèn bàn phong cách vintage, mang đến ánh sáng ấm áp và cổ điển"
+      },
+      "category": "6896f4371d7bf3545d594fc4",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&q=80",
+          "alt": "Vintage Desk Lamp",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594ff6"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop&q=80",
+          "alt": "Classic Lighting",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594ff7"
+        }
+      ],
+      "material": "Kim loại và gỗ",
+      "specifications": {
+        "dimensions": {
+          "length": 25,
+          "width": 25,
+          "height": 45,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 2,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 75.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "lamp",
+        "vintage",
+        "desk",
+        "lighting"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.611Z",
+      "updatedAt": "2025-08-09T07:09:43.611Z",
+      "__v": 0
+    },
+    {
+      "_id": "6896f4371d7bf3545d594ff8",
+      "name": {
+        "en": "Smart RGB LED Light",
+        "vi": "Đèn LED thông minh RGB"
+      },
+      "description": {
+        "en": "Smart RGB LED light controllable via app with various colors",
+        "vi": "Đèn LED thông minh RGB có thể điều khiển qua app, đa dạng màu sắc"
+      },
+      "category": "6896f4371d7bf3545d594fc4",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&q=80",
+          "alt": "Smart RGB LED Light",
+          "isPrimary": true,
+          "_id": "6896f4371d7bf3545d594ff9"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&q=80",
+          "alt": "Modern LED Lighting",
+          "isPrimary": false,
+          "_id": "6896f4371d7bf3545d594ffa"
+        }
+      ],
+      "material": "Nhựa và LED",
+      "specifications": {
+        "dimensions": {
+          "length": 15,
+          "width": 15,
+          "height": 8,
+          "unit": "cm"
+        },
+        "weight": {
+          "value": 0.5,
+          "unit": "kg"
+        }
+      },
+      "moisture": "< 12%",
+      "packaging": "Carton box",
+      "price": {
+        "amount": 49.99,
+        "currency": "USD",
+        "unit": "piece"
+      },
+      "keywords": [],
+      "status": "published",
+      "isFeatured": true,
+      "isActive": true,
+      "tags": [
+        "led",
+        "smart",
+        "rgb",
+        "app-controlled"
+      ],
+      "relatedProducts": [],
+      "reviewStats": {
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "averageRating": 0,
+        "totalReviews": 0
+      },
+      "videos": [],
+      "createdAt": "2025-08-09T07:09:43.611Z",
+      "updatedAt": "2025-08-09T07:09:43.611Z",
+      "__v": 0
+    }
+  ]
+}

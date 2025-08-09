@@ -185,7 +185,14 @@ router.post('/', [
   body('description.en').optional(),
   body('description.vi').optional(),
   body('slug').optional(),
-  body('parent').optional().isMongoId().withMessage('Invalid parent category ID'),
+  body('parent').optional().custom((value) => {
+    if (value === null || value === undefined || value === '') {
+      return true; // Allow null, undefined, or empty string
+    }
+    // If value exists, validate it's a valid MongoDB ObjectId
+    const mongoose = require('mongoose');
+    return mongoose.Types.ObjectId.isValid(value);
+  }).withMessage('Invalid parent category ID'),
   body('order').optional().isInt({ min: 0 }),
   body('isActive').optional().isBoolean(),
   body('isFeatured').optional().isBoolean(),

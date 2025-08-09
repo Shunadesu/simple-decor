@@ -6,32 +6,32 @@ const About = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { number: '10+', label: 'Năm kinh nghiệm' },
-    { number: '50+', label: 'Quốc gia xuất khẩu' },
-    { number: '1000+', label: 'Khách hàng hài lòng' },
-    { number: '100%', label: 'Sản phẩm tự nhiên' }
+    { number: '10+', label: t('about.stats.experience') },
+    { number: '50+', label: t('about.stats.countries') },
+    { number: '1000+', label: t('about.stats.customers') },
+    { number: '100%', label: t('about.stats.naturalProducts') }
   ];
 
   const values = [
     {
       icon: Heart,
-      title: 'Bền vững',
-      description: 'Cam kết sử dụng vật liệu tự nhiên và thân thiện môi trường'
+      title: t('about.values.sustainability.title'),
+      description: t('about.values.sustainability.description')
     },
     {
       icon: Award,
-      title: 'Chất lượng',
-      description: 'Đảm bảo chất lượng cao nhất trong mọi sản phẩm'
+      title: t('about.values.quality.title'),
+      description: t('about.values.quality.description')
     },
     {
       icon: Users,
-      title: 'Khách hàng',
-      description: 'Đặt lợi ích khách hàng lên hàng đầu'
+      title: t('about.values.customer.title'),
+      description: t('about.values.customer.description')
     },
     {
       icon: Globe,
-      title: 'Toàn cầu',
-      description: 'Phục vụ khách hàng trên toàn thế giới'
+      title: t('about.values.global.title'),
+      description: t('about.values.global.description')
     }
   ];
 
@@ -44,7 +44,7 @@ const About = () => {
             {t('about.title')}
           </h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Khám phá câu chuyện và sứ mệnh của chúng tôi
+            {t('about.subtitle')}
           </p>
         </div>
       </section>
@@ -58,16 +58,13 @@ const About = () => {
                 {t('about.stories')}
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Simple decor được thành lập với tầm nhìn tạo ra những sản phẩm từ vật liệu tự nhiên, 
-                mang lại giá trị thẩm mỹ và thực tiễn cho cuộc sống hiện đại.
+                {t('about.story.description1')}
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Chúng tôi tin rằng thiết kế tối giản không chỉ là xu hướng mà còn là cách sống 
-                bền vững, tôn trọng thiên nhiên và tạo ra những sản phẩm có ý nghĩa.
+                {t('about.story.description2')}
               </p>
               <p className="text-lg text-gray-600">
-                Từ những ngày đầu với một xưởng nhỏ, đến nay chúng tôi đã phát triển thành 
-                một doanh nghiệp xuất khẩu với mạng lưới khách hàng toàn cầu.
+                {t('about.story.description3')}
               </p>
             </div>
             <div className="bg-gray-200 rounded-xl p-8 h-80 flex items-center justify-center">

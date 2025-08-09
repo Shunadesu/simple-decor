@@ -31,14 +31,14 @@ const QuoteModal = ({ isOpen, onClose }) => {
       });
 
       if (response.ok) {
-        toast.success('Yêu cầu báo giá đã được gửi thành công!');
+        toast.success(t('quote.success'));
         reset();
         onClose();
       } else {
-        toast.error('Có lỗi xảy ra. Vui lòng thử lại.');
+        toast.error(t('quote.error'));
       }
     } catch (error) {
-      toast.error('Có lỗi xảy ra. Vui lòng thử lại.');
+      toast.error(t('quote.error'));
     } finally {
       setIsSubmitting(false);
     }
@@ -52,7 +52,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-xl font-bold text-gray-900">
-              Nhận Báo Giá Miễn Phí
+              {t('quote.title')}
             </h2>
             <button
               onClick={onClose}
@@ -63,19 +63,19 @@ const QuoteModal = ({ isOpen, onClose }) => {
           </div>
 
           <p className="text-gray-600 mb-6">
-            Điền thông tin để nhận báo giá chi tiết cho sản phẩm của chúng tôi
+            {t('quote.subtitle')}
           </p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Họ và tên *
+                {t('quote.form.name')} *
               </label>
               <input
                 type="text"
-                {...register('name', { required: 'Vui lòng nhập họ tên' })}
+                {...register('name', { required: t('quote.form.name') + ' is required' })}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="Nhập họ và tên"
+                placeholder={t('quote.form.name')}
               />
               {errors.name && (
                 <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
@@ -84,15 +84,15 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Email *
+                {t('quote.form.email')} *
               </label>
               <input
                 type="email"
                 {...register('email', { 
-                  required: 'Vui lòng nhập email',
+                  required: t('quote.form.email') + ' is required',
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: 'Email không hợp lệ'
+                    message: 'Invalid email'
                   }
                 })}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -105,7 +105,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Số điện thoại
+                {t('quote.form.phone')}
               </label>
               <input
                 type="tel"
@@ -117,13 +117,13 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Sản phẩm quan tâm
+                {t('quote.form.company')}
               </label>
               <select
                 {...register('product')}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               >
-                <option value="">Chọn sản phẩm</option>
+                <option value="">Select company type</option>
                 <option value="storage-baskets">Storage Baskets</option>
                 <option value="decorative-items">Decorative Items</option>
                 <option value="kitchen-ware">Kitchen Ware</option>
@@ -133,7 +133,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Ghi chú
+                {t('quote.form.message')}
               </label>
               <textarea
                 {...register('notes')}
@@ -153,7 +153,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                 ) : (
                   <>
-                    <span>Gửi yêu cầu</span>
+                    <span>{t('quote.form.submit')}</span>
                   </>
                 )}
               </button>

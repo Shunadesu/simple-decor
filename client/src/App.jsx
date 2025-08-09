@@ -22,11 +22,13 @@ import Checkout from './pages/Checkout';
 import OrderConfirmation from './pages/OrderConfirmation';
 import QuoteModal from './components/QuoteModal';
 import PromoPopup from './components/PromoPopup';
+import TranslationTest from './components/TranslationTest';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [rerenderKey, setRerenderKey] = useState(0);
   const [showPromoPopup, setShowPromoPopup] = useState(false);
 
   // Check if promo popup should be shown
@@ -57,6 +59,19 @@ function App() {
     }
   }, []);
 
+  // Force re-render when language changes
+  useEffect(() => {
+    const handleLanguageChange = () => {
+      setRerenderKey(prev => prev + 1);
+    };
+    
+    i18n.on('languageChanged', handleLanguageChange);
+    
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
+
   // Handle promo popup form submission
   const handlePromoSubmit = async (data) => {
     try {
@@ -85,9 +100,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div key={rerenderKey} className="min-h-screen bg-white">
       <ScrollToTop />
-      <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <main className="flex-1">
           <Routes>
@@ -110,8 +124,6 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </Suspense>
-      
       {/* Promo Popup */}
       <PromoPopup
         isOpen={showPromoPopup}
@@ -130,6 +142,9 @@ function App() {
           },
         }}
       />
+      
+      {/* Debug Component - Temporarily disabled */}
+      {/* {process.env.NODE_ENV === 'development' && <TranslationTest />} */}
     </div>
   );
 }

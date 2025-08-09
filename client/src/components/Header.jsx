@@ -72,10 +72,10 @@ const Header = () => {
       label: t('nav.about'),
       hasDropdown: true,
       dropdownItems: [
-        { path: '/about', label: 'About Us' },
-        { path: '/about/our-story', label: 'Our Story' },
-        { path: '/about/our-solutions', label: 'Our Solutions' },
-        { path: '/about/careers', label: 'Careers' }
+        { path: '/about', label: t('about.title') },
+        { path: '/about/our-story', label: t('about.stories') },
+        { path: '/about/our-solutions', label: t('about.solutions') },
+        { path: '/about/careers', label: t('about.careers') }
       ]
     },
     { path: '/partners', label: t('nav.partners') },
@@ -84,7 +84,14 @@ const Header = () => {
   ];
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+    console.log('Changing language to:', lng);
+    i18n.changeLanguage(lng).then(() => {
+      console.log('Language changed successfully to:', lng);
+      console.log('Current language:', i18n.language);
+      // Không cần reload, để i18n tự handle
+    }).catch((err) => {
+      console.error('Error changing language:', err);
+    });
     setIsLangOpen(false);
   };
 

@@ -259,7 +259,7 @@ const Blog = () => {
                           
                           {/* Read More */}
                           <div className="flex items-center space-x-1 text-primary-600 group-hover:text-primary-700 font-medium">
-                            <span className="text-sm">Đọc thêm</span>
+                            <span className="text-sm">{t('blog.readMore')}</span>
                             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                           </div>
                         </div>

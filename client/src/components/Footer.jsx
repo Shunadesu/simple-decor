@@ -97,8 +97,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Chuyên cung cấp sản phẩm trang trí nội thất từ vật liệu tự nhiên, thân thiện với môi trường. 
-              Chúng tôi cam kết mang đến những sản phẩm chất lượng cao với giá cả hợp lý.
+              {t('footer.companyDescription')}
             </p>
             
             {/* Social Media */}
@@ -180,7 +179,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/blog" className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group">
-                  <span className="group-hover:translate-x-1 transition-transform">Blog</span>
+                  <span className="group-hover:translate-x-1 transition-transform">{t('nav.blog')}</span>
                 </Link>
               </li>
               <li>
@@ -247,11 +246,10 @@ const Footer = () => {
                 <MapPin size={18} className="text-primary-400 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300 font-medium">{t('footer.address')}</p>
-                  <p className="text-white text-sm leading-relaxed">
-                    Van Boi Village, Nhat Tuu Commune<br />
-                    Kim Bang District, Ha Nam Province<br />
-                    Vietnam
-                  </p>
+                  <div 
+                    className="text-white text-sm leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: t('footer.addressDetails') }}
+                  />
                 </div>
               </div>
             </div>
@@ -266,9 +264,10 @@ const Footer = () => {
               <div className="text-center">
                 <Globe size={48} className="text-primary-400 mx-auto mb-4" />
                 <p className="text-gray-300 text-lg font-medium">{t('footer.mapPlaceholder')}</p>
-                <p className="text-gray-400 mt-2">
-                  Van Boi Village, Nhat Tuu Commune, Kim Bang District, Ha Nam Province
-                </p>
+                <div 
+                  className="text-gray-400 mt-2"
+                  dangerouslySetInnerHTML={{ __html: t('footer.addressDetails').replace(/<br \/>/g, ', ') }}
+                />
                 <button className="mt-4 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg text-sm transition-colors">
                   {t('footer.getDirections')}
                 </button>

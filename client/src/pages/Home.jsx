@@ -296,18 +296,6 @@ const Home = () => {
     }
   }, [selectedCategory, sortBy, debouncedSearchTerm]);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-green-600" />
-          <p className="text-gray-600">
-            {retrying ? 'Server is busy, retrying...' : 'Loading...'}
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen">

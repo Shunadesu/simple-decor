@@ -193,34 +193,7 @@ const Products = () => {
   const hideToast = () => {
     setToast(null);
   };
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Đang tải sản phẩm...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-red-600 mb-4">{error}</p>
-          <button 
-            onClick={fetchProducts}
-            className="btn-primary"
-          >
-            Thử lại
-          </button>
-        </div>
-      </div>
-    );
-  }
-
+  
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -382,7 +355,10 @@ const Products = () => {
             {/* Results Count */}
             <div className="flex justify-between items-center mb-6">
               <p className="text-gray-600">
-                Hiển thị {products.length} trong tổng số {totalProducts} sản phẩm
+                {t('products.showing', { 
+                  count: products.length, 
+                  total: totalProducts 
+                })}
               </p>
             </div>
 
@@ -459,7 +435,7 @@ const Products = () => {
                             className="bg-primary-600 text-white py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center space-x-2"
                           >
                             <Eye size={16} />
-                            <span>Xem chi tiết</span>
+                            <span>{t('products.viewDetails')}</span>
                           </button>
                           <button
                             onClick={(e) => {
@@ -483,7 +459,7 @@ const Products = () => {
                             className="bg-primary-600 text-white py-2 px-4 rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
                           >
                             <ShoppingCart size={16} />
-                            <span>Thêm vào giỏ</span>
+                            <span>{t('products.addToCart')}</span>
                           </button>
                           <button
                             onClick={(e) => {
