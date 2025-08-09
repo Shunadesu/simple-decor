@@ -17,13 +17,13 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://zuna-backend.onrender.com/api",
+    "VITE_API_URL": "https://simple-decor.onrender.com/api",
     "VITE_APP_NAME": "Zuna Admin CMS",
     "VITE_APP_VERSION": "1.0.0"
   },
   "build": {
     "env": {
-      "VITE_API_URL": "https://zuna-backend.onrender.com/api"
+      "VITE_API_URL": "https://simple-decor.onrender.com/api"
     }
   },
   "headers": [

@@ -208,7 +208,7 @@ blogSchema.index({ status: 1, publishedAt: -1 });
 blogSchema.index({ category: 1, status: 1 });
 blogSchema.index({ isFeatured: 1, status: 1 });
 blogSchema.index({ tags: 1 });
-blogSchema.index({ slug: 1 });
+// slug index is automatically created by unique: true
 
 // Virtual for URL
 blogSchema.virtual('url').get(function() {

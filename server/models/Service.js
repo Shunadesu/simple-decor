@@ -240,7 +240,7 @@ const serviceSchema = new mongoose.Schema({
 serviceSchema.index({ category: 1, isActive: 1 });
 serviceSchema.index({ isFeatured: 1, displayOrder: 1 });
 serviceSchema.index({ 'title.en': 'text', 'title.vi': 'text', 'description.en': 'text', 'description.vi': 'text' });
-serviceSchema.index({ slug: 1 });
+// slug index is automatically created by unique: true
 
 // Virtual for localized content
 serviceSchema.virtual('localizedTitle').get(function() {

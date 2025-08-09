@@ -4,7 +4,8 @@ services:
     name: zuna-backend
     env: node
     plan: free
-    buildCommand: cd server && npm install && npm run build
+    region: singapore
+    buildCommand: cd server && npm install
     startCommand: cd server && npm start
     healthCheckPath: /api/health
     envVars:
@@ -12,26 +13,22 @@ services:
         value: production
       - key: PORT
         value: 10000
+      # MongoDB connection - you'll set this manually in dashboard
       - key: MONGODB_URI
-        fromDatabase:
-          name: zuna-db
-          property: connectionString
+        sync: false
+      # JWT secret - you'll set this manually
       - key: JWT_SECRET
-        generateValue: true
+        sync: false
+      # Cloudinary credentials - you'll set this manually
       - key: CLOUDINARY_CLOUD_NAME
         sync: false
       - key: CLOUDINARY_API_KEY
         sync: false
       - key: CLOUDINARY_API_SECRET
         sync: false
+      # CORS origins - will be updated after frontend deployment
       - key: CLIENT_URL
-        value: https://zuna-client.vercel.app
+        value: http://localhost:3000
       - key: ADMIN_URL
-        value: https://zuna-admin.vercel.app
+        value: http://localhost:3001
     autoDeploy: true
-
-databases:
-  - name: zuna-db
-    databaseName: zuna_simple_decor
-    user: zuna_user
-    plan: free
