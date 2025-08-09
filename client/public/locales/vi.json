@@ -1,0 +1,567 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "products": "Sản Phẩm",
+    "services": "Dịch Vụ",
+    "about": "Giới Thiệu",
+    "partners": "Đối Tác",
+    "contact": "Liên Hệ",
+    "blog": "Blog",
+    "enquiry": "Giỏ Yêu Cầu"
+  },
+  "home": {
+    "hero": {
+      "title": "Cảm Hứng Tối Giản",
+      "subtitle": "Với mong muốn tạo ra những sản phẩm phù hợp với thế giới hiện đại từ vật liệu tự nhiên, chúng tôi muốn chia sẻ những ý tưởng độc đáo với chi phí hợp lý.",
+      "cta": "TẢI CATALOGUE PDF"
+    },
+    "vision": {
+      "title": "Tầm Nhìn & Sứ Mệnh",
+      "description": "Chúng tôi nỗ lực cung cấp những sản phẩm bền vững, chất lượng cao để nâng cao không gian sống hiện đại."
+    },
+    "services": {
+      "title": "Dịch Vụ Của Chúng Tôi",
+      "consultation": "Tư Vấn Sản Phẩm Theo Yêu Cầu",
+      "weeklyQuote": "Gửi Báo Giá Hàng Tuần",
+      "exportDocs": "Hỗ Trợ Chứng Từ Xuất Khẩu",
+      "shipping": "Hỗ Trợ Booking Tàu Nếu Cần",
+      "inspection": "Kiểm Định & Giám Sát Hàng Hóa",
+      "afterSales": "Dịch Vụ Sau Bán Hàng"
+    }
+  },
+  "about": {
+    "title": "Giới Thiệu",
+    "subtitle": "Khám phá câu chuyện và sứ mệnh của Simple Decor",
+    "stories": "Câu Chuyện Của Chúng Tôi",
+    "solutions": "Giải Pháp Của Chúng Tôi", 
+    "careers": "Tuyển Dụng",
+    "story": {
+      "description1": "Simple Decor được thành lập với tầm nhìn tạo ra những sản phẩm từ vật liệu tự nhiên, mang lại giá trị thẩm mỹ và thực tiễn cho cuộc sống hiện đại.",
+      "description2": "Chúng tôi tin rằng thiết kế tối giản không chỉ là xu hướng mà còn là cách sống bền vững, tôn trọng thiên nhiên và tạo ra những sản phẩm có ý nghĩa.",
+      "description3": "Từ những ngày đầu với một xưởng nhỏ, đến nay chúng tôi đã phát triển thành doanh nghiệp xuất khẩu phục vụ khách hàng trên toàn thế giới."
+    },
+    "stats": {
+      "experience": "Năm Kinh Nghiệm",
+      "countries": "Quốc Gia Xuất Khẩu",
+      "customers": "Khách Hàng Hài Lòng", 
+      "naturalProducts": "Sản Phẩm Tự Nhiên"
+    },
+    "values": {
+      "sustainability": {
+        "title": "Bền Vững",
+        "description": "Cam kết sử dụng vật liệu tự nhiên và thân thiện môi trường"
+      },
+      "quality": {
+        "title": "Chất Lượng",
+        "description": "Đảm bảo chất lượng cao nhất trong mọi sản phẩm"
+      },
+      "customer": {
+        "title": "Khách Hàng",
+        "description": "Đặt lợi ích khách hàng lên hàng đầu"
+      },
+      "global": {
+        "title": "Toàn Cầu", 
+        "description": "Phục vụ khách hàng trên toàn thế giới"
+      }
+    }
+  },
+  "products": {
+    "title": "Sản Phẩm",
+    "categories": "Danh Mục",
+    "showing": "Hiển thị {{count}} trong tổng số {{total}} sản phẩm",
+    "viewDetails": "Xem Chi Tiết",
+    "addToCart": "Thêm Vào Giỏ",
+    "details": {
+      "technicalSpecs": "Thông Số Kỹ Thuật",
+      "material": "Chất Liệu",
+      "specifications": "Quy Cách",
+      "moisture": "Độ Ẩm",
+      "packaging": "Cách Đóng Gói",
+      "requestQuote": "Gửi Yêu Cầu Báo Giá"
+    }
+  },
+  "productDetail": {
+    "backToProducts": "Quay Lại Sản Phẩm",
+    "error": "Lỗi",
+    "notFound": "Không tìm thấy sản phẩm",
+    "reviews": "đánh giá",
+    "inStock": "Còn Hàng",
+    "outOfStock": "Hết Hàng",
+    "quantity": "Số Lượng",
+    "addToCart": "Thêm Vào Giỏ",
+    "addedToCart": "Đã thêm vào giỏ hàng",
+    "removedFromWishlist": "Đã xóa khỏi danh sách yêu thích",
+    "addedToWishlist": "Đã thêm vào danh sách yêu thích",
+    "loginRequired": "Vui lòng đăng nhập để tiếp tục",
+    "specifications": "Thông Số Kỹ Thuật",
+    "material": "Chất Liệu",
+    "dimensions": "Kích Thước",
+    "weight": "Trọng Lượng",
+    "color": "Màu Sắc",
+    "moisture": "Độ Ẩm",
+    "packaging": "Đóng Gói",
+    "writeReview": "Viết Đánh Giá",
+    "editReview": "Chỉnh Sửa Đánh Giá",
+    "rating": "Đánh Giá",
+    "reviewTitle": "Tiêu Đề Đánh Giá",
+    "reviewComment": "Nội Dung Đánh Giá",
+    "submitReview": "Gửi Đánh Giá",
+    "updateReview": "Cập Nhật Đánh Giá",
+    "cancel": "Hủy",
+    "saving": "Đang lưu...",
+    "reviewSubmitted": "Đánh giá đã được gửi thành công",
+    "reviewUpdated": "Đánh giá đã được cập nhật thành công",
+    "reviewDeleted": "Đánh giá đã được xóa thành công",
+    "helpfulUpdated": "Trạng thái hữu ích đã được cập nhật",
+    "noReviews": "Chưa có đánh giá nào",
+    "beFirstToReview": "Hãy là người đầu tiên đánh giá sản phẩm này",
+    "helpful": "hữu ích"
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "form": {
+      "name": "Tên",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "country": "Quốc Gia",
+      "interestedProduct": "Sản Phẩm Quan Tâm",
+      "submit": "Gửi Tin Nhắn"
+    },
+    "info": {
+      "phone": "Điện Thoại",
+      "email": "Email",
+      "address": "Địa Chỉ"
+    }
+  },
+
+  "quickView": {
+    "title": "Xem Nhanh",
+    "description": "Mô Tả",
+    "specifications": "Thông Số",
+    "dimensions": "Kích Thước",
+    "weight": "Trọng Lượng",
+    "material": "Chất Liệu",
+    "quantity": "Số Lượng",
+    "available": "có sẵn",
+    "addToCart": "Thêm Vào Giỏ",
+    "wishlist": "Yêu Thích",
+    "freeShipping": "Miễn Phí Vận Chuyển",
+    "securePayment": "Thanh Toán An Toàn"
+  },
+  "profile": {
+    "loginRequired": "Yêu Cầu Đăng Nhập",
+    "loginRequiredDesc": "Vui lòng đăng nhập để truy cập hồ sơ của bạn.",
+    "login": "Đăng Nhập",
+    "logout": "Đăng Xuất",
+    "tabs": {
+      "profile": "Hồ Sơ",
+      "orders": "Đơn Hàng",
+      "wishlist": "Yêu Thích",
+      "addresses": "Địa Chỉ",
+      "settings": "Cài Đặt"
+    },
+    "edit": "Chỉnh Sửa",
+    "save": "Lưu",
+    "saving": "Đang lưu...",
+    "cancel": "Hủy",
+    "add": "Thêm",
+    "personalInfo": "Thông Tin Cá Nhân",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "email": "Email",
+    "phone": "Điện Thoại",
+    "changePassword": "Đổi Mật Khẩu",
+    "currentPassword": "Mật Khẩu Hiện Tại",
+    "newPassword": "Mật Khẩu Mới",
+    "confirmPassword": "Xác Nhận Mật Khẩu",
+    "noOrders": "Chưa Có Đơn Hàng",
+    "noOrdersDesc": "Bạn chưa đặt đơn hàng nào. Bắt đầu mua sắm để xem lịch sử đơn hàng tại đây.",
+    "noWishlist": "Chưa Có Sản Phẩm Yêu Thích",
+    "noWishlistDesc": "Bạn chưa thêm sản phẩm nào vào danh sách yêu thích. Bắt đầu xem để thêm sản phẩm yêu thích.",
+    "browseProducts": "Xem Sản Phẩm",
+    "order": "Đơn Hàng",
+    "orderStatus": {
+      "pending": "Chờ Xử Lý",
+      "processing": "Đang Xử Lý",
+      "shipped": "Đã Gửi",
+      "delivered": "Đã Giao",
+      "completed": "Hoàn Thành",
+      "cancelled": "Đã Hủy"
+    },
+    "addAddress": "Thêm Địa Chỉ",
+    "addNewAddress": "Thêm Địa Chỉ Mới",
+    "addressType": "Loại Địa Chỉ",
+    "addressTypes": {
+      "home": "Nhà",
+      "work": "Công Ty",
+      "other": "Khác"
+    },
+    "isDefault": "Đặt Làm Mặc Định",
+    "default": "Mặc Định",
+    "address": "Địa Chỉ",
+    "city": "Thành Phố",
+    "state": "Tỉnh/Thành",
+    "zipCode": "Mã Bưu Điện",
+    "country": "Quốc Gia",
+    "notifications": "Thông Báo",
+    "emailNotifications": "Thông Báo Email",
+    "smsNotifications": "Thông Báo SMS",
+    "pushNotifications": "Thông Báo Push",
+    "updateSuccess": "Cập nhật hồ sơ thành công",
+    "updateError": "Cập nhật hồ sơ thất bại",
+    "addressAddedSuccess": "Địa chỉ đã được thêm thành công",
+    "addressRemovedSuccess": "Địa chỉ đã được xóa thành công",
+    "wishlistRemovedSuccess": "Sản phẩm đã được xóa khỏi danh sách yêu thích",
+    "wishlistRemovedError": "Xóa sản phẩm khỏi danh sách yêu thích thất bại",
+    "fetchOrdersError": "Tải danh sách đơn hàng thất bại"
+  },
+  "wishlist": {
+    "title": "Danh Sách Yêu Thích",
+    "items": "sản phẩm",
+    "emptyTitle": "Danh sách yêu thích của bạn trống",
+    "emptyDescription": "Bắt đầu thêm sản phẩm vào danh sách yêu thích để lưu lại cho sau này.",
+    "browseProducts": "Xem Sản Phẩm",
+    "selectAll": "Chọn Tất Cả",
+    "deselectAll": "Bỏ Chọn Tất Cả",
+    "removeSelected": "Xóa Đã Chọn",
+    "clearAll": "Xóa Tất Cả",
+    "clearConfirm": "Bạn có chắc chắn muốn xóa toàn bộ danh sách yêu thích?",
+    "select": "Chọn",
+    "addToCart": "Thêm Vào Giỏ",
+    "remove": "Xóa"
+  },
+  "search": {
+    "placeholder": "Tìm kiếm sản phẩm...",
+    "searching": "Đang tìm kiếm...",
+    "noResults": "Không tìm thấy sản phẩm nào",
+    "viewAllResults": "Xem tất cả kết quả",
+    "recentSearches": "Tìm kiếm gần đây",
+    "clearAll": "Xóa tất cả",
+    "productsFound": "sản phẩm được tìm thấy"
+  },
+  "cart": {
+    "title": "Giỏ Hàng",
+    "empty": "Giỏ hàng trống",
+    "emptyDescription": "Bạn chưa có sản phẩm nào trong giỏ hàng",
+    "continueShopping": "Tiếp Tục Mua Sắm",
+    "checkout": "Thanh Toán",
+    "total": "Tổng Cộng",
+    "subtotal": "Tạm Tính",
+    "shipping": "Phí Vận Chuyển",
+    "tax": "Thuế",
+    "items": "sản phẩm",
+    "quantity": "Số lượng",
+    "price": "Giá",
+    "remove": "Xóa",
+    "update": "Cập nhật",
+    "clear": "Xóa giỏ hàng",
+    "clearConfirm": "Bạn có chắc chắn muốn xóa tất cả sản phẩm trong giỏ hàng?"
+  },
+  "checkout": {
+    "title": "Thanh Toán",
+    "steps": {
+      "shipping": "Thông Tin Giao Hàng",
+      "payment": "Thanh Toán",
+      "review": "Xem Lại Đơn Hàng"
+    },
+    "shippingInfo": "Thông Tin Giao Hàng",
+    "billingInfo": "Thông Tin Thanh Toán",
+    "sameAsShipping": "Giống thông tin giao hàng",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "email": "Email",
+    "phone": "Số Điện Thoại",
+    "address": "Địa Chỉ",
+    "city": "Thành Phố",
+    "state": "Tỉnh/Thành",
+    "zipCode": "Mã Bưu Điện",
+    "country": "Quốc Gia",
+    "paymentMethod": "Phương Thức Thanh Toán",
+    "creditCard": "Thẻ Tín Dụng",
+    "bankTransfer": "Chuyển Khoản Ngân Hàng",
+    "cod": "Thanh Toán Khi Nhận Hàng",
+    "orderSummary": "Tóm Tắt Đơn Hàng",
+    "orderTotal": "Tổng Đơn Hàng",
+    "freeShipping": "Miễn phí vận chuyển",
+    "freeShippingOver": "Miễn phí vận chuyển cho đơn hàng trên",
+    "placeOrder": "Đặt Hàng",
+    "orderPlaced": "Đơn hàng đã được đặt thành công",
+    "orderNumber": "Số đơn hàng",
+    "thankYou": "Cảm ơn bạn đã đặt hàng!",
+    "continue": "Tiếp Tục",
+    "back": "Quay Lại",
+    "processing": "Đang xử lý...",
+    "required": "Bắt buộc",
+    "orderError": "Có lỗi xảy ra khi đặt hàng. Vui lòng thử lại."
+  },
+  "footer": {
+    "followUs": "Theo Dõi Chúng Tôi",
+    "contactUs": "Liên Hệ",
+    "companyDescription": "Chuyên cung cấp sản phẩm trang trí nội thất từ vật liệu tự nhiên, thân thiện với môi trường. Chúng tôi cam kết mang đến những sản phẩm chất lượng cao với giá cả hợp lý.",
+    "newsletter": {
+      "title": "Đăng Ký Nhận Bản Tin",
+      "description": "Nhận thông tin về sản phẩm mới, ưu đãi đặc biệt và xu hướng trang trí nội thất xanh",
+      "placeholder": "Nhập email của bạn...",
+      "subscribe": "Đăng Ký",
+      "subscribing": "Đang xử lý...",
+      "success": "Cảm ơn bạn đã đăng ký nhận bản tin!",
+      "error": "Có lỗi xảy ra. Vui lòng thử lại!"
+    },
+    "quickLinks": "Liên Kết Nhanh",
+    "aboutUs": "Về Chúng Tôi",
+    "ourStory": "Câu Chuyện",
+    "ourSolutions": "Giải Pháp",
+    "careers": "Tuyển Dụng",
+    "wishlist": "Yêu Thích",
+    "partners": "Đối Tác",
+    "connectWithUs": "Kết Nối Với Chúng Tôi",
+    "ourLocation": "Vị Trí Của Chúng Tôi",
+    "getDirections": "Xem Chỉ Đường",
+    "mapPlaceholder": "Bản đồ tương tác",
+    "hotline": "Hotline",
+    "support247": "24/7 Support",
+    "customerService": "Customer Service",
+    "address": "Địa Chỉ",
+    "addressDetails": "Thôn Vạn Bôi, Xã Nhật Tựu<br />Huyện Kim Bảng, Tỉnh Hà Nam<br />Việt Nam",
+    "madeWithLove": "Made with",
+    "inVietnam": "in Vietnam",
+    "allRightsReserved": "All rights reserved",
+    "privacyPolicy": "Chính Sách Bảo Mật",
+    "termsOfService": "Điều Khoản Dịch Vụ",
+    "shippingPolicy": "Chính Sách Vận Chuyển",
+    "returnPolicy": "Đổi Trả Hàng",
+    "scrollToTop": "Cuộn lên đầu trang"
+  },
+  "language": {
+    "switchTo": "Chuyển sang",
+    "current": "Hiện tại",
+    "vietnamese": "Tiếng Việt",
+    "english": "English",
+    "korean": "한국어",
+    "chinese": "中文",
+    "japanese": "日本語"
+  },
+  "currency": {
+    "vnd": "Việt Nam Đồng",
+    "usd": "US Dollar",
+    "eur": "Euro"
+  },
+  "auth": {
+    "login": "Đăng Nhập",
+    "register": "Đăng Ký",
+    "logout": "Đăng Xuất",
+    "email": "Email",
+    "password": "Mật Khẩu",
+    "confirmPassword": "Xác Nhận Mật Khẩu",
+    "forgotPassword": "Quên Mật Khẩu?",
+    "rememberMe": "Ghi Nhớ Đăng Nhập",
+    "loginSuccess": "Đăng nhập thành công",
+    "registerSuccess": "Đăng ký thành công",
+    "loginRequired": "Vui lòng đăng nhập",
+    "invalidCredentials": "Thông tin đăng nhập không đúng",
+    "emailExists": "Email đã tồn tại",
+    "weakPassword": "Mật khẩu quá yếu",
+    "passwordMismatch": "Mật khẩu xác nhận không khớp"
+  },
+  "partners": {
+    "title": "Đối Tác",
+    "subtitle": "Đối tác tin cậy trên toàn thế giới",
+    "strategicPartnersTitle": "Đối Tác Chiến Lược",
+    "strategicPartnersSubtitle": "Chúng tôi tự hào được hợp tác với những đối tác uy tín trên toàn thế giới",
+    "list": {
+      "globalImport": {
+        "name": "Global Import Co.",
+        "country": "Hoa Kỳ",
+        "description": "Đối tác xuất khẩu chính tại thị trường Mỹ",
+        "years": "5+ năm hợp tác"
+      },
+      "europeanDecor": {
+        "name": "European Decor Ltd.",
+        "country": "Đức",
+        "description": "Nhà phân phối độc quyền tại châu Âu",
+        "years": "3+ năm hợp tác"
+      },
+      "asiaPacific": {
+        "name": "Asia Pacific Trading",
+        "country": "Singapore",
+        "description": "Đối tác chiến lược tại khu vực châu Á",
+        "years": "4+ năm hợp tác"
+      },
+      "nordicHome": {
+        "name": "Nordic Home Solutions",
+        "country": "Thụy Điển",
+        "description": "Đối tác thương mại tại Bắc Âu",
+        "years": "2+ năm hợp tác"
+      }
+    },
+    "benefitsTitle": "Lợi Ích Hợp Tác",
+    "benefitsSubtitle": "Những giá trị chúng tôi mang lại cho đối tác",
+    "benefits": {
+      "longTerm": {
+        "title": "Hợp Tác Lâu Dài",
+        "description": "Xây dựng mối quan hệ đối tác bền vững"
+      },
+      "globalNetwork": {
+        "title": "Mạng Lưới Toàn Cầu",
+        "description": "Tiếp cận thị trường quốc tế"
+      },
+      "qualityAssurance": {
+        "title": "Chất Lượng Đảm Bảo",
+        "description": "Cam kết chất lượng sản phẩm cao"
+      },
+      "support": {
+        "title": "Hỗ Trợ Tận Tâm",
+        "description": "Dịch vụ khách hàng 24/7"
+      }
+    },
+    "becomePartnerTitle": "Trở Thành Đối Tác",
+    "becomePartnerSubtitle": "Bạn có muốn trở thành đối tác của chúng tôi? Hãy liên hệ để tìm hiểu thêm",
+    "contactNow": "Liên Hệ Ngay",
+    "downloadBrochure": "Tải Brochure",
+    "globalNetworkTitle": "Mạng Lưới Đối Tác Toàn Cầu",
+    "globalNetworkSubtitle": "Chúng tôi có mặt tại hơn 50 quốc gia trên thế giới",
+    "mapPlaceholder": "Bản đồ đối tác sẽ được tích hợp tại đây",
+    "mapDescription": "Hiển thị vị trí các đối tác trên toàn thế giới"
+  },
+  "ourStory": {
+    "title": "Câu Chuyện Của Chúng Tôi",
+    "subtitle": "Khám phá hành trình đưa chúng tôi trở thành công ty trang trí nội thất tự nhiên hàng đầu",
+    "storyTitle": "Hành Trình Của Chúng Tôi",
+    "storyParagraph1": "Simple Decor bắt đầu như một doanh nghiệp gia đình nhỏ với cam kết mạnh mẽ về cuộc sống bền vững và vẻ đẹp tự nhiên. Chúng tôi tin rằng mỗi ngôi nhà đều xứng đáng có những món đồ trang trí đẹp, thân thiện với môi trường và mang trong mình một câu chuyện riêng.",
+    "storyParagraph2": "Qua nhiều năm, chúng tôi đã phát triển từ một xưởng địa phương thành một thương hiệu quốc tế, nhưng các giá trị cốt lõi vẫn không thay đổi. Chúng tôi tiếp tục chế tác thủ công từng sản phẩm một cách cẩn thận, sử dụng các kỹ thuật truyền thống được truyền lại qua nhiều thế hệ.",
+    "storyParagraph3": "Ngày nay, chúng tôi tự hào phục vụ khách hàng trên toàn thế giới, mang sự ấm áp và tính chân thực của nghề thủ công Việt Nam đến các ngôi nhà khắp nơi trên thế giới.",
+    "factoryImageAlt": "Cơ sở sản xuất của chúng tôi",
+    "milestonesTitle": "Hành Trình Qua Các Năm",
+    "coreValuesTitle": "Giá Trị Cốt Lõi",
+    "values": {
+      "sustainability": {
+        "title": "Bền Vững",
+        "description": "Cam kết về các thực hành thân thiện với môi trường và vật liệu bền vững"
+      },
+      "quality": {
+        "title": "Chất Lượng",
+        "description": "Đảm bảo sự xuất sắc trong mọi sản phẩm chúng tôi tạo ra"
+      },
+      "customer": {
+        "title": "Tập Trung Khách Hàng",
+        "description": "Đặt nhu cầu và sự hài lòng của khách hàng lên hàng đầu"
+      },
+      "global": {
+        "title": "Tầm Với Toàn Cầu",
+        "description": "Mang nghề thủ công Việt Nam đến với thế giới"
+      }
+    },
+    "milestones": {
+      "2014": {
+        "title": "Thành Lập Công Ty",
+        "description": "Simple Decor được thành lập với tầm nhìn tạo ra những sản phẩm gia dụng đẹp từ vật liệu tự nhiên."
+      },
+      "2016": {
+        "title": "Xuất Khẩu Đầu Tiên",
+        "description": "Mở rộng ra quốc tế, mang thủ công mỹ nghệ Việt Nam đến thị trường toàn cầu."
+      },
+      "2018": {
+        "title": "Chứng Nhận Chất Lượng",
+        "description": "Đạt được các chứng nhận chất lượng quốc tế và thiết lập quy trình sản xuất bền vững."
+      },
+      "2020": {
+        "title": "Mở Rộng Đội Ngũ",
+        "description": "Phát triển đội ngũ thợ thủ công và thiết kế viên có tay nghề cao để đáp ứng nhu cầu toàn cầu ngày càng tăng."
+      },
+      "2024": {
+        "title": "Đổi Mới & Phát Triển",
+        "description": "Ra mắt các dòng sản phẩm mới và áp dụng chuyển đổi số để mang lại trải nghiệm tốt hơn cho khách hàng."
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Đọc Thêm",
+    "latestPosts": "Bài Viết Mới Nhất",
+    "noResults": "Không tìm thấy bài viết nào",
+    "searchPlaceholder": "Tìm kiếm bài viết...",
+    "categories": "Danh Mục",
+    "tags": "Thẻ",
+    "author": "Tác Giả",
+    "publishedDate": "Ngày Đăng",
+    "backToList": "Quay Lại Blog"
+  },
+  "customerSatisfaction": {
+    "title": "Sự hài lòng của khách hàng là ưu tiên hàng đầu",
+    "subtitle": "Chúng tôi cam kết mang đến sản phẩm và dịch vụ tốt nhất",
+    "features": {
+      "qualityControl": {
+        "title": "Kiểm Soát Chất Lượng",
+        "subtitle": "Chất Lượng Cao Cấp",
+        "description": "Mỗi sản phẩm đều trải qua quy trình kiểm soát chất lượng nghiêm ngặt để đảm bảo sự xuất sắc và độ bền."
+      },
+      "shippingOptimization": {
+        "title": "Tối Ưu Vận Chuyển",
+        "subtitle": "Nhanh Chóng & An Toàn", 
+        "description": "Quy trình vận chuyển tối ưu với đóng gói cẩn thận để đảm bảo sản phẩm đến tay khách hàng an toàn và đúng hẹn."
+      },
+      "productRange": {
+        "title": "Đa Dạng Sản Phẩm",
+        "subtitle": "Lựa Chọn Phong Phú",
+        "description": "Đa dạng các sản phẩm trang trí nội thất từ vật liệu tự nhiên để đáp ứng mọi nhu cầu thiết kế của bạn."
+      }
+    }
+  },
+  "quote": {
+    "title": "Nhận Báo Giá Miễn Phí",
+    "subtitle": "Điền thông tin để nhận báo giá chi tiết cho sản phẩm của chúng tôi",
+    "form": {
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "company": "Công ty",
+      "message": "Tin nhắn/Yêu cầu",
+      "submit": "Gửi Yêu Cầu Báo Giá",
+      "submitting": "Đang gửi..."
+    },
+    "success": "Yêu cầu báo giá đã được gửi thành công!",
+    "error": "Có lỗi xảy ra. Vui lòng thử lại."
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Lỗi",
+    "success": "Thành công",
+    "warning": "Cảnh báo",
+    "info": "Thông tin",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy",
+    "ok": "Đồng ý",
+    "yes": "Có",
+    "no": "Không",
+    "save": "Lưu",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "add": "Thêm",
+    "remove": "Gỡ bỏ",
+    "update": "Cập nhật",
+    "submit": "Gửi",
+    "reset": "Đặt lại",
+    "search": "Tìm kiếm",
+    "filter": "Lọc",
+    "sort": "Sắp xếp",
+    "view": "Xem",
+    "show": "Hiển thị",
+    "hide": "Ẩn",
+    "more": "Thêm",
+    "less": "Ít hơn",
+    "all": "Tất cả",
+    "none": "Không có",
+    "select": "Chọn",
+    "clear": "Xóa",
+    "close": "Đóng",
+    "open": "Mở",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước đó",
+    "page": "Trang",
+    "of": "của",
+    "total": "Tổng cộng",
+    "items": "mục",
+    "item": "mục"
+  }
+} 

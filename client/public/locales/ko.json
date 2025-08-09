@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "홈",
+    "products": "제품",
+    "services": "서비스",
+    "about": "회사소개",
+    "partners": "파트너",
+    "contact": "연락처",
+    "blog": "블로그",
+    "enquiry": "견적 문의"
+  },
+  "home": {
+    "hero": {
+      "title": "미니멀리즘 영감",
+      "subtitle": "자연 재료로 현대 세계에 적합한 제품을 만들고자 하는 열망으로, 저렴한 비용으로 독특한 아이디어를 공유하고 싶습니다.",
+      "cta": "카탈로그 PDF 다운로드"
+    },
+    "vision": {
+      "title": "비전 & 미션",
+      "description": "현대적인 생활 공간을 향상시키는 지속 가능하고 고품질의 제품을 제공하기 위해 노력합니다."
+    },
+    "services": {
+      "title": "우리의 서비스",
+      "consultation": "요청에 따른 제품 상담",
+      "weeklyQuote": "주간 견적 서비스",
+      "exportDocs": "수출 서류 지원",
+      "shipping": "선박 예약 지원",
+      "inspection": "품질 검사 및 모니터링",
+      "afterSales": "애프터 서비스"
+    }
+  },
+  "about": {
+    "title": "회사소개",
+    "stories": "우리의 이야기",
+    "solutions": "우리의 솔루션",
+    "careers": "채용정보"
+  },
+  "products": {
+    "title": "제품",
+    "categories": "카테고리",
+    "details": {
+      "technicalSpecs": "기술 사양",
+      "material": "재료",
+      "specifications": "사양",
+      "moisture": "습도",
+      "packaging": "포장 방법",
+      "requestQuote": "견적 요청"
+    }
+  },
+  "contact": {
+    "title": "연락처",
+    "form": {
+      "name": "이름",
+      "email": "이메일",
+      "whatsapp": "왓츠앱",
+      "country": "국가",
+      "interestedProduct": "관심 제품",
+      "submit": "메시지 보내기"
+    },
+    "info": {
+      "phone": "전화",
+      "email": "이메일",
+      "address": "주소"
+    }
+  },
+  "footer": {
+    "followUs": "팔로우",
+    "contactUs": "연락처"
+  },
+  "quickView": {
+    "title": "퀵뷰",
+    "description": "설명",
+    "specifications": "사양",
+    "dimensions": "치수",
+    "weight": "무게",
+    "material": "재료",
+    "quantity": "수량",
+    "available": "사용 가능",
+    "addToCart": "장바구니에 추가",
+    "wishlist": "위시리스트",
+    "freeShipping": "무료 배송",
+    "securePayment": "안전한 결제"
+  }
+} 
