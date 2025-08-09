@@ -10,10 +10,20 @@
     "enquiry": "Quote Request"
   },
   "cart": {
-    "title": "Cart"
+    "title": "Cart",
+    "items": "items",
+    "empty": "Your cart is empty",
+    "emptyDescription": "Add some products to your cart to get started",
+    "continueShopping": "Continue Shopping",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove",
+    "quantity": "Quantity"
   },
   "auth": {
-    "login": "Login"
+    "login": "Login",
+    "passwordMismatch": "Passwords do not match"
   },
   "partners": {
     "title": "Our Partners",
@@ -203,5 +213,293 @@
     "termsOfService": "Terms of Service",
     "shippingPolicy": "Shipping Policy",
     "returnPolicy": "Return Policy"
+  },
+  "checkout": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Address",
+    "city": "City",
+    "state": "State/Province",
+    "zipCode": "ZIP/Postal Code",
+    "country": "Country",
+    "steps": {
+      "shipping": "Shipping Info",
+      "payment": "Payment",
+      "review": "Review Order"
+    },
+    "orderPlaced": "Order placed successfully!",
+    "orderError": "Failed to place order. Please try again."
+  },
+  "productDetail": {
+    "backToProducts": "Back to Products",
+    "productNotFound": "Product Not Found",
+    "productNotFoundDesc": "The product you're looking for doesn't exist.",
+    "untitledProduct": "Untitled Product",
+    "addToCart": "Add to Cart",
+    "addedToCart": "Added to cart!",
+    "addedToWishlist": "Added to wishlist!",
+    "removedFromWishlist": "Removed from wishlist!",
+    "quantity": "Quantity",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "specifications": "Specifications",
+    "material": "Material",
+    "dimensions": "Dimensions",
+    "weight": "Weight",
+    "color": "Color",
+    "moisture": "Moisture Content",
+    "packaging": "Packaging",
+    "imageGallery": "Product Gallery",
+    "noImages": "No images available",
+    "reviews": "Customer Reviews",
+    "rating": "Rating",
+    "writeReview": "Write a Review",
+    "reviewTitle": "Review Title",
+    "reviewComment": "Your Review",
+    "submitReview": "Submit Review",
+    "updateReview": "Update Review",
+    "editReview": "Edit Review",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "reviewSubmitted": "Review submitted successfully!",
+    "reviewUpdated": "Review updated successfully!",
+    "reviewDeleted": "Review deleted successfully!",
+    "noReviews": "No reviews yet",
+    "beFirstToReview": "Be the first to review this product",
+    "loginRequired": "Login Required",
+    "helpful": "Was this helpful?",
+    "helpfulUpdated": "Thank you for your feedback!",
+    "relatedProducts": "Related Products",
+    "viewAll": "View All",
+    "error": "An error occurred"
+  },
+  "profile": {
+    "personalInfo": "Personal Information",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "save": "Save Changes",
+    "saving": "Saving...",
+    "updateSuccess": "Profile updated successfully!",
+    "updateError": "Failed to update profile",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "notifications": "Notification Preferences",
+    "emailNotifications": "Email Notifications",
+    "smsNotifications": "SMS Notifications",
+    "pushNotifications": "Push Notifications",
+    "tabs": {
+      "profile": "Profile",
+      "addresses": "Addresses",
+      "orders": "Order History",
+      "wishlist": "Wishlist",
+      "settings": "Settings"
+    },
+    "addAddress": "Add New Address",
+    "addNewAddress": "Add Address",
+    "address": "Address",
+    "city": "City",
+    "state": "State/Province",
+    "zipCode": "ZIP Code",
+    "country": "Country",
+    "addressType": "Address Type",
+    "addressTypes": {
+      "home": "Home",
+      "work": "Work",
+      "other": "Other"
+    },
+    "isDefault": "Set as default",
+    "default": "Default",
+    "add": "Add",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "addressAddedSuccess": "Address added successfully!",
+    "addressRemovedSuccess": "Address removed successfully!",
+    "order": "Order",
+    "noOrders": "No orders yet",
+    "noOrdersDesc": "You haven't placed any orders yet.",
+    "fetchOrdersError": "Failed to load orders",
+    "noWishlist": "Your wishlist is empty",
+    "noWishlistDesc": "Add products to your wishlist to see them here.",
+    "wishlistRemovedSuccess": "Item removed from wishlist",
+    "wishlistRemovedError": "Failed to remove item",
+    "browseProducts": "Browse Products",
+    "loginRequired": "Login Required",
+    "loginRequiredDesc": "Please login to view your profile",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "ourSolutions": {
+    "title": "Our Solutions",
+    "subtitle": "Comprehensive solutions for your business needs",
+    "overviewTitle": "Solution Overview",
+    "overviewDescription": "We provide end-to-end solutions for your home decor business",
+    "solutions": {
+      "customDesign": {
+        "title": "Custom Design",
+        "description": "Tailored design solutions for your specific needs"
+      },
+      "smartManufacturing": {
+        "title": "Smart Manufacturing",
+        "description": "Advanced manufacturing processes with quality control"
+      },
+      "customerService": {
+        "title": "Customer Service",
+        "description": "Dedicated support throughout your journey"
+      },
+      "globalDistribution": {
+        "title": "Global Distribution",
+        "description": "Worldwide shipping and logistics solutions"
+      }
+    },
+    "technologiesTitle": "Our Technologies",
+    "technologies": {
+      "isoQuality": {
+        "title": "ISO Quality Standards",
+        "description": "Certified quality management systems"
+      },
+      "environmentalSafety": {
+        "title": "Environmental Safety",
+        "description": "Eco-friendly and sustainable practices"
+      },
+      "advancedTechnology": {
+        "title": "Advanced Technology",
+        "description": "Cutting-edge manufacturing technology"
+      }
+    },
+    "processTitle": "Our Process",
+    "process": {
+      "consultation": {
+        "title": "Consultation",
+        "description": "Understanding your requirements and goals"
+      },
+      "design": {
+        "title": "Design & Planning",
+        "description": "Creating customized solutions for your needs"
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "Producing high-quality products with precision"
+      },
+      "delivery": {
+        "title": "Delivery & Support",
+        "description": "Ensuring successful implementation and ongoing support"
+      }
+    },
+    "ctaTitle": "Ready to Get Started?",
+    "ctaDescription": "Contact us today to discuss your project requirements",
+    "contactNow": "Contact Now",
+    "viewQuote": "Get Quote"
+  },
+  "ourStory": {
+    "title": "Our Story",
+    "subtitle": "The journey of Simple Decor",
+    "storyTitle": "How We Started",
+    "storyParagraph1": "Simple Decor began as a small family workshop with a vision to create beautiful, sustainable home decor products.",
+    "storyParagraph2": "Over the years, we've grown into a trusted partner for businesses worldwide, maintaining our commitment to quality and sustainability.",
+    "storyParagraph3": "Today, we continue to innovate while staying true to our core values of craftsmanship and environmental responsibility.",
+    "milestonesTitle": "Our Journey",
+    "milestones": {
+      "2014": {
+        "title": "Company Founded",
+        "description": "Started as a small workshop focusing on natural materials"
+      },
+      "2016": {
+        "title": "International Expansion",
+        "description": "Began exporting to European markets"
+      },
+      "2018": {
+        "title": "Quality Certification",
+        "description": "Achieved ISO quality standards certification"
+      },
+      "2020": {
+        "title": "Digital Transformation",
+        "description": "Launched online platform and digital services"
+      },
+      "2024": {
+        "title": "Sustainability Leadership",
+        "description": "Leading the industry in sustainable practices"
+      }
+    },
+    "coreValuesTitle": "Our Core Values",
+    "values": {
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Committed to environmental responsibility"
+      },
+      "quality": {
+        "title": "Quality Excellence",
+        "description": "Delivering superior products and services"
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "Putting customer satisfaction first"
+      },
+      "global": {
+        "title": "Global Perspective",
+        "description": "Serving customers worldwide"
+      }
+    },
+    "imageAlt": "Our Story Image",
+    "factoryImageAlt": "Our Manufacturing Facility"
+  },
+  "quickView": {
+    "title": "Quick View",
+    "description": "Product Description",
+    "specifications": "Specifications",
+    "material": "Material",
+    "dimensions": "Dimensions",
+    "weight": "Weight",
+    "quantity": "Quantity",
+    "available": "Available",
+    "addToCart": "Add to Cart",
+    "wishlist": "Add to Wishlist",
+    "removeFromWishlist": "Remove from Wishlist",
+    "freeShipping": "Free Shipping",
+    "securePayment": "Secure Payment"
+  },
+  "quote": {
+    "title": "Request Quote",
+    "subtitle": "Get a personalized quote for your project",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company Name",
+      "message": "Project Details",
+      "submit": "Send Quote Request"
+    },
+    "success": "Quote request sent successfully!",
+    "error": "Failed to send quote request"
+  },
+  "wishlist": {
+    "title": "My Wishlist",
+    "items": "items",
+    "emptyTitle": "Your wishlist is empty",
+    "emptyDescription": "Save products you love to your wishlist",
+    "browseProducts": "Browse Products",
+    "select": "Select",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "removeSelected": "Remove Selected",
+    "clearAll": "Clear All",
+    "clearConfirm": "Are you sure you want to clear your wishlist?",
+    "remove": "Remove",
+    "addToCart": "Add to Cart"
+  },
+  "search": "Search",
+  "search.placeholder": "Search products...",
+  "search.searching": "Searching...",
+  "blog": {
+    "readMore": "Read More"
+  },
+  "common": {
+    "retry": "Try Again",
+    "priceUnavailable": "Price unavailable"
   }
 }

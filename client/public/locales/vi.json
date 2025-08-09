@@ -10,7 +10,16 @@
     "enquiry": "Yêu Cầu Báo Giá"
   },
   "cart": {
-    "title": "Giỏ hàng"
+    "title": "Giỏ hàng",
+    "items": "sản phẩm",
+    "empty": "Giỏ hàng trống",
+    "emptyDescription": "Thêm một số sản phẩm vào giỏ hàng để bắt đầu",
+    "continueShopping": "Tiếp Tục Mua Sắm",
+    "subtotal": "Tạm tính",
+    "total": "Tổng cộng",
+    "checkout": "Thanh toán",
+    "remove": "Xóa",
+    "quantity": "Số lượng"
   },
   "auth": {
     "login": "Đăng nhập"
@@ -203,5 +212,66 @@
     "termsOfService": "Điều Khoản Dịch Vụ",
     "shippingPolicy": "Chính Sách Vận Chuyển",
     "returnPolicy": "Chính Sách Đổi Trả"
+  },
+  "checkout": {
+    "firstName": "Họ",
+    "lastName": "Tên",
+    "email": "Địa chỉ Email",
+    "phone": "Số điện thoại",
+    "address": "Địa chỉ",
+    "city": "Thành phố",
+    "state": "Tỉnh/Thành phố",
+    "zipCode": "Mã bưu điện",
+    "country": "Quốc gia",
+    "steps": {
+      "shipping": "Thông tin giao hàng",
+      "payment": "Thanh toán",
+      "review": "Xem lại đơn hàng"
+    },
+    "orderPlaced": "Đặt hàng thành công!",
+    "orderError": "Không thể đặt hàng. Vui lòng thử lại."
+  },
+  "productDetail": {
+    "backToProducts": "Quay lại Sản phẩm",
+    "productNotFound": "Không tìm thấy sản phẩm",
+    "productNotFoundDesc": "Sản phẩm bạn tìm kiếm không tồn tại.",
+    "untitledProduct": "Sản phẩm không có tiêu đề",
+    "addToCart": "Thêm vào giỏ hàng",
+    "addedToCart": "Đã thêm vào giỏ hàng!",
+    "addedToWishlist": "Đã thêm vào danh sách yêu thích!",
+    "removedFromWishlist": "Đã xóa khỏi danh sách yêu thích!",
+    "quantity": "Số lượng",
+    "inStock": "Còn hàng",
+    "outOfStock": "Hết hàng",
+    "specifications": "Thông số kỹ thuật",
+    "material": "Chất liệu",
+    "dimensions": "Kích thước",
+    "weight": "Trọng lượng",
+    "color": "Màu sắc",
+    "moisture": "Độ ẩm",
+    "packaging": "Đóng gói",
+    "imageGallery": "Thư viện ảnh",
+    "noImages": "Không có hình ảnh",
+    "reviews": "Đánh giá khách hàng",
+    "rating": "Đánh giá",
+    "writeReview": "Viết đánh giá",
+    "reviewTitle": "Tiêu đề đánh giá",
+    "reviewComment": "Nội dung đánh giá",
+    "submitReview": "Gửi đánh giá",
+    "updateReview": "Cập nhật đánh giá",
+    "editReview": "Chỉnh sửa đánh giá",
+    "cancel": "Hủy",
+    "saving": "Đang lưu...",
+    "reviewSubmitted": "Gửi đánh giá thành công!",
+    "reviewUpdated": "Cập nhật đánh giá thành công!",
+    "reviewDeleted": "Xóa đánh giá thành công!",
+    "noReviews": "Chưa có đánh giá",
+    "beFirstToReview": "Hãy là người đầu tiên đánh giá sản phẩm này",
+    "loginRequired": "Yêu cầu đăng nhập",
+    "helpful": "Đánh giá này có hữu ích không?",
+    "helpfulUpdated": "Cảm ơn phản hồi của bạn!",
+    "relatedProducts": "Sản phẩm liên quan",
+    "viewAll": "Xem tất cả",
+    "error": "Đã xảy ra lỗi"
   }
 }
