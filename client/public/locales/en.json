@@ -147,6 +147,27 @@
       }
     }
   },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us for any inquiries",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "whatsapp": "WhatsApp Number",
+      "country": "Country",
+      "interestedProduct": "Product of Interest",
+      "message": "Message Content",
+      "submit": "Send Message"
+    },
+    "info": {
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "address": "Office Address",
+      "workingHours": "Working Hours",
+      "support247": "24/7 Support",
+      "responseTime": "Response within 24h"
+    }
+  },
   "footer": {
     "followUs": "Follow Us",
     "contactUs": "Contact Us",
@@ -172,6 +193,15 @@
     "support247": "24/7 Support",
     "customerService": "Customer Service",
     "address": "Address",
-    "addressDetails": "Van Boi Village, Nhat Tuu Commune<br />Kim Bang District, Ha Nam Province<br />Vietnam"
+    "addressDetails": "Van Boi Village, Nhat Tuu Commune<br />Kim Bang District, Ha Nam Province<br />Vietnam",
+    "ourLocation": "Our Location",
+    "mapPlaceholder": "Interactive map showing our office location",
+    "getDirections": "Get Directions",
+    "madeWithLove": "Made with Love",
+    "inVietnam": "in Vietnam",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "shippingPolicy": "Shipping Policy",
+    "returnPolicy": "Return Policy"
   }
 }

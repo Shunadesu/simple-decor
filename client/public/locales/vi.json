@@ -147,6 +147,27 @@
       }
     }
   },
+  "contact": {
+    "title": "Liên Hệ",
+    "subtitle": "Liên hệ với chúng tôi để được tư vấn",
+    "form": {
+      "name": "Họ và Tên",
+      "email": "Địa Chỉ Email",
+      "whatsapp": "Số WhatsApp",
+      "country": "Quốc Gia",
+      "interestedProduct": "Sản Phẩm Quan Tâm",
+      "message": "Nội Dung Tin Nhắn",
+      "submit": "Gửi Tin Nhắn"
+    },
+    "info": {
+      "phone": "Số Điện Thoại",
+      "email": "Địa Chỉ Email",
+      "address": "Địa Chỉ Văn Phòng",
+      "workingHours": "Giờ Làm Việc",
+      "support247": "Hỗ Trợ 24/7",
+      "responseTime": "Phản hồi trong 24h"
+    }
+  },
   "footer": {
     "followUs": "Theo Dõi Chúng Tôi",
     "contactUs": "Liên Hệ",
@@ -172,6 +193,15 @@
     "support247": "24/7 Support",
     "customerService": "Customer Service",
     "address": "Địa Chỉ",
-    "addressDetails": "Thôn Vạn Bôi, Xã Nhật Tựu<br />Huyện Kim Bảng, Tỉnh Hà Nam<br />Việt Nam"
+    "addressDetails": "Thôn Vạn Bôi, Xã Nhật Tựu<br />Huyện Kim Bảng, Tỉnh Hà Nam<br />Việt Nam",
+    "ourLocation": "Vị Trí Của Chúng Tôi",
+    "mapPlaceholder": "Bản đồ tương tác hiển thị vị trí văn phòng",
+    "getDirections": "Chỉ Đường",
+    "madeWithLove": "Được Tạo Với Tình Yêu",
+    "inVietnam": "tại Việt Nam",
+    "privacyPolicy": "Chính Sách Bảo Mật",
+    "termsOfService": "Điều Khoản Dịch Vụ",
+    "shippingPolicy": "Chính Sách Vận Chuyển",
+    "returnPolicy": "Chính Sách Đổi Trả"
   }
 }
