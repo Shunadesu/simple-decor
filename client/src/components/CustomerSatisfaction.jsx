@@ -7,8 +7,19 @@ const CustomerSatisfaction = () => {
   
   // Debug logging
   console.log('CustomerSatisfaction - Current language:', i18n.language);
+  console.log('CustomerSatisfaction - Ready:', i18n.isInitialized);
+  console.log('CustomerSatisfaction - Available resources:', Object.keys(i18n.store?.data || {}));
+  console.log('CustomerSatisfaction - Current namespace data:', i18n.store?.data?.[i18n.language]?.translation ? Object.keys(i18n.store.data[i18n.language].translation).slice(0, 10) : 'No data');
   console.log('CustomerSatisfaction - Title translation:', t('customerSatisfaction.title'));
   console.log('CustomerSatisfaction - Has title key?', i18n.exists('customerSatisfaction.title'));
+  
+  // Force reload if key missing
+  React.useEffect(() => {
+    if (i18n.isInitialized && !i18n.exists('customerSatisfaction.title')) {
+      console.log('CustomerSatisfaction - Force reloading resources...');
+      i18n.reloadResources([i18n.language]);
+    }
+  }, [i18n.language, i18n.isInitialized]);
 
   const features = [
     {

@@ -89,11 +89,11 @@ i18n
     
     // Backend config for loading translation files
     backend: {
-      loadPath: '/locales/{{lng}}.json?v=' + Date.now(),
+      loadPath: '/locales/{{lng}}.json?v=' + Date.now() + '&cache=false',
       crossDomain: true,
       withCredentials: false,
       requestOptions: {
-        cache: 'default',
+        cache: 'no-cache',
         mode: 'cors',
         credentials: 'omit'
       },
