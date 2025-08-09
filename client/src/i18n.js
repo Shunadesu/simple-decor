@@ -104,6 +104,8 @@ i18n
           const parsed = JSON.parse(data);
           console.log('Translation data loaded successfully for:', url);
           console.log('Sample keys:', Object.keys(parsed).slice(0, 5));
+          console.log('Has customerSatisfaction?', !!parsed.customerSatisfaction);
+          console.log('Has cart.title?', !!parsed.cart?.title);
           // Wrap in translation namespace for i18next
           return { translation: parsed };
         } catch (e) {

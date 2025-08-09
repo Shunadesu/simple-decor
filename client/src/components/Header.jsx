@@ -301,6 +301,7 @@ const Header = () => {
               >
                 <ShoppingCart size={20} />
                 <span className="hidden sm:inline">{t('cart.title')}</span>
+                {/* Debug: {console.log('Header cart title:', t('cart.title'), 'exists:', i18n.exists('cart.title'))} */}
                                  {getTotalItems() > 0 && (
                    <span className="absolute -top-2 -right-2 bg-primary-800 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                      {getTotalItems()}

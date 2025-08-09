@@ -3,7 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { CheckCircle, Truck, DollarSign } from 'lucide-react';
 
 const CustomerSatisfaction = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  // Debug logging
+  console.log('CustomerSatisfaction - Current language:', i18n.language);
+  console.log('CustomerSatisfaction - Title translation:', t('customerSatisfaction.title'));
+  console.log('CustomerSatisfaction - Has title key?', i18n.exists('customerSatisfaction.title'));
 
   const features = [
     {
