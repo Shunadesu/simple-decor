@@ -3,6 +3,32 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import Backend from 'i18next-http-backend';
 
+// Fallback translations để tránh lỗi load file
+const fallbackTranslations = {
+  en: {
+    'nav.home': 'Home',
+    'nav.products': 'Products', 
+    'nav.services': 'Services',
+    'nav.about': 'About',
+    'nav.partners': 'Partners',
+    'nav.contact': 'Contact',
+    'nav.blog': 'Blog',
+    'cart.title': 'Cart',
+    'auth.login': 'Login'
+  },
+  vi: {
+    'nav.home': 'Trang chủ',
+    'nav.products': 'Sản phẩm',
+    'nav.services': 'Dịch vụ', 
+    'nav.about': 'Giới thiệu',
+    'nav.partners': 'Đối tác',
+    'nav.contact': 'Liên hệ',
+    'nav.blog': 'Blog',
+    'cart.title': 'Giỏ hàng',
+    'auth.login': 'Đăng nhập'
+  }
+};
+
 i18n
   .use(Backend)
   .use(LanguageDetector)
@@ -13,20 +39,31 @@ i18n
       useSuspense: false,
     },
     fallbackLng: 'en',
-    debug: false, // Tắt debug để tránh spam
+    debug: process.env.NODE_ENV === 'development',
     interpolation: {
       escapeValue: false,
     },
+    // Fallback resources nếu load file thất bại
+    resources: fallbackTranslations,
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/locales/{{lng}}.json',
       crossDomain: true,
       withCredentials: false,
       requestOptions: {
         cache: 'no-cache'
+      },
+      // Fallback khi load thất bại
+      allowMultiLoading: false,
+      parse: (data, url) => {
+        try {
+          return JSON.parse(data);
+        } catch (e) {
+          console.warn('Failed to parse translation file:', url);
+          return {};
+        }
       }
     },
-    ns: ['common'],
-    defaultNS: 'common',
+
     detection: {
       // Thứ tự ưu tiên phát hiện ngôn ngữ
       order: [
