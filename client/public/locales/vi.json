@@ -9,6 +9,12 @@
     "blog": "Blog",
     "enquiry": "Yêu Cầu Báo Giá"
   },
+  "cart": {
+    "title": "Giỏ hàng"
+  },
+  "auth": {
+    "login": "Đăng nhập"
+  },
   "about": {
     "title": "Giới Thiệu",
     "subtitle": "Khám phá câu chuyện và sứ mệnh của Simple Decor",

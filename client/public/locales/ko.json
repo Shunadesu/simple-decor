@@ -1,1 +1,18 @@
-{}
+{
+  "nav": {
+    "home": "홈",
+    "products": "제품",
+    "services": "서비스",
+    "about": "회사 소개",
+    "partners": "파트너",
+    "contact": "연락처",
+    "blog": "블로그",
+    "enquiry": "문의 카트"
+  },
+  "cart": {
+    "title": "장바구니"
+  },
+  "auth": {
+    "login": "로그인"
+  }
+}

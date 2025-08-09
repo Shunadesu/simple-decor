@@ -9,6 +9,12 @@
     "blog": "Blog",
     "enquiry": "Quote Request"
   },
+  "cart": {
+    "title": "Cart"
+  },
+  "auth": {
+    "login": "Login"
+  },
   "about": {
     "title": "About Us",
     "subtitle": "Discover the story and mission of Simple Decor",

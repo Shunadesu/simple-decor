@@ -1,1 +1,18 @@
-{}
+{
+  "nav": {
+    "home": "ホーム",
+    "products": "製品",
+    "services": "サービス",
+    "about": "会社概要",
+    "partners": "パートナー",
+    "contact": "お問い合わせ",
+    "blog": "ブログ",
+    "enquiry": "見積もりカート"
+  },
+  "cart": {
+    "title": "カート"
+  },
+  "auth": {
+    "login": "ログイン"
+  }
+}
