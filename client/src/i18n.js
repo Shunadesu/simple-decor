@@ -106,25 +106,26 @@ i18n
           console.log('Sample keys:', Object.keys(parsed).slice(0, 5));
           console.log('Has customerSatisfaction?', !!parsed.customerSatisfaction);
           console.log('Has cart.title?', !!parsed.cart?.title);
-          // Wrap in translation namespace for i18next
+          console.log('Data structure sample:', JSON.stringify(parsed).substring(0, 200));
+          // Wrap in translation namespace since JSON files are flat
           return { translation: parsed };
         } catch (e) {
           console.error('Failed to parse translation file:', url, e);
           // Return fallback for current language
           const lng = url.match(/\/([a-z]{2})\.json/)?.[1] || 'en';
-          return { translation: fallbackTranslations[lng] || fallbackTranslations.en || {} };
+          return fallbackTranslations[lng] || fallbackTranslations.en || {};
         }
       }
     },
 
-    // Fallback resources if files fail to load
-    resources: {
-      en: { translation: fallbackTranslations.en },
-      vi: { translation: fallbackTranslations.vi },
-      ko: { translation: fallbackTranslations.ko },
-      zh: { translation: fallbackTranslations.zh },
-      ja: { translation: fallbackTranslations.ja }
-    },
+    // Disable inline resources to force backend loading
+    // resources: {
+    //   en: { translation: fallbackTranslations.en },
+    //   vi: { translation: fallbackTranslations.vi },
+    //   ko: { translation: fallbackTranslations.ko },
+    //   zh: { translation: fallbackTranslations.zh },
+    //   ja: { translation: fallbackTranslations.ja }
+    // },
 
     detection: {
       // Thứ tự ưu tiên phát hiện ngôn ngữ
