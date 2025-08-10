@@ -160,4 +160,70 @@
 
 .animate-fade-in {
   animation: fadeInUp 0.8s ease-out;
+}
+
+/* Animation Delay Utilities */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Custom Swiper Navigation */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.swiper-button-prev-custom {
+  left: 20px;
+}
+
+.swiper-button-next-custom {
+  right: 20px;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Custom Swiper Pagination */
+.swiper-pagination-custom {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet-custom {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active-custom {
+  background: #7B8D5B;
+  transform: scale(1.2);
 } 

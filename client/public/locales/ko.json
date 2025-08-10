@@ -10,18 +10,83 @@
     "enquiry": "문의 카트"
   },
   "cart": {
-    "title": "장바구니"
+    "title": "장바구니",
+    "items": "상품",
+    "empty": "장바구니가 비어있습니다",
+    "emptyDescription": "장바구니를 시작하려면 몇 가지 상품을 추가하세요",
+    "continueShopping": "쇼핑 계속하기",
+    "subtotal": "소계",
+    "total": "총계",
+    "checkout": "결제",
+    "remove": "삭제",
+    "quantity": "수량"
   },
   "auth": {
     "login": "로그인"
   },
   "partners": {
     "title": "우리의 파트너",
-    "subtitle": "전 세계 신뢰할 수 있는 파트너와 강력한 관계 구축"
+    "subtitle": "전 세계 신뢰할 수 있는 파트너와 강력한 관계 구축",
+    "strategicPartnersTitle": "전략적 파트너",
+    "strategicPartnersSubtitle": "전 세계에서 협력하는 최고 기업들",
+    "benefitsTitle": "파트너십 혜택",
+    "benefitsSubtitle": "우리가 소중한 파트너에게 제공하는 것",
+    "becomePartnerTitle": "파트너가 되기",
+    "becomePartnerSubtitle": "우리의 신뢰할 수 있는 글로벌 파트너 네트워크에 참여",
+    "contactNow": "지금 연락",
+    "downloadBrochure": "브로셔 다운로드",
+    "globalNetworkTitle": "글로벌 네트워크",
+    "globalNetworkSubtitle": "우리의 파트너는 전 세계에 걸쳐 있습니다",
+    "mapPlaceholder": "글로벌 파트너 네트워크를 보여주는 인터랙티브 지도",
+    "mapDescription": "전 세계 파트너와 연결하여 최고의 제품과 서비스 제공",
+    "list": {
+      "globalImport": {
+        "name": "글로벌 임포트 주식회사",
+        "country": "국제 무역",
+        "description": "지속 가능한 제품에 특화된 주요 국제 무역 파트너",
+        "years": "5년 이상 협력"
+      },
+      "europeanDecor": {
+        "name": "European Decor Ltd.",
+        "country": "유럽 시장",
+        "description": "광범위한 네트워크를 가진 고급 유럽 인테리어 장식 유통업체",
+        "years": "3년 이상 협력"
+      },
+      "asiaPacific": {
+        "name": "Asia Pacific Trading",
+        "country": "아시아 태평양 지역",
+        "description": "주요 아시아 시장을 포괄하는 지역 유통업체",
+        "years": "4년 이상 협력"
+      },
+      "nordicHome": {
+        "name": "Nordic Home Design",
+        "country": "북유럽 국가들",
+        "description": "고급 소매 네트워크를 가진 스칸디나비아 디자인 전문가",
+        "years": "2년 이상 협력"
+      }
+    },
+    "benefits": {
+      "longTerm": {
+        "title": "장기적 파트너십",
+        "description": "독점적 혜택과 우선 지원으로 지속 가능한 관계 구축"
+      },
+      "globalNetwork": {
+        "title": "글로벌 네트워크 접근",
+        "description": "전 세계 공급업체와 유통업체 네트워크에 연결"
+      },
+      "qualityAssurance": {
+        "title": "품질 보증",
+        "description": "포괄적인 검사와 인증을 통한 제품 품질 보증"
+      },
+      "support": {
+        "title": "24/7 지원",
+        "description": "전용 계정 관리와 24시간 기술 지원"
+      }
+    }
   },
   "products": {
     "title": "우리의 제품",
-    "subtitle": "천연 홈 데코 제품 컬렉션을 확인하세요",
+    "subtitle": "천연 소재의 홈 데코레이션 제품 컬렉션을 확인하세요",
     "showing": "총 {{total}}개 중 {{count}}개 제품 표시",
     "viewDetails": "자세히 보기",
     "addToCart": "장바구니에 추가",
@@ -32,6 +97,464 @@
     "categories": "카테고리",
     "priceRange": "가격 범위",
     "inStock": "재고 있음",
-    "outOfStock": "품절"
+    "outOfStock": "품절",
+    "hero": {
+      "badge": "고품질 제품",
+      "title": "컬렉션 탐색",
+      "titleHighlight": "천연 제품",
+      "description": "신중하게 선택된 천연 소재에서, 당신의 생활 공간에 독특하고 지속 가능한 인테리어 장식 제품을 제공합니다.",
+      "cta": {
+        "explore": "제품 탐색",
+        "contact": "상담 문의"
+      }
+    },
+    "stats": {
+      "customers": "만족한 고객",
+      "countries": "수출 대상국",
+      "satisfaction": "만족도",
+      "natural": "천연 소재"
+    },
+    "features": {
+      "title": "왜 우리 제품을 선택하는가",
+      "subtitle": "우리가 당신에게 제공하는 탁월한 혜택",
+      "quality": {
+        "title": "고품질",
+        "description": "각 제품은 탁월성과 내구성을 보장하기 위해 엄격한 품질 관리를 거칩니다."
+      },
+      "shipping": {
+        "title": "글로벌 배송",
+        "description": "전 세계 어디든 빠르고 안전한 배송 서비스."
+      },
+      "support": {
+        "title": "24/7 지원",
+        "description": "언제 어디서나 당신을 지원할 준비가 된 전문 팀."
+      },
+      "warranty": {
+        "title": "신뢰할 수 있는 보증",
+        "description": "투명한 보증 정책과 헌신적인 애프터서비스."
+      }
+    },
+    "categories": {
+      "title": "제품 카테고리",
+      "subtitle": "우리의 다양한 제품 카테고리 탐색",
+      "products": "제품",
+      "fallbackDescription": "다양하고 고품질한 제품 컬렉션 탐색",
+      "viewProducts": "제품 보기",
+      "viewAllProducts": "모든 제품 보기"
+    },
+    "search": {
+      "placeholder": "제품 검색..."
+    },
+    "sort": {
+      "newest": "최신",
+      "name": "이름 A-Z",
+      "priceLow": "가격 낮음에서 높음",
+      "rating": "평점 높음"
+    },
+    "backToCategories": "카테고리로 돌아가기",
+    "details": {
+      "material": "소재",
+      "dimensions": "크기",
+      "moisture": "습도"
+    },
+    "price": {
+      "contact": "문의"
+    },
+    "addedToCart": "추가되었습니다",
+    "wishlist": {
+      "loginRequired": "위시리스트에 제품을 추가하려면 로그인하세요"
+    },
+    "noProducts": {
+      "title": "제품을 찾을 수 없습니다",
+      "description": "검색 조건에 맞는 제품이 없습니다.",
+      "backToCategories": "카테고리로 돌아가기"
+    },
+    "testimonials": {
+      "title": "고객 후기",
+      "subtitle": "우리 제품을 사용한 고객들의 솔직한 리뷰",
+      "sarah": {
+        "role": "인테리어 디자이너",
+        "content": "Simple Decor의 제품은 정말 훌륭합니다! 품질과 디자인 모두 뛰어납니다. 제 클라이언트들이 이 제품들에 매우 만족하고 있습니다."
+      },
+      "michael": {
+        "role": "레스토랑 소유자",
+        "content": "레스토랑에서 그들의 제품을 사용하고 있습니다. 품질이 매우 좋고 제 공간에 적합한 디자인입니다."
+      },
+      "emma": {
+        "role": "건축가",
+        "content": "건축가로서, 제품의 지속 가능성과 미학을 높이 평가합니다. Simple Decor는 지속 가능한 디자인을 정말 이해하고 있습니다."
+      }
+    },
+    "cta": {
+      "title": "우리 컬렉션을 탐색할 준비가 되셨나요?",
+      "description": "지금 문의하여 전문적인 조언과 지원을 받으세요",
+      "contact": "지금 문의",
+      "learnMore": "자세히 보기"
+    }
+  },
+  "about": {
+    "title": "회사 소개",
+    "subtitle": "Simple Decor의 스토리와 미션 탐색",
+    "stories": "우리의 스토리",
+    "solutions": "우리의 솔루션",
+    "careers": "채용 정보",
+    "story": {
+      "description1": "Simple Decor는 현대 생활에 미적 가치와 실용적 가치를 가져다주는 천연 소재의 제품을 만드는 비전으로 설립되었습니다.",
+      "description2": "미니멀 디자인은 단순한 트렌드가 아니라, 자연을 존중하고 의미 있는 제품을 만드는 지속 가능한 라이프스타일이라고 믿습니다.",
+      "description3": "작은 워크숍에서 시작하여, 현재는 전 세계 고객에게 서비스를 제공하는 수출 기업으로 성장했습니다."
+    },
+    "stats": {
+      "experience": "년의 경험",
+      "countries": "수출 대상국",
+      "customers": "만족한 고객",
+      "naturalProducts": "천연 제품"
+    },
+    "values": {
+      "sustainability": {
+        "title": "지속 가능성",
+        "description": "천연 소재와 환경 친화적 소재 사용에 대한 약속"
+      },
+      "quality": {
+        "title": "품질",
+        "description": "모든 제품에서 최고 품질 보장"
+      },
+      "customer": {
+        "title": "고객",
+        "description": "고객의 이익을 최우선으로"
+      },
+      "global": {
+        "title": "글로벌",
+        "description": "전 세계 고객에게 서비스 제공"
+      }
+    }
+  },
+  "customerSatisfaction": {
+    "title": "고객 만족도가 최우선",
+    "subtitle": "최고의 제품과 서비스를 제공하겠다고 약속합니다",
+    "features": {
+      "qualityControl": {
+        "title": "품질 관리",
+        "subtitle": "고품질",
+        "description": "각 제품은 탁월성과 내구성을 보장하기 위해 엄격한 품질 관리 프로세스를 거칩니다."
+      },
+      "shippingOptimization": {
+        "title": "배송 최적화",
+        "subtitle": "빠르고 안전",
+        "description": "제품이 안전하고 시간에 맞춰 고객에게 도착하도록 신중한 포장을 통한 최적화된 배송 프로세스."
+      },
+      "productRange": {
+        "title": "다양한 제품",
+        "subtitle": "풍부한 선택",
+        "description": "당신의 모든 디자인 요구를 충족하는 천연 소재의 다양한 인테리어 장식 제품."
+      }
+    }
+  },
+  "contact": {
+    "title": "연락처",
+    "subtitle": "상담을 위해 문의해 주세요",
+    "form": {
+      "name": "이름",
+      "email": "이메일 주소",
+      "whatsapp": "WhatsApp 번호",
+      "country": "국가",
+      "interestedProduct": "관심 제품",
+      "message": "메시지 내용",
+      "submit": "메시지 보내기"
+    },
+    "info": {
+      "phone": "전화번호",
+      "email": "이메일 주소",
+      "address": "사무실 주소",
+      "workingHours": "근무 시간",
+      "support247": "24/7 지원",
+      "responseTime": "24시간 내 응답"
+    }
+  },
+  "footer": {
+    "followUs": "팔로우하기",
+    "contactUs": "연락처",
+    "companyDescription": "환경 친화적인 천연 소재의 인테리어 장식 제품을 전문으로 제공. 우리는 합리적인 가격으로 고품질 제품을 제공하겠다고 약속합니다.",
+    "newsletter": {
+      "title": "뉴스레터 구독",
+      "description": "신제품, 특별 혜택, 그린 인테리어 디자인 트렌드 정보를 받아보세요",
+      "placeholder": "이메일 주소를 입력하세요...",
+      "subscribe": "구독",
+      "subscribing": "처리 중...",
+      "success": "뉴스레터 구독해 주셔서 감사합니다!",
+      "error": "오류가 발생했습니다. 다시 시도해 주세요!"
+    },
+    "quickLinks": "빠른 링크",
+    "aboutUs": "회사 소개",
+    "ourStory": "스토리",
+    "ourSolutions": "솔루션",
+    "careers": "채용 정보",
+    "wishlist": "위시리스트",
+    "partners": "파트너",
+    "connectWithUs": "연결하기",
+    "hotline": "핫라인",
+    "support247": "24/7 지원",
+    "customerService": "고객 서비스",
+    "address": "주소",
+    "addressDetails": "반보이 마을, 니앗뜨 마을<br />킴방 현, 하남 성<br />베트남",
+    "ourLocation": "우리의 위치",
+    "mapPlaceholder": "사무실 위치를 보여주는 인터랙티브 지도",
+    "getDirections": "길찾기",
+    "madeWithLove": "사랑을 담아 만들어졌습니다",
+    "inVietnam": "베트남에서",
+    "privacyPolicy": "개인정보 보호정책",
+    "termsOfService": "서비스 약관",
+    "shippingPolicy": "배송 정책",
+    "returnPolicy": "반품 정책"
+  },
+  "checkout": {
+    "firstName": "이름",
+    "lastName": "성",
+    "email": "이메일 주소",
+    "phone": "전화번호",
+    "address": "주소",
+    "city": "도시",
+    "state": "도/시",
+    "zipCode": "우편번호",
+    "country": "국가",
+    "steps": {
+      "shipping": "배송 정보",
+      "payment": "결제",
+      "review": "주문 확인"
+    },
+    "orderPlaced": "주문이 완료되었습니다!",
+    "orderError": "주문할 수 없습니다. 다시 시도해 주세요."
+  },
+  "productDetail": {
+    "backToProducts": "제품으로 돌아가기",
+    "productNotFound": "제품을 찾을 수 없습니다",
+    "productNotFoundDesc": "찾으시는 제품이 존재하지 않습니다.",
+    "untitledProduct": "제목 없는 제품",
+    "addToCart": "장바구니에 추가",
+    "addedToCart": "장바구니에 추가되었습니다!",
+    "addedToWishlist": "위시리스트에 추가되었습니다!",
+    "removedFromWishlist": "위시리스트에서 제거되었습니다!",
+    "quantity": "수량",
+    "inStock": "재고 있음",
+    "outOfStock": "품절",
+    "specifications": "사양",
+    "material": "소재",
+    "dimensions": "크기",
+    "weight": "무게",
+    "color": "색상",
+    "moisture": "습도",
+    "packaging": "포장",
+    "imageGallery": "이미지 갤러리",
+    "noImages": "이미지가 없습니다",
+    "reviews": "고객 리뷰",
+    "rating": "평점",
+    "writeReview": "리뷰 작성",
+    "reviewTitle": "리뷰 제목",
+    "reviewComment": "리뷰 내용",
+    "submitReview": "리뷰 제출",
+    "updateReview": "리뷰 업데이트",
+    "editReview": "리뷰 편집",
+    "cancel": "취소",
+    "saving": "저장 중...",
+    "reviewSubmitted": "리뷰가 제출되었습니다!",
+    "reviewUpdated": "리뷰가 업데이트되었습니다!",
+    "reviewDeleted": "리뷰가 삭제되었습니다!",
+    "noReviews": "리뷰가 없습니다",
+    "beFirstToReview": "이 제품의 첫 번째 리뷰를 작성해 주세요",
+    "loginRequired": "로그인이 필요합니다",
+    "helpful": "이 리뷰가 도움이 되었나요?",
+    "helpfulUpdated": "피드백을 주셔서 감사합니다!",
+    "relatedProducts": "관련 제품",
+    "viewAll": "모두 보기",
+    "error": "오류가 발생했습니다"
+  },
+  "home": {
+    "heroSwiper": {
+      "slide1": {
+        "title": "심플 데코에 오신 것을 환영합니다",
+        "subtitle": "우아한 디자인으로 생활 공간을 변화시키세요",
+        "description": "당신의 공간을 특별하게 만드는 아름다운 홈 데코 아이템 컬렉션을 발견하세요.",
+        "ctaPrimary": "제품 탐색",
+        "ctaSecondary": "무료 상담"
+      },
+      "slide2": {
+        "title": "프리미엄 품질 가구",
+        "subtitle": "세심한 주의와 세부 사항으로 제작",
+        "description": "우리의 가구는 오래 지속되도록 설계되었으며, 완벽한 집을 위해 스타일과 기능성을 결합합니다.",
+        "ctaPrimary": "컬렉션 보기",
+        "ctaSecondary": "지금 연락"
+      },
+      "slide3": {
+        "title": "현대적인 인테리어 솔루션",
+        "subtitle": "현대 생활을 위한 현대적 디자인",
+        "description": "미니멀부터 럭셔리까지, 당신의 스타일에 맞는 다양한 인테리어 솔루션을 제공합니다.",
+        "ctaPrimary": "지금 탐색",
+        "ctaSecondary": "예약하기"
+      },
+      "slide4": {
+        "title": "전문적인 디자인 상담",
+        "subtitle": "당신의 프로젝트를 위한 전문적인 가이던스",
+        "description": "우리의 전문가 팀은 당신의 개성을 반영한 완벽한 공간을 만드는 것을 도와드립니다.",
+        "ctaPrimary": "지금 상담",
+        "ctaSecondary": "프로젝트 보기"
+      },
+      "loading": "로딩 중..."
+    },
+    "heroImage": {
+      "badge": "프리미엄 품질",
+      "title": "당신의 집을",
+      "titleHighlight": "예술 작품으로",
+      "description": "사랑과 세심한 주의를 기울여 수작업으로 만들어진 프리미엄 홈 데코 아이템 컬렉션을 발견하고, 당신의 가족에게 완벽한 생활 공간을 제공합니다.",
+      "ctaPrimary": "제품 탐색",
+      "ctaSecondary": "무료 상담",
+      "stats": {
+        "rating": "고객 평점",
+        "customers": "만족한 고객",
+        "products": "고품질 제품"
+      }
+    },
+    "featuredCategories": {
+      "title": "주요 카테고리",
+      "subtitle": "가장 인기 있는 제품 카테고리 발견",
+      "viewProducts": "제품 보기",
+      "viewAllCategories": "모든 카테고리 보기",
+      "noCategories": "현재 주요 카테고리가 없습니다.",
+      "products": "제품",
+      "fallbackDescription": "탁월한 품질의 다양한 컬렉션 발견"
+    },
+    "featuredProducts": {
+      "title": "주요 제품",
+      "subtitle": "품질과 디자인 탁월성에 대한 우리의 약속을 보여주는 엄선된 제품들.",
+      "viewAllProducts": "모든 제품 보기",
+      "noProducts": "현재 주요 제품이 없습니다."
+    },
+    "addedToCart": "「{{productName}}」이(가) 장바구니에 추가되었습니다!",
+    "whyChooseUs": {
+      "title": "왜",
+      "titleHighlight": "심플 데코를 선택하는가?",
+      "description": "우리는 제품을 제공할 뿐만 아니라, 다른 곳에서는 찾을 수 없는 탁월한 가치를 가진 훌륭한 쇼핑 경험을 제공합니다.",
+      "features": {
+        "quality": {
+          "title": "품질 보증",
+          "description": "제품은 고객에게 도달하기 전에 최고 품질을 보장하기 위해 엄격하게 테스트됩니다."
+        },
+        "shipping": {
+          "title": "빠른 배송",
+          "description": "빠르고 안전한 서비스와 24/7 주문 추적으로 전국 배송."
+        },
+        "service": {
+          "title": "헌신적인 서비스",
+          "description": "선택부터 애프터서비스까지 고객을 지원하는 열정적인 컨설팅 팀."
+        },
+        "design": {
+          "title": "독특한 디자인",
+          "description": "베트남 공간에 적합한 높은 미학을 가진 독점 제품."
+        },
+        "warranty": {
+          "title": "장기 보증",
+          "description": "고객의 최대 이익을 보장하는 유연한 보증 및 반품 정책."
+        },
+        "community": {
+          "title": "큰 커뮤니티",
+          "description": "인테리어 장식에 열정을 가진 커뮤니티를 만드는 10,000명 이상의 신뢰할 수 있는 고객."
+        }
+      },
+      "cta": {
+        "explore": "지금 탐색",
+        "consult": "상담 문의"
+      },
+      "stats": {
+        "satisfaction": "만족도",
+        "support": "지원",
+        "rating": "평점"
+      },
+      "certification": {
+        "title": "인증",
+        "iso": "ISO 9001:2015"
+      }
+    },
+    "articlesGrid": {
+      "title": "뉴스 & 기사",
+      "subtitle": "인테리어 장식과 디자인 트렌드에 대한 최신 뉴스 업데이트",
+      "readTime": "분 읽기",
+      "viewAllArticles": "모든 기사 보기",
+      "noArticles": "현재 기사가 없습니다."
+    },
+    "insights": {
+      "title": "인사이트",
+      "subtitle": "여기서 우리의 모든 기사를 탐색하세요...",
+      "tabs": {
+        "business": "비즈니스용",
+        "growth": "성장용",
+        "society": "사회용"
+      },
+      "tabContent": {
+        "business": {
+          "title": "비즈니스용",
+          "subtitle": "제조 프로세스, 컨설팅부터 수공예 산업 뉴스와 정보까지, 최신 비즈니스 인사이트를 둘러보세요..."
+        },
+        "growth": {
+          "title": "성장용",
+          "subtitle": "지속 가능한 비즈니스 발전을 주도하는 성장 전략과 시장 인사이트를 발견하세요..."
+        },
+        "society": {
+          "title": "사회용",
+          "subtitle": "사회적 책임과 커뮤니티 영향 이니셔티브에 대한 우리의 약속을 탐색하세요..."
+        }
+      },
+      "exploreMore": "더 탐색하기",
+      "sampleData": {
+        "business": {
+          "article1": {
+            "title": "하남: 심플 데코의 영감의 여정의 기원",
+            "category": "비즈니스 여정",
+            "excerpt": "우리의 여정이 하남 성에서 어떻게 시작되었고, 지속 가능한 수공예에 대한 우리의 약속을 어떻게 형성했는지 탐색하세요."
+          },
+          "article2": {
+            "title": "재활용 소재로 식물 바구니를 만드는 완성 프로세스",
+            "category": "제조",
+            "excerpt": "재활용 소재로 아름다운 식물 바구니를 만드는 단계별 프로세스."
+          },
+          "article3": {
+            "title": "수공예 산업에서의 지속 가능한 제조",
+            "category": "지속 가능성",
+            "excerpt": "전통적인 수공예가 현대의 지속 가능한 실천을 어떻게 채택할 수 있는지."
+          }
+        },
+        "growth": {
+          "article1": {
+            "title": "수공예 기업의 시장 확장 전략",
+            "category": "전략",
+            "excerpt": "경쟁이 치열한 시장에서 수공예 기업을 확장하는 효과적인 방법."
+          },
+          "article2": {
+            "title": "전통 수공예에서의 디지털 변환",
+            "category": "기술",
+            "excerpt": "전통적인 수공예를 보존하고 촉진하기 위한 기술 활용."
+          },
+          "article3": {
+            "title": "디지털 시대의 고객 경험",
+            "category": "고객 서비스",
+            "excerpt": "점점 더 디지털화되는 세계에서 의미 있는 고객 관계 구축."
+          }
+        },
+        "society": {
+          "article1": {
+            "title": "수공예 훈련을 통한 커뮤니티 역량 강화",
+            "category": "커뮤니티",
+            "excerpt": "우리의 훈련 프로그램이 지역 커뮤니티에 권한을 부여하고 전통적인 기술을 보존하는 방법."
+          },
+          "article2": {
+            "title": "지속 가능한 디자인의 환경적 영향",
+            "category": "환경",
+            "excerpt": "지속 가능한 디자인 실천이 기업과 환경 모두에 이익을 가져오는 방법을 이해하세요."
+          },
+          "article3": {
+            "title": "현대 수공예를 통한 문화적 유산 보존",
+            "category": "문화",
+            "excerpt": "전통적인 문화적 실천과 현대적인 디자인 감각의 연결."
+          }
+        }
+      }
+    }
   }
 }

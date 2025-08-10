@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
@@ -15,10 +15,10 @@ import FeaturedCategories from '../components/Home/FeaturedCategories';
 import ArticlesGrid from '../components/Home/ArticlesGrid';
 import WhyChooseUs from '../components/Home/WhyChooseUs';
 import InsightsSection from '../components/Home/InsightsSection';
-import { categoriesApi, productsApi } from '../services';
 import useAuthStore from '../stores/authStore';
 import useWishlistStore from '../stores/wishlistStore';
 import useCartStore from '../stores/cartStore';
+import useHomeStore from '../stores/homeStore';
 import toast from 'react-hot-toast';
 import { createCartImageData } from '../utils/image';
 import { useLocalizedProductName } from '../utils/productUtils';
@@ -29,149 +29,30 @@ const Home = () => {
   const { addToWishlist, removeFromWishlist, items: wishlistItems } = useWishlistStore();
   const { addItem } = useCartStore();
   
-  const [categories, setCategories] = useState([]);
-  const [featuredProducts, setFeaturedProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [retrying, setRetrying] = useState(false);
-  
-  // New state for categories/products view
-  const [currentView, setCurrentView] = useState('categories');
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [categoryProducts, setCategoryProducts] = useState([]);
-  const [productsLoading, setProductsLoading] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState('createdAt');
-  const [viewMode, setViewMode] = useState('grid');
-  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
-
-
-
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      setRetrying(false);
-      
-      // Fetch categories and featured products in parallel
-      const [categoriesResponse, featuredResponse] = await Promise.all([
-        categoriesApi.getCategories({ active: true, limit: 6 }),
-        productsApi.getFeaturedProducts(8)
-      ]);
-
-      // Handle categories response
-      if (categoriesResponse && categoriesResponse.success && categoriesResponse.data) {
-        setCategories(categoriesResponse.data);
-      } else if (categoriesResponse && categoriesResponse.categories) {
-        setCategories(categoriesResponse.categories);
-      } else if (Array.isArray(categoriesResponse)) {
-        setCategories(categoriesResponse);
-      } else {
-        setCategories([]);
-      }
-
-      // Handle featured products response
-      if (featuredResponse && featuredResponse.success && featuredResponse.data && featuredResponse.data.products) {
-        setFeaturedProducts(featuredResponse.data.products);
-      } else if (featuredResponse && featuredResponse.products) {
-        setFeaturedProducts(featuredResponse.products);
-      } else if (Array.isArray(featuredResponse)) {
-        setFeaturedProducts(featuredResponse);
-      } else {
-        setFeaturedProducts([]);
-      }
-      
-    } catch (error) {
-      console.error('Error fetching data:', error);
-      
-      // Check if it's a rate limit error
-      if (error.message.includes('429') || error.message.includes('Too Many Requests')) {
-        setError('Server is busy. Please wait a moment and try again.');
-        setRetrying(true);
-        
-        // Auto-retry after 5 seconds
-        setTimeout(() => {
-          setRetrying(false);
-          fetchData();
-        }, 5000);
-      } else {
-        setError('Failed to load data. Please try again later.');
-        setCategories([]);
-        setFeaturedProducts([]);
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  // Handle category selection
-  const handleCategoryClick = async (category) => {
-    setSelectedCategory(category);
-    setCurrentView('products');
-    setCategoryProducts([]);
-    setProductsLoading(true);
-    setSearchTerm('');
-    
-    try {
-      const response = await productsApi.getProducts({
-        category: category._id,
-        limit: 12,
-        sortBy: sortBy,
-        sortOrder: sortBy === 'name' ? 'asc' : 'desc'
-      });
-      
-      if (response.success) {
-        setCategoryProducts(response.data.products || []);
-      } else {
-        setCategoryProducts([]);
-      }
-    } catch (error) {
-      console.error('Error fetching category products:', error);
-      setCategoryProducts([]);
-    } finally {
-      setProductsLoading(false);
-    }
-  };
-
-  // Handle search and sort changes
-  const handleSearchAndSort = async () => {
-    if (!selectedCategory) return;
-    
-    setProductsLoading(true);
-    try {
-      const params = {
-        category: selectedCategory._id,
-        limit: 12,
-        sortBy: sortBy,
-        sortOrder: sortBy === 'name' ? 'asc' : 'desc'
-      };
-      
-      if (debouncedSearchTerm) {
-        params.search = debouncedSearchTerm;
-      }
-      
-      const response = await productsApi.getProducts(params);
-      
-      if (response.success) {
-        setCategoryProducts(response.data.products || []);
-      } else {
-        setCategoryProducts([]);
-      }
-    } catch (error) {
-      console.error('Error fetching category products:', error);
-      setCategoryProducts([]);
-    } finally {
-      setProductsLoading(false);
-    }
-  };
-
-  // Handle back to categories
-  const handleBackToCategories = () => {
-    setCurrentView('categories');
-    setSelectedCategory(null);
-    setCategoryProducts([]);
-    setSearchTerm('');
-  };
+  // Home store
+  const {
+    categories,
+    featuredProducts,
+    categoryProducts,
+    loading,
+    productsLoading,
+    error,
+    retrying,
+    currentView,
+    selectedCategory,
+    searchTerm,
+    sortBy,
+    viewMode,
+    debouncedSearchTerm,
+    setSearchTerm,
+    setSortBy,
+    setViewMode,
+    setDebouncedSearchTerm,
+    fetchData,
+    handleCategoryClick,
+    handleSearchAndSort,
+    handleBackToCategories
+  } = useHomeStore();
 
   // Get primary image URL from product
   const getPrimaryImage = (product) => {
@@ -246,11 +127,13 @@ const Home = () => {
       ...imageData,
       quantity: 1
     });
-    toast.success(`Đã thêm "${productName}" vào giỏ hàng!`);
+    toast.success(t('home.addedToCart', { productName }));
   };
 
+  // Simple useEffect without complex dependencies
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Debounce search term
@@ -260,12 +143,14 @@ const Home = () => {
     }, 500);
 
     return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm]);
 
   useEffect(() => {
     if (selectedCategory) {
       handleSearchAndSort();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategory, sortBy, debouncedSearchTerm]);
 
 
@@ -274,10 +159,9 @@ const Home = () => {
       {/* Hero Swiper Section */}
       <HeroSwiper />
 
-     
       {/* Featured Categories Section */}
       <FeaturedCategories />
- {/* Hero Image Section */}
+      {/* Hero Image Section */}
       <HeroImage />
 
       {/* Featured Products Section */}
@@ -285,10 +169,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Sản Phẩm Nổi Bật
+              {t('home.featuredProducts.title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Những sản phẩm được tuyển chọn kỹ lưỡng thể hiện cam kết của chúng tôi về chất lượng và thiết kế xuất sắc.
+              {t('home.featuredProducts.subtitle')}
             </p>
           </div>
 
@@ -300,7 +184,7 @@ const Home = () => {
             </div>
           ) : (
             <div className="text-center py-8">
-              <p className="text-gray-600">Hiện tại chưa có sản phẩm nổi bật nào.</p>
+              <p className="text-gray-600">{t('home.featuredProducts.noProducts')}</p>
             </div>
           )}
 
@@ -309,7 +193,7 @@ const Home = () => {
               to="/products"
               className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-300"
             >
-              Xem Tất Cả Sản Phẩm
+              {t('home.featuredProducts.viewAllProducts')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>

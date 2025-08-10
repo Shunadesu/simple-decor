@@ -38,7 +38,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Header */}
-              <section className="bg-primary-50 text-primary-600 py-20 mt-24">
+              <section className="bg-primary-50 text-primary-600 py-20 mt-32">
         <div className="container-custom text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">
             {t('about.title')}

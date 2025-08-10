@@ -97,7 +97,100 @@
     "categories": "Danh Mục",
     "priceRange": "Khoảng Giá",
     "inStock": "Còn Hàng",
-    "outOfStock": "Hết Hàng"
+    "outOfStock": "Hết Hàng",
+    "hero": {
+      "badge": "Sản phẩm chất lượng cao",
+      "title": "Khám phá bộ sưu tập",
+      "titleHighlight": "sản phẩm tự nhiên",
+      "description": "Từ những vật liệu tự nhiên được chọn lọc kỹ lưỡng, chúng tôi mang đến những sản phẩm trang trí nội thất độc đáo và bền vững cho không gian sống của bạn.",
+      "cta": {
+        "explore": "Khám phá sản phẩm",
+        "contact": "Liên hệ tư vấn"
+      }
+    },
+    "stats": {
+      "customers": "Khách hàng hài lòng",
+      "countries": "Quốc gia xuất khẩu",
+      "satisfaction": "Tỷ lệ hài lòng",
+      "natural": "Vật liệu tự nhiên"
+    },
+    "features": {
+      "title": "Tại sao chọn sản phẩm của chúng tôi",
+      "subtitle": "Những lợi ích vượt trội mà chúng tôi mang đến cho bạn",
+      "quality": {
+        "title": "Chất lượng cao cấp",
+        "description": "Mỗi sản phẩm đều được kiểm soát chất lượng nghiêm ngặt để đảm bảo sự xuất sắc và độ bền."
+      },
+      "shipping": {
+        "title": "Vận chuyển toàn cầu",
+        "description": "Dịch vụ vận chuyển nhanh chóng và an toàn đến mọi nơi trên thế giới."
+      },
+      "support": {
+        "title": "Hỗ trợ 24/7",
+        "description": "Đội ngũ hỗ trợ chuyên nghiệp sẵn sàng phục vụ bạn mọi lúc, mọi nơi."
+      },
+      "warranty": {
+        "title": "Bảo hành uy tín",
+        "description": "Chính sách bảo hành minh bạch và dịch vụ hậu mãi tận tâm."
+      }
+    },
+    "categories": {
+      "title": "Danh mục sản phẩm",
+      "subtitle": "Khám phá các danh mục sản phẩm đa dạng của chúng tôi",
+      "products": "sản phẩm",
+      "fallbackDescription": "Khám phá bộ sưu tập sản phẩm đa dạng và chất lượng cao",
+      "viewProducts": "Xem sản phẩm",
+      "viewAllProducts": "Xem tất cả sản phẩm"
+    },
+    "search": {
+      "placeholder": "Tìm kiếm sản phẩm..."
+    },
+    "sort": {
+      "newest": "Mới nhất",
+      "name": "Tên A-Z",
+      "priceLow": "Giá thấp đến cao",
+      "rating": "Đánh giá cao nhất"
+    },
+    "backToCategories": "Quay lại danh mục",
+    "details": {
+      "material": "Chất liệu",
+      "dimensions": "Kích thước",
+      "moisture": "Độ ẩm"
+    },
+    "price": {
+      "contact": "Liên hệ"
+    },
+    "addedToCart": "Đã thêm",
+    "wishlist": {
+      "loginRequired": "Vui lòng đăng nhập để thêm sản phẩm vào danh sách yêu thích"
+    },
+    "noProducts": {
+      "title": "Không tìm thấy sản phẩm",
+      "description": "Không có sản phẩm nào phù hợp với tiêu chí tìm kiếm của bạn.",
+      "backToCategories": "Quay lại danh mục"
+    },
+    "testimonials": {
+      "title": "Khách hàng nói gì về chúng tôi",
+      "subtitle": "Những đánh giá chân thực từ khách hàng đã sử dụng sản phẩm của chúng tôi",
+      "sarah": {
+        "role": "Nhà thiết kế nội thất",
+        "content": "Sản phẩm của Simple Decor thực sự xuất sắc! Chất lượng và thiết kế đều vượt trội. Khách hàng của tôi rất hài lòng với những sản phẩm này."
+      },
+      "michael": {
+        "role": "Chủ nhà hàng",
+        "content": "Tôi đã sử dụng sản phẩm của họ cho nhà hàng của mình. Chất lượng rất tốt và thiết kế phù hợp với không gian của tôi."
+      },
+      "emma": {
+        "role": "Kiến trúc sư",
+        "content": "Là một kiến trúc sư, tôi đánh giá cao sự bền vững và thẩm mỹ của sản phẩm. Simple Decor thực sự hiểu về thiết kế bền vững."
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng khám phá bộ sưu tập của chúng tôi?",
+      "description": "Liên hệ với chúng tôi ngay hôm nay để được tư vấn và hỗ trợ chuyên nghiệp",
+      "contact": "Liên hệ ngay",
+      "learnMore": "Tìm hiểu thêm"
+    }
   },
   "about": {
     "title": "Giới Thiệu",
@@ -273,5 +366,195 @@
     "relatedProducts": "Sản phẩm liên quan",
     "viewAll": "Xem tất cả",
     "error": "Đã xảy ra lỗi"
+  },
+  "home": {
+    "heroSwiper": {
+      "slide1": {
+        "title": "Chào Mừng Đến Simple Decor",
+        "subtitle": "Biến đổi không gian sống với thiết kế tinh tế",
+        "description": "Khám phá bộ sưu tập đồ trang trí nội thất đẹp mắt sẽ làm cho không gian của bạn trở nên đặc biệt.",
+        "ctaPrimary": "Khám Phá Sản Phẩm",
+        "ctaSecondary": "Tư Vấn Miễn Phí"
+      },
+      "slide2": {
+        "title": "Nội Thất Chất Lượng Cao",
+        "subtitle": "Được chế tác với sự chăm sóc và chú ý đến từng chi tiết",
+        "description": "Các sản phẩm nội thất của chúng tôi được thiết kế để tồn tại lâu dài, kết hợp phong cách với chức năng cho ngôi nhà hoàn hảo của bạn.",
+        "ctaPrimary": "Xem Bộ Sưu Tập",
+        "ctaSecondary": "Liên Hệ Ngay"
+      },
+      "slide3": {
+        "title": "Giải Pháp Nội Thất Hiện Đại",
+        "subtitle": "Thiết kế đương đại cho cuộc sống hiện đại",
+        "description": "Từ tối giản đến sang trọng, chúng tôi cung cấp nhiều giải pháp nội thất để phù hợp với phong cách của bạn.",
+        "ctaPrimary": "Khám Phá Ngay",
+        "ctaSecondary": "Đặt Lịch Hẹn"
+      },
+      "slide4": {
+        "title": "Tư Vấn Thiết Kế Chuyên Nghiệp",
+        "subtitle": "Hướng dẫn chuyên nghiệp cho dự án của bạn",
+        "description": "Đội ngũ chuyên gia của chúng tôi sẵn sàng giúp bạn tạo ra không gian hoàn hảo phản ánh cá tính của bạn.",
+        "ctaPrimary": "Tư Vấn Ngay",
+        "ctaSecondary": "Xem Dự Án"
+      },
+      "loading": "Đang tải..."
+    },
+    "heroImage": {
+      "badge": "Chất lượng hàng đầu",
+      "title": "Biến Ngôi Nhà Thành",
+      "titleHighlight": "Tác Phẩm Nghệ Thuật",
+      "description": "Khám phá bộ sưu tập đồ trang trí nội thất cao cấp, được chế tác thủ công với tình yêu và sự tỉ mỉ để mang đến không gian sống hoàn hảo cho gia đình bạn.",
+      "ctaPrimary": "Khám Phá Sản Phẩm",
+      "ctaSecondary": "Tư Vấn Miễn Phí",
+      "stats": {
+        "rating": "Đánh giá khách hàng",
+        "customers": "Khách hàng hài lòng",
+        "products": "Sản phẩm chất lượng"
+      }
+    },
+    "featuredCategories": {
+      "title": "Danh Mục Nổi Bật",
+      "subtitle": "Khám phá các danh mục sản phẩm được yêu thích nhất",
+      "viewProducts": "Xem sản phẩm",
+      "viewAllCategories": "Xem Tất Cả Danh Mục",
+      "noCategories": "Hiện tại chưa có danh mục nổi bật nào.",
+      "products": "sản phẩm",
+      "fallbackDescription": "Khám phá bộ sưu tập đa dạng với chất lượng tuyệt vời"
+    },
+    "featuredProducts": {
+      "title": "Sản Phẩm Nổi Bật",
+      "subtitle": "Những sản phẩm được tuyển chọn kỹ lưỡng thể hiện cam kết của chúng tôi về chất lượng và thiết kế xuất sắc.",
+      "viewAllProducts": "Xem Tất Cả Sản Phẩm",
+      "noProducts": "Hiện tại chưa có sản phẩm nổi bật nào."
+    },
+    "addedToCart": "Đã thêm \"{{productName}}\" vào giỏ hàng!",
+    "whyChooseUs": {
+      "title": "Tại Sao Chọn",
+      "titleHighlight": "Simple Decor?",
+      "description": "Chúng tôi không chỉ cung cấp sản phẩm mà còn mang đến trải nghiệm mua sắm tuyệt vời với những giá trị vượt trội mà bạn khó có thể tìm thấy ở nơi khác.",
+      "features": {
+        "quality": {
+          "title": "Chất Lượng Đảm Bảo",
+          "description": "Sản phẩm được kiểm tra nghiêm ngặt, đảm bảo chất lượng cao nhất trước khi đến tay khách hàng."
+        },
+        "shipping": {
+          "title": "Giao Hàng Nhanh Chóng",
+          "description": "Giao hàng toàn quốc với dịch vụ nhanh chóng, an toàn và theo dõi đơn hàng 24/7."
+        },
+        "service": {
+          "title": "Dịch Vụ Tận Tâm",
+          "description": "Đội ngũ chuyên viên tư vấn nhiệt tình, hỗ trợ khách hàng từ khâu chọn lựa đến sau bán hàng."
+        },
+        "design": {
+          "title": "Thiết Kế Độc Đáo",
+          "description": "Các sản phẩm được thiết kế độc quyền, mang tính thẩm mỹ cao và phù hợp với không gian Việt Nam."
+        },
+        "warranty": {
+          "title": "Bảo Hành Dài Hạn",
+          "description": "Chế độ bảo hành và đổi trả linh hoạt, đảm bảo quyền lợi tối đa cho khách hàng."
+        },
+        "community": {
+          "title": "Cộng Đồng Lớn",
+          "description": "Hơn 10,000 khách hàng tin tưởng và lựa chọn, tạo nên cộng đồng yêu thích trang trí nội thất."
+        }
+      },
+      "cta": {
+        "explore": "Khám Phá Ngay",
+        "consult": "Liên Hệ Tư Vấn"
+      },
+      "stats": {
+        "satisfaction": "Hài lòng",
+        "support": "Hỗ trợ",
+        "rating": "Đánh giá"
+      },
+      "certification": {
+        "title": "Chứng nhận",
+        "iso": "ISO 9001:2015"
+      }
+    },
+    "articlesGrid": {
+      "title": "Tin Tức & Bài Viết",
+      "subtitle": "Cập nhật những tin tức mới nhất về trang trí nội thất và xu hướng thiết kế",
+      "readTime": "phút đọc",
+      "viewAllArticles": "Xem Tất Cả Bài Viết",
+      "noArticles": "Hiện tại chưa có bài viết nào."
+    },
+    "insights": {
+      "title": "Insights",
+      "subtitle": "Explore all of our articles here...",
+      "tabs": {
+        "business": "FOR BUSINESS",
+        "growth": "FOR GROWTH",
+        "society": "FOR SOCIETY"
+      },
+      "tabContent": {
+        "business": {
+          "title": "For Business",
+          "subtitle": "Browse through the newest business insights from manufacturing processes, consultation, to handicraft industry news and information..."
+        },
+        "growth": {
+          "title": "For Growth",
+          "subtitle": "Discover growth strategies and market insights that drive sustainable business development..."
+        },
+        "society": {
+          "title": "For Society",
+          "subtitle": "Explore our commitment to social responsibility and community impact initiatives..."
+        }
+      },
+      "exploreMore": "EXPLORE MORE",
+      "sampleData": {
+        "business": {
+          "article1": {
+            "title": "Hà Nam: Nguồn gốc của hành trình truyền cảm hứng của Simple Decor",
+            "category": "Hành trình kinh doanh",
+            "excerpt": "Khám phá cách hành trình của chúng tôi bắt đầu tại tỉnh Hà Nam và cách nó định hình cam kết của chúng tôi về nghề thủ công bền vững."
+          },
+          "article2": {
+            "title": "Quy trình hoàn thiện tạo ra giỏ trồng cây từ vật liệu tái chế",
+            "category": "Sản xuất",
+            "excerpt": "Quy trình từng bước tạo ra những giỏ trồng cây đẹp từ vật liệu tái chế."
+          },
+          "article3": {
+            "title": "Sản xuất bền vững trong ngành thủ công mỹ nghệ",
+            "category": "Bền vững",
+            "excerpt": "Cách nghề thủ công truyền thống có thể áp dụng các thực hành bền vững hiện đại."
+          }
+        },
+        "growth": {
+          "article1": {
+            "title": "Chiến lược mở rộng thị trường cho doanh nghiệp thủ công",
+            "category": "Chiến lược",
+            "excerpt": "Các phương pháp hiệu quả để mở rộng doanh nghiệp thủ công trong thị trường cạnh tranh."
+          },
+          "article2": {
+            "title": "Chuyển đổi số trong nghề thủ công truyền thống",
+            "category": "Công nghệ",
+            "excerpt": "Tận dụng công nghệ để bảo tồn và thúc đẩy nghề thủ công truyền thống."
+          },
+          "article3": {
+            "title": "Trải nghiệm khách hàng trong thời đại số",
+            "category": "Dịch vụ khách hàng",
+            "excerpt": "Xây dựng mối quan hệ khách hàng có ý nghĩa trong thế giới ngày càng số hóa."
+          }
+        },
+        "society": {
+          "article1": {
+            "title": "Trao quyền cộng đồng thông qua đào tạo nghề thủ công",
+            "category": "Cộng đồng",
+            "excerpt": "Cách các chương trình đào tạo của chúng tôi trao quyền cho cộng đồng địa phương và bảo tồn kỹ năng truyền thống."
+          },
+          "article2": {
+            "title": "Tác động môi trường của thiết kế bền vững",
+            "category": "Môi trường",
+            "excerpt": "Hiểu cách các thực hành thiết kế bền vững mang lại lợi ích cho cả doanh nghiệp và môi trường."
+          },
+          "article3": {
+            "title": "Bảo tồn di sản văn hóa thông qua nghề thủ công hiện đại",
+            "category": "Văn hóa",
+            "excerpt": "Kết nối các thực hành văn hóa truyền thống với cảm quan thiết kế đương đại."
+          }
+        }
+      }
+    }
   }
 }

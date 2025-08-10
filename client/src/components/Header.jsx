@@ -6,6 +6,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaPinterest, FaYoutube
 import useAuthStore from '../stores/authStore';
 import useCartStore from '../stores/cartStore';
 import useWishlistStore from '../stores/wishlistStore';
+import { useHeaderContext } from '../contexts/HeaderContext';
 import LoginModal from './LoginModal';
 import CartModal from './CartModal';
 import CurrencySelector from './CurrencySelector';
@@ -25,6 +26,7 @@ const Header = () => {
   const { user, isAuthenticated, logout } = useAuthStore();
   const { getTotalItems } = useCartStore();
   const { getWishlistCount } = useWishlistStore();
+  const { isScrolled, isHomePage } = useHeaderContext();
 
   const languages = [
     { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -62,6 +64,8 @@ const Header = () => {
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, []);
+
+
 
   const navItems = [
     { path: '/', label: t('nav.home') },
@@ -112,9 +116,15 @@ const Header = () => {
 
   return (
     <div className=''>
-      <header className="bg-primary-500 text-white fixed top-0 left-0 right-0 z-10 shadow-lg">
+      <header className={`fixed top-0 left-0 right-0 z-[30] transition-all duration-300 ${
+        isHomePage && isScrolled 
+          ? 'bg-white shadow-lg' 
+          : isHomePage 
+            ? 'bg-transparent'
+            : 'bg-white shadow-lg'
+      }`}>
         {/* Top bar */}
-        <div className="bg-primary-500 mx-auto px-4 py-2">
+        <div className="hidden md:block bg-primary-500 mx-auto px-4 py-2 text-white">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-4">
               <Link to="/contact" className="text-white hover:text-primary-300">
@@ -204,8 +214,8 @@ const Header = () => {
         </div>
 
         {/* Main header */}
-        <div className="bg-white mx-auto px-4 py-4">
-          <div className="flex text-primary-500 items-center justify-between">
+        <div className="mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="w-[150px] h-[70px]">
              <img src="https://www.simpledecor.vn/wp-content/uploads/2022/05/simple-decor-logo-466x277-2022-SVG-01.svg" alt="" className='w-full h-full object-cover' />
@@ -222,8 +232,12 @@ const Header = () => {
                       onMouseLeave={() => setIsAboutDropdownOpen(false)}
                     >
                       <button
-                        className={`flex items-center space-x-1 hover:text-primary-700 transition-colors ${
-                          isAboutActive ? 'text-primary-500 font-bold' : ''
+                        className={`flex items-center space-x-1 transition-colors ${
+                          isHomePage && isScrolled 
+                            ? `hover:text-primary-700 ${isAboutActive ? 'text-primary-600 font-bold' : 'text-primary-500'}`
+                            : isHomePage 
+                              ? `hover:text-primary-300 ${isAboutActive ? 'text-white font-bold' : 'text-white'}`
+                              : `hover:text-primary-700 ${isAboutActive ? 'text-primary-600 font-bold' : 'text-primary-500'}`
                         }`}
                       >
                         <span>{item.label}</span>
@@ -249,8 +263,12 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.path}
-                      className={`hover:text-primary-700 transition-colors ${
-                        location.pathname === item.path ? 'text-primary-500 font-bold' : ''
+                      className={`transition-colors ${
+                        isHomePage && isScrolled 
+                          ? `hover:text-primary-700 ${location.pathname === item.path ? 'text-primary-600 font-bold' : 'text-primary-500'}`
+                          : isHomePage 
+                            ? `hover:text-primary-300 ${location.pathname === item.path ? 'text-white font-bold' : 'text-white'}`
+                            : `hover:text-primary-700 ${location.pathname === item.path ? 'text-primary-600 font-bold' : 'text-primary-500'}`
                       }`}
                     >
                       {item.label}
@@ -266,11 +284,13 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => setIsLangOpen(!isLangOpen)}
-                  className="flex items-center space-x-2 hover:text-primary-500 transition-colors"
+                  className={`flex items-center space-x-2 transition-colors ${
+                    isHomePage && isScrolled ? 'hover:text-primary-700 text-primary-500' : isHomePage ? 'hover:text-primary-300 text-white' : 'hover:text-primary-700 text-primary-500'
+                  }`}
                 >
                   <Globe size={20} />
                   <span className="hidden sm:inline">
-                    {langInfo.current?.flag}
+                    {langInfo.current?.flag} {langInfo.current?.name}
                   </span>
                 </button>
                 {isLangOpen && (
@@ -290,19 +310,16 @@ const Header = () => {
                 )}
               </div>
 
-             
-
-             
-
               {/* Cart */}
               <button
                 onClick={() => setIsCartModalOpen(true)}
-                className="flex items-center space-x-2 hover:text-primary-300 transition-colors relative"
+                className={`flex items-center space-x-2 transition-colors relative ${
+                  isHomePage && isScrolled ? 'hover:text-primary-700 text-primary-500' : isHomePage ? 'hover:text-primary-300 text-white' : 'hover:text-primary-700 text-primary-500'
+                }`}
               >
                 <ShoppingCart size={20} />
                 <span className="hidden sm:inline">{t('cart.title')}</span>
-                {/* Debug: {console.log('Header cart title:', t('cart.title'), 'exists:', i18n.exists('cart.title'))} */}
-                                 {getTotalItems() > 0 && (
+                {getTotalItems() > 0 && (
                    <span className="absolute -top-2 -right-2 bg-primary-800 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                      {getTotalItems()}
                    </span>
@@ -312,7 +329,9 @@ const Header = () => {
               {/* User Authentication */}
               {isAuthenticated ? (
                 <Link to="/profile" className="relative group">
-                  <button className="flex items-center space-x-2 hover:text-primary-300 transition-colors">
+                  <button className={`flex items-center space-x-2 transition-colors ${
+                    isHomePage && isScrolled ? 'hover:text-primary-700 text-primary-500' : isHomePage ? 'hover:text-primary-300 text-white' : 'hover:text-primary-700 text-primary-500'
+                  }`}>
                     <User size={20} />
                     <span className="hidden sm:inline">{user?.name || 'User'}</span>
                   </button>
@@ -320,7 +339,9 @@ const Header = () => {
               ) : (
                 <button
                   onClick={() => setIsLoginModalOpen(true)}
-                  className="flex items-center space-x-2 hover:text-primary-300 transition-colors"
+                  className={`flex items-center space-x-2 transition-colors ${
+                    isHomePage && isScrolled ? 'hover:text-primary-700 text-primary-500' : isHomePage ? 'hover:text-primary-300 text-white' : 'hover:text-primary-700 text-primary-500'
+                  }`}
                 >
                   <User size={20} />
                   <span className="hidden sm:inline">{t('auth.login')}</span>
@@ -330,7 +351,9 @@ const Header = () => {
               {/* Mobile menu button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="md:hidden"
+                className={`md:hidden transition-colors ${
+                  isHomePage && isScrolled ? 'hover:text-primary-700 text-primary-500' : isHomePage ? 'hover:text-primary-300 text-white' : 'hover:text-primary-700 text-primary-500'
+                }`}
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -347,8 +370,12 @@ const Header = () => {
                       <div>
                         <button
                           onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
-                          className={`w-full text-left py-2 px-4 rounded hover:bg-primary-700 transition-colors flex items-center justify-between ${
-                            isAboutActive ? 'bg-primary-700' : ''
+                          className={`w-full text-left py-2 px-4 rounded transition-colors flex items-center justify-between ${
+                            isHomePage && isScrolled 
+                              ? `hover:bg-primary-100 ${isAboutActive ? 'bg-primary-100 text-primary-600' : 'text-primary-500'}`
+                              : isHomePage 
+                                ? `hover:bg-primary-700 ${isAboutActive ? 'bg-primary-700 text-white' : 'text-white'}`
+                                : `hover:bg-primary-100 ${isAboutActive ? 'bg-primary-100 text-primary-600' : 'text-primary-500'}`
                           }`}
                         >
                           <span>{item.label}</span>
@@ -364,8 +391,12 @@ const Header = () => {
                                   setIsMenuOpen(false);
                                   setIsAboutDropdownOpen(false);
                                 }}
-                                className={`block py-2 px-4 rounded hover:bg-primary-700 transition-colors ${
-                                  location.pathname === dropdownItem.path ? 'bg-primary-700' : ''
+                                className={`block py-2 px-4 rounded transition-colors ${
+                                  isHomePage && isScrolled 
+                                    ? `hover:bg-primary-100 ${location.pathname === dropdownItem.path ? 'bg-primary-100 text-primary-600' : 'text-primary-500'}`
+                                    : isHomePage 
+                                      ? `hover:bg-primary-700 ${location.pathname === dropdownItem.path ? 'bg-primary-700 text-white' : 'text-white'}`
+                                      : `hover:bg-primary-100 ${location.pathname === dropdownItem.path ? 'bg-primary-100 text-primary-600' : 'text-primary-500'}`
                                 }`}
                               >
                                 {dropdownItem.label}
@@ -378,8 +409,12 @@ const Header = () => {
                       <Link
                         to={item.path}
                         onClick={() => setIsMenuOpen(false)}
-                        className={`py-2 px-4 rounded hover:bg-primary-700 transition-colors ${
-                          location.pathname === item.path ? 'bg-primary-700' : ''
+                        className={`py-2 px-4 rounded transition-colors ${
+                          isHomePage && isScrolled 
+                            ? `hover:bg-primary-100 ${location.pathname === item.path ? 'bg-primary-100 text-primary-600' : 'text-primary-500'}`
+                            : isHomePage 
+                              ? `hover:bg-primary-700 ${location.pathname === item.path ? 'bg-primary-700 text-white' : 'text-white'}`
+                              : `hover:bg-primary-100 ${location.pathname === item.path ? 'bg-primary-100 text-primary-600' : 'text-primary-500'}`
                         }`}
                       >
                         {item.label}
@@ -389,25 +424,29 @@ const Header = () => {
                 ))}
                 {/* Mobile cart, wishlist and login */}
                 <div className="border-t pt-4 mt-4 space-y-2">
-                                     <button
-                     onClick={() => {
-                       setIsCartModalOpen(true);
-                       setIsMenuOpen(false);
-                     }}
-                     className="w-full text-left py-2 px-4 rounded hover:bg-primary-700 transition-colors flex items-center space-x-2"
-                   >
+                  <button
+                    onClick={() => {
+                      setIsCartModalOpen(true);
+                      setIsMenuOpen(false);
+                    }}
+                    className={`w-full text-left py-2 px-4 rounded transition-colors flex items-center space-x-2 ${
+                      isHomePage && isScrolled ? 'hover:bg-primary-100 text-primary-500' : isHomePage ? 'hover:bg-primary-700 text-white' : 'hover:bg-primary-100 text-primary-500'
+                    }`}
+                  >
                     <ShoppingCart size={20} />
                     <span>{t('cart.title')} ({getTotalItems()})</span>
                   </button>
                   
                   {!isAuthenticated && (
-                                         <button
-                       onClick={() => {
-                         setIsLoginModalOpen(true);
-                         setIsMenuOpen(false);
-                       }}
-                       className="w-full text-left py-2 px-4 rounded hover:bg-primary-700 transition-colors flex items-center space-x-2"
-                     >
+                    <button
+                      onClick={() => {
+                        setIsLoginModalOpen(true);
+                        setIsMenuOpen(false);
+                      }}
+                      className={`w-full text-left py-2 px-4 rounded transition-colors flex items-center space-x-2 ${
+                        isHomePage && isScrolled ? 'hover:bg-primary-100 text-primary-500' : isHomePage ? 'hover:bg-primary-700 text-white' : 'hover:bg-primary-100 text-primary-500'
+                      }`}
+                    >
                       <User size={20} />
                       <span>{t('auth.login')}</span>
                     </button>

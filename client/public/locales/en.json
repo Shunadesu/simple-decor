@@ -98,7 +98,100 @@
     "categories": "Categories",
     "priceRange": "Price Range",
     "inStock": "In Stock",
-    "outOfStock": "Out of Stock"
+    "outOfStock": "Out of Stock",
+    "hero": {
+      "badge": "Premium Quality Products",
+      "title": "Discover our collection of",
+      "titleHighlight": "natural products",
+      "description": "From carefully selected natural materials, we bring unique and sustainable home decor products for your living space.",
+      "cta": {
+        "explore": "Explore Products",
+        "contact": "Get Consultation"
+      }
+    },
+    "stats": {
+      "customers": "Satisfied Customers",
+      "countries": "Export Countries",
+      "satisfaction": "Satisfaction Rate",
+      "natural": "Natural Materials"
+    },
+    "features": {
+      "title": "Why choose our products",
+      "subtitle": "The outstanding benefits we bring to you",
+      "quality": {
+        "title": "Premium Quality",
+        "description": "Every product undergoes strict quality control to ensure excellence and durability."
+      },
+      "shipping": {
+        "title": "Global Shipping",
+        "description": "Fast and secure shipping service to anywhere in the world."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Professional support team ready to serve you anytime, anywhere."
+      },
+      "warranty": {
+        "title": "Reliable Warranty",
+        "description": "Transparent warranty policy and dedicated after-sales service."
+      }
+    },
+    "categories": {
+      "title": "Product Categories",
+      "subtitle": "Explore our diverse product categories",
+      "products": "products",
+      "fallbackDescription": "Explore our diverse and high-quality product collection",
+      "viewProducts": "View Products",
+      "viewAllProducts": "View All Products"
+    },
+    "search": {
+      "placeholder": "Search products..."
+    },
+    "sort": {
+      "newest": "Newest",
+      "name": "Name A-Z",
+      "priceLow": "Price Low to High",
+      "rating": "Highest Rating"
+    },
+    "backToCategories": "Back to Categories",
+    "details": {
+      "material": "Material",
+      "dimensions": "Dimensions",
+      "moisture": "Moisture"
+    },
+    "price": {
+      "contact": "Contact"
+    },
+    "addedToCart": "Added",
+    "wishlist": {
+      "loginRequired": "Please login to add products to your wishlist"
+    },
+    "noProducts": {
+      "title": "No products found",
+      "description": "No products match your search criteria.",
+      "backToCategories": "Back to Categories"
+    },
+    "testimonials": {
+      "title": "What our customers say",
+      "subtitle": "Authentic reviews from customers who have used our products",
+      "sarah": {
+        "role": "Interior Designer",
+        "content": "Simple Decor's products are truly excellent! Both quality and design are outstanding. My clients are very satisfied with these products."
+      },
+      "michael": {
+        "role": "Restaurant Owner",
+        "content": "I've used their products for my restaurant. The quality is very good and the design fits my space perfectly."
+      },
+      "emma": {
+        "role": "Architect",
+        "content": "As an architect, I appreciate the sustainability and aesthetics of the products. Simple Decor truly understands sustainable design."
+      }
+    },
+    "cta": {
+      "title": "Ready to explore our collection?",
+      "description": "Contact us today for professional consultation and support",
+      "contact": "Contact Now",
+      "learnMore": "Learn More"
+    }
   },
   "about": {
     "title": "About Us",
@@ -501,5 +594,195 @@
   "common": {
     "retry": "Try Again",
     "priceUnavailable": "Price unavailable"
+  },
+  "home": {
+    "heroSwiper": {
+      "slide1": {
+        "title": "Welcome to Simple Decor",
+        "subtitle": "Transform your living space with elegant design",
+        "description": "Discover our collection of beautiful home decor items that will make your space truly special.",
+        "ctaPrimary": "Explore Products",
+        "ctaSecondary": "Free Consultation"
+      },
+      "slide2": {
+        "title": "Premium Quality Furniture",
+        "subtitle": "Crafted with care and attention to detail",
+        "description": "Our furniture pieces are designed to last, combining style with functionality for your perfect home.",
+        "ctaPrimary": "View Collection",
+        "ctaSecondary": "Contact Now"
+      },
+      "slide3": {
+        "title": "Modern Interior Solutions",
+        "subtitle": "Contemporary designs for modern living",
+        "description": "From minimalist to luxurious, we offer a wide range of interior solutions to match your style.",
+        "ctaPrimary": "Explore Now",
+        "ctaSecondary": "Book Appointment"
+      },
+      "slide4": {
+        "title": "Expert Design Consultation",
+        "subtitle": "Professional guidance for your project",
+        "description": "Our team of experts is here to help you create the perfect space that reflects your personality.",
+        "ctaPrimary": "Consult Now",
+        "ctaSecondary": "View Projects"
+      },
+      "loading": "Loading..."
+    },
+    "heroImage": {
+      "badge": "Premium Quality",
+      "title": "Transform Your Home Into",
+      "titleHighlight": "A Work of Art",
+      "description": "Discover our premium collection of home decor items, handcrafted with love and precision to bring perfect living spaces to your family.",
+      "ctaPrimary": "Explore Products",
+      "ctaSecondary": "Free Consultation",
+      "stats": {
+        "rating": "Customer Rating",
+        "customers": "Satisfied Customers",
+        "products": "Quality Products"
+      }
+    },
+    "featuredCategories": {
+      "title": "Featured Categories",
+      "subtitle": "Discover the most popular product categories",
+      "viewProducts": "View products",
+      "viewAllCategories": "View All Categories",
+      "noCategories": "No featured categories available at the moment.",
+      "products": "products",
+      "fallbackDescription": "Discover diverse collections with excellent quality"
+    },
+    "featuredProducts": {
+      "title": "Featured Products",
+      "subtitle": "Handpicked products that showcase our commitment to quality and design excellence.",
+      "viewAllProducts": "View All Products",
+      "noProducts": "No featured products available at the moment."
+    },
+    "addedToCart": "Added \"{{productName}}\" to cart!",
+    "whyChooseUs": {
+      "title": "Why Choose",
+      "titleHighlight": "Simple Decor?",
+      "description": "We don't just provide products, we deliver an exceptional shopping experience with outstanding values you won't find elsewhere.",
+      "features": {
+        "quality": {
+          "title": "Quality Assurance",
+          "description": "Products are strictly tested to ensure the highest quality before reaching customers."
+        },
+        "shipping": {
+          "title": "Fast Shipping",
+          "description": "Nationwide delivery with fast, safe service and 24/7 order tracking."
+        },
+        "service": {
+          "title": "Dedicated Service",
+          "description": "Enthusiastic consulting team supporting customers from selection to after-sales."
+        },
+        "design": {
+          "title": "Unique Design",
+          "description": "Exclusive products with high aesthetics suitable for Vietnamese spaces."
+        },
+        "warranty": {
+          "title": "Long-term Warranty",
+          "description": "Flexible warranty and return policies ensuring maximum customer benefits."
+        },
+        "community": {
+          "title": "Large Community",
+          "description": "Over 10,000 trusted customers creating a community passionate about interior decoration."
+        }
+      },
+      "cta": {
+        "explore": "Explore Now",
+        "consult": "Contact for Consultation"
+      },
+      "stats": {
+        "satisfaction": "Satisfaction",
+        "support": "Support",
+        "rating": "Rating"
+      },
+      "certification": {
+        "title": "Certification",
+        "iso": "ISO 9001:2015"
+      }
+    },
+    "articlesGrid": {
+      "title": "News & Articles",
+      "subtitle": "Latest updates on interior decoration and design trends",
+      "readTime": "min read",
+      "viewAllArticles": "View All Articles",
+      "noArticles": "No articles available at the moment."
+    },
+    "insights": {
+      "title": "Insights",
+      "subtitle": "Explore all of our articles here...",
+      "tabs": {
+        "business": "FOR BUSINESS",
+        "growth": "FOR GROWTH",
+        "society": "FOR SOCIETY"
+      },
+      "tabContent": {
+        "business": {
+          "title": "For Business",
+          "subtitle": "Browse through the newest business insights from manufacturing processes, consultation, to handicraft industry news and information..."
+        },
+        "growth": {
+          "title": "For Growth",
+          "subtitle": "Discover growth strategies and market insights that drive sustainable business development..."
+        },
+        "society": {
+          "title": "For Society",
+          "subtitle": "Explore our commitment to social responsibility and community impact initiatives..."
+        }
+      },
+      "exploreMore": "EXPLORE MORE",
+      "sampleData": {
+        "business": {
+          "article1": {
+            "title": "Ha Nam: The Source of the Inspiring Journey of Simple Decor",
+            "category": "Business Journey",
+            "excerpt": "Discover how our journey began in Ha Nam province and how it shaped our commitment to sustainable craftsmanship."
+          },
+          "article2": {
+            "title": "The Complete Creation of a Plant Basket Made from Recycled Materials",
+            "category": "Manufacturing",
+            "excerpt": "Step-by-step process of creating beautiful plant baskets from recycled materials."
+          },
+          "article3": {
+            "title": "Sustainable Manufacturing in the Handicraft Industry",
+            "category": "Sustainability",
+            "excerpt": "How traditional handicrafts can embrace modern sustainable practices."
+          }
+        },
+        "growth": {
+          "article1": {
+            "title": "Market Expansion Strategies for Handicraft Businesses",
+            "category": "Strategy",
+            "excerpt": "Effective approaches to expand your handicraft business in competitive markets."
+          },
+          "article2": {
+            "title": "Digital Transformation in Traditional Crafts",
+            "category": "Technology",
+            "excerpt": "Leveraging technology to preserve and promote traditional craftsmanship."
+          },
+          "article3": {
+            "title": "Customer Experience in the Digital Age",
+            "category": "Customer Service",
+            "excerpt": "Building meaningful customer relationships in an increasingly digital world."
+          }
+        },
+        "society": {
+          "article1": {
+            "title": "Community Empowerment Through Handicraft Training",
+            "category": "Community",
+            "excerpt": "How our training programs empower local communities and preserve traditional skills."
+          },
+          "article2": {
+            "title": "Environmental Impact of Sustainable Design",
+            "category": "Environment",
+            "excerpt": "Understanding how sustainable design practices benefit both business and environment."
+          },
+          "article3": {
+            "title": "Cultural Heritage Preservation Through Modern Craft",
+            "category": "Culture",
+            "excerpt": "Bridging traditional cultural practices with contemporary design sensibilities."
+          }
+        }
+      }
+    }
   }
 }

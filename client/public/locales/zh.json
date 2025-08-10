@@ -10,14 +10,79 @@
     "enquiry": "询价车"
   },
   "cart": {
-    "title": "购物车"
+    "title": "购物车",
+    "items": "商品",
+    "empty": "购物车为空",
+    "emptyDescription": "添加一些商品到购物车开始购物",
+    "continueShopping": "继续购物",
+    "subtotal": "小计",
+    "total": "总计",
+    "checkout": "结账",
+    "remove": "删除",
+    "quantity": "数量"
   },
   "auth": {
     "login": "登录"
   },
   "partners": {
     "title": "我们的合作伙伴",
-    "subtitle": "与全球可信赖的合作伙伴建立牢固关系"
+    "subtitle": "与全球可信赖的合作伙伴建立牢固关系",
+    "strategicPartnersTitle": "战略合作伙伴",
+    "strategicPartnersSubtitle": "我们在全球合作的顶级公司",
+    "benefitsTitle": "合作伙伴利益",
+    "benefitsSubtitle": "我们为珍贵合作伙伴提供的内容",
+    "becomePartnerTitle": "成为合作伙伴",
+    "becomePartnerSubtitle": "加入我们值得信赖的全球合作伙伴网络",
+    "contactNow": "立即联系",
+    "downloadBrochure": "下载宣传册",
+    "globalNetworkTitle": "全球网络",
+    "globalNetworkSubtitle": "我们的合作伙伴遍布全球",
+    "mapPlaceholder": "显示全球合作伙伴网络的交互式地图",
+    "mapDescription": "与全球合作伙伴连接，提供最佳产品和服务",
+    "list": {
+      "globalImport": {
+        "name": "全球进口有限公司",
+        "country": "国际贸易",
+        "description": "专注于可持续产品的主要国际贸易合作伙伴",
+        "years": "合作5年以上"
+      },
+      "europeanDecor": {
+        "name": "European Decor Ltd.",
+        "country": "欧洲市场",
+        "description": "拥有广泛网络的高级欧洲室内装饰分销商",
+        "years": "合作3年以上"
+      },
+      "asiaPacific": {
+        "name": "Asia Pacific Trading",
+        "country": "亚太地区",
+        "description": "覆盖主要亚洲市场的区域分销商",
+        "years": "合作4年以上"
+      },
+      "nordicHome": {
+        "name": "Nordic Home Design",
+        "country": "北欧国家",
+        "description": "拥有高级零售网络的斯堪的纳维亚设计专家",
+        "years": "合作2年以上"
+      }
+    },
+    "benefits": {
+      "longTerm": {
+        "title": "长期合作伙伴关系",
+        "description": "建立具有独家利益和优先支持的可持续关系"
+      },
+      "globalNetwork": {
+        "title": "全球网络访问",
+        "description": "连接全球供应商和分销商网络"
+      },
+      "qualityAssurance": {
+        "title": "质量保证",
+        "description": "通过全面检查和认证确保产品质量"
+      },
+      "support": {
+        "title": "24/7支持",
+        "description": "专用账户管理和24小时技术支持"
+      }
+    }
   },
   "products": {
     "title": "我们的产品",
@@ -32,6 +97,464 @@
     "categories": "分类",
     "priceRange": "价格范围",
     "inStock": "有库存",
-    "outOfStock": "缺货"
+    "outOfStock": "缺货",
+    "hero": {
+      "badge": "高品质产品",
+      "title": "探索系列",
+      "titleHighlight": "天然产品",
+      "description": "从精心挑选的天然材料中，为您的居住空间提供独特且可持续的室内装饰产品。",
+      "cta": {
+        "explore": "探索产品",
+        "contact": "联系咨询"
+      }
+    },
+    "stats": {
+      "customers": "满意客户",
+      "countries": "出口国家",
+      "satisfaction": "满意度",
+      "natural": "天然材料"
+    },
+    "features": {
+      "title": "为什么选择我们的产品",
+      "subtitle": "我们为您提供的卓越优势",
+      "quality": {
+        "title": "高品质",
+        "description": "每个产品都经过严格的品质控制，确保卓越性和耐用性。"
+      },
+      "shipping": {
+        "title": "全球配送",
+        "description": "快速安全的配送服务，覆盖全球各地。"
+      },
+      "support": {
+        "title": "24/7支持",
+        "description": "随时准备为您提供支持的专业团队。"
+      },
+      "warranty": {
+        "title": "可靠保修",
+        "description": "透明的保修政策和贴心的售后服务。"
+      }
+    },
+    "categories": {
+      "title": "产品分类",
+      "subtitle": "探索我们多样化的产品分类",
+      "products": "产品",
+      "fallbackDescription": "探索多样化和高品质的产品系列",
+      "viewProducts": "查看产品",
+      "viewAllProducts": "查看所有产品"
+    },
+    "search": {
+      "placeholder": "搜索产品..."
+    },
+    "sort": {
+      "newest": "最新",
+      "name": "名称A-Z",
+      "priceLow": "价格从低到高",
+      "rating": "评分最高"
+    },
+    "backToCategories": "返回分类",
+    "details": {
+      "material": "材料",
+      "dimensions": "尺寸",
+      "moisture": "湿度"
+    },
+    "price": {
+      "contact": "联系"
+    },
+    "addedToCart": "已添加",
+    "wishlist": {
+      "loginRequired": "请登录以将产品添加到收藏夹"
+    },
+    "noProducts": {
+      "title": "未找到产品",
+      "description": "没有符合您搜索条件的产品。",
+      "backToCategories": "返回分类"
+    },
+    "testimonials": {
+      "title": "客户评价",
+      "subtitle": "使用我们产品的客户的真实评价",
+      "sarah": {
+        "role": "室内设计师",
+        "content": "Simple Decor的产品真的很棒！质量和设计都很出色。我的客户对这些产品非常满意。"
+      },
+      "michael": {
+        "role": "餐厅老板",
+        "content": "我在餐厅使用了他们的产品。质量很好，设计也很适合我的空间。"
+      },
+      "emma": {
+        "role": "建筑师",
+        "content": "作为建筑师，我高度评价产品的可持续性和美学。Simple Decor真正理解可持续设计。"
+      }
+    },
+    "cta": {
+      "title": "准备好探索我们的系列了吗？",
+      "description": "立即联系我们，获得专业建议和支持",
+      "contact": "立即联系",
+      "learnMore": "了解更多"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "探索Simple Decor的故事和使命",
+    "stories": "我们的故事",
+    "solutions": "我们的解决方案",
+    "careers": "招聘信息",
+    "story": {
+      "description1": "Simple Decor的成立愿景是创造来自天然材料的产品，为现代生活带来美学价值和实用价值。",
+      "description2": "我们相信极简设计不仅仅是一种趋势，而是一种尊重自然、创造有意义产品的可持续生活方式。",
+      "description3": "从一个小作坊开始，我们现在已经发展成为为全球客户服务的出口企业。"
+    },
+    "stats": {
+      "experience": "年经验",
+      "countries": "出口国家",
+      "customers": "满意客户",
+      "naturalProducts": "天然产品"
+    },
+    "values": {
+      "sustainability": {
+        "title": "可持续性",
+        "description": "承诺使用天然材料和环保材料"
+      },
+      "quality": {
+        "title": "质量",
+        "description": "确保所有产品的最高质量"
+      },
+      "customer": {
+        "title": "客户",
+        "description": "将客户利益放在首位"
+      },
+      "global": {
+        "title": "全球",
+        "description": "为全球客户提供服务"
+      }
+    }
+  },
+  "customerSatisfaction": {
+    "title": "客户满意度是重中之重",
+    "subtitle": "我们承诺提供最好的产品和服务",
+    "features": {
+      "qualityControl": {
+        "title": "质量控制",
+        "subtitle": "高品质",
+        "description": "每个产品都经过严格的品质控制流程，确保卓越性和耐用性。"
+      },
+      "shippingOptimization": {
+        "title": "配送优化",
+        "subtitle": "快速安全",
+        "description": "通过精心包装的优化配送流程，确保产品安全及时地到达客户手中。"
+      },
+      "productRange": {
+        "title": "多样化产品",
+        "subtitle": "丰富选择",
+        "description": "满足您所有设计需求的天然材料多样化室内装饰产品。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "联系我们进行咨询",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱地址",
+      "whatsapp": "WhatsApp号码",
+      "country": "国家",
+      "interestedProduct": "感兴趣的产品",
+      "message": "消息内容",
+      "submit": "发送消息"
+    },
+    "info": {
+      "phone": "电话号码",
+      "email": "邮箱地址",
+      "address": "办公地址",
+      "workingHours": "工作时间",
+      "support247": "24/7支持",
+      "responseTime": "24小时内回复"
+    }
+  },
+  "footer": {
+    "followUs": "关注我们",
+    "contactUs": "联系我们",
+    "companyDescription": "专业提供环保天然材料的室内装饰产品。我们承诺以合理价格提供高品质产品。",
+    "newsletter": {
+      "title": "订阅通讯",
+      "description": "获取新产品、特别优惠和绿色室内设计趋势信息",
+      "placeholder": "输入您的邮箱...",
+      "subscribe": "订阅",
+      "subscribing": "处理中...",
+      "success": "感谢您订阅我们的通讯！",
+      "error": "发生错误。请重试！"
+    },
+    "quickLinks": "快速链接",
+    "aboutUs": "关于我们",
+    "ourStory": "我们的故事",
+    "ourSolutions": "我们的解决方案",
+    "careers": "招聘信息",
+    "wishlist": "收藏夹",
+    "partners": "合作伙伴",
+    "connectWithUs": "与我们联系",
+    "hotline": "热线",
+    "support247": "24/7支持",
+    "customerService": "客户服务",
+    "address": "地址",
+    "addressDetails": "万杯村、日自村<br />金榜县、河南省<br />越南",
+    "ourLocation": "我们的位置",
+    "mapPlaceholder": "显示办公室位置的交互式地图",
+    "getDirections": "获取路线",
+    "madeWithLove": "用爱制作",
+    "inVietnam": "在越南",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "shippingPolicy": "配送政策",
+    "returnPolicy": "退货政策"
+  },
+  "checkout": {
+    "firstName": "名",
+    "lastName": "姓",
+    "email": "邮箱地址",
+    "phone": "电话号码",
+    "address": "地址",
+    "city": "城市",
+    "state": "省/市",
+    "zipCode": "邮政编码",
+    "country": "国家",
+    "steps": {
+      "shipping": "配送信息",
+      "payment": "支付",
+      "review": "订单确认"
+    },
+    "orderPlaced": "订单已成功！",
+    "orderError": "无法下单。请重试。"
+  },
+  "productDetail": {
+    "backToProducts": "返回产品",
+    "productNotFound": "未找到产品",
+    "productNotFoundDesc": "您查找的产品不存在。",
+    "untitledProduct": "无标题产品",
+    "addToCart": "添加到购物车",
+    "addedToCart": "已添加到购物车！",
+    "addedToWishlist": "已添加到收藏夹！",
+    "removedFromWishlist": "已从收藏夹移除！",
+    "quantity": "数量",
+    "inStock": "有库存",
+    "outOfStock": "缺货",
+    "specifications": "规格",
+    "material": "材料",
+    "dimensions": "尺寸",
+    "weight": "重量",
+    "color": "颜色",
+    "moisture": "湿度",
+    "packaging": "包装",
+    "imageGallery": "图片库",
+    "noImages": "无图片",
+    "reviews": "客户评价",
+    "rating": "评分",
+    "writeReview": "写评价",
+    "reviewTitle": "评价标题",
+    "reviewComment": "评价内容",
+    "submitReview": "提交评价",
+    "updateReview": "更新评价",
+    "editReview": "编辑评价",
+    "cancel": "取消",
+    "saving": "保存中...",
+    "reviewSubmitted": "评价已提交！",
+    "reviewUpdated": "评价已更新！",
+    "reviewDeleted": "评价已删除！",
+    "noReviews": "暂无评价",
+    "beFirstToReview": "成为第一个评价此产品的人",
+    "loginRequired": "需要登录",
+    "helpful": "此评价是否有帮助？",
+    "helpfulUpdated": "感谢您的反馈！",
+    "relatedProducts": "相关产品",
+    "viewAll": "查看全部",
+    "error": "发生错误"
+  },
+  "home": {
+    "heroSwiper": {
+      "slide1": {
+        "title": "欢迎来到简约装饰",
+        "subtitle": "用优雅的设计改造您的居住空间",
+        "description": "探索我们精美的家居装饰系列，让您的空间变得真正特别。",
+        "ctaPrimary": "探索产品",
+        "ctaSecondary": "免费咨询"
+      },
+      "slide2": {
+        "title": "优质家具",
+        "subtitle": "精心制作，注重细节",
+        "description": "我们的家具设计经久耐用，将风格与功能性相结合，为您的完美家居服务。",
+        "ctaPrimary": "查看系列",
+        "ctaSecondary": "立即联系"
+      },
+      "slide3": {
+        "title": "现代室内解决方案",
+        "subtitle": "现代生活的当代设计",
+        "description": "从简约到奢华，我们提供各种室内解决方案来匹配您的风格。",
+        "ctaPrimary": "立即探索",
+        "ctaSecondary": "预约"
+      },
+      "slide4": {
+        "title": "专业设计咨询",
+        "subtitle": "为您的项目提供专业指导",
+        "description": "我们的专家团队随时准备帮助您创造反映您个性的完美空间。",
+        "ctaPrimary": "立即咨询",
+        "ctaSecondary": "查看项目"
+      },
+      "loading": "加载中..."
+    },
+    "heroImage": {
+      "badge": "优质品质",
+      "title": "将您的家变成",
+      "titleHighlight": "艺术品",
+      "description": "探索我们精心手工制作的优质家居装饰系列，用爱和精确度为您的家庭带来完美的生活空间。",
+      "ctaPrimary": "探索产品",
+      "ctaSecondary": "免费咨询",
+      "stats": {
+        "rating": "客户评分",
+        "customers": "满意客户",
+        "products": "优质产品"
+      }
+    },
+    "featuredCategories": {
+      "title": "特色分类",
+      "subtitle": "探索最受欢迎的产品分类",
+      "viewProducts": "查看产品",
+      "viewAllCategories": "查看所有分类",
+      "noCategories": "目前没有特色分类。",
+      "products": "产品",
+      "fallbackDescription": "探索具有卓越品质的多样化系列"
+    },
+    "featuredProducts": {
+      "title": "特色产品",
+      "subtitle": "精心挑选的产品展示了我们对质量和设计卓越性的承诺。",
+      "viewAllProducts": "查看所有产品",
+      "noProducts": "目前没有特色产品。"
+    },
+    "addedToCart": "已将"{{productName}}"添加到购物车！",
+    "whyChooseUs": {
+      "title": "为什么选择",
+      "titleHighlight": "简约装饰？",
+      "description": "我们不仅提供产品，还提供在其他地方找不到的卓越价值的出色购物体验。",
+      "features": {
+        "quality": {
+          "title": "质量保证",
+          "description": "产品在到达客户手中之前经过严格测试，确保最高质量。"
+        },
+        "shipping": {
+          "title": "快速配送",
+          "description": "全国配送，快速安全服务，24/7订单跟踪。"
+        },
+        "service": {
+          "title": "贴心服务",
+          "description": "热情的咨询团队，从选择到售后全程支持客户。"
+        },
+        "design": {
+          "title": "独特设计",
+          "description": "适合越南空间的高美学独家产品。"
+        },
+        "warranty": {
+          "title": "长期保修",
+          "description": "灵活的保修和退货政策，确保客户最大利益。"
+        },
+        "community": {
+          "title": "大型社区",
+          "description": "超过10,000名值得信赖的客户，创建热爱室内装饰的社区。"
+        }
+      },
+      "cta": {
+        "explore": "立即探索",
+        "consult": "联系咨询"
+      },
+      "stats": {
+        "satisfaction": "满意度",
+        "support": "支持",
+        "rating": "评分"
+      },
+      "certification": {
+        "title": "认证",
+        "iso": "ISO 9001:2015"
+      }
+    },
+    "articlesGrid": {
+      "title": "新闻与文章",
+      "subtitle": "更新室内装饰和设计趋势的最新新闻",
+      "readTime": "分钟阅读",
+      "viewAllArticles": "查看所有文章",
+      "noArticles": "目前没有文章。"
+    },
+    "insights": {
+      "title": "洞察",
+      "subtitle": "在这里探索我们的所有文章...",
+      "tabs": {
+        "business": "商业用途",
+        "growth": "成长用途",
+        "society": "社会用途"
+      },
+      "tabContent": {
+        "business": {
+          "title": "商业用途",
+          "subtitle": "浏览从制造流程、咨询到手工艺行业新闻和信息的最新商业洞察..."
+        },
+        "growth": {
+          "title": "成长用途",
+          "subtitle": "发现推动可持续业务发展的增长策略和市场洞察..."
+        },
+        "society": {
+          "title": "社会用途",
+          "subtitle": "探索我们对社会责任和社区影响倡议的承诺..."
+        }
+      },
+      "exploreMore": "探索更多",
+      "sampleData": {
+        "business": {
+          "article1": {
+            "title": "河南：Simple Decor灵感之旅的起源",
+            "category": "商业之旅",
+            "excerpt": "探索我们的旅程如何在河南省开始，以及它如何塑造我们对可持续手工艺的承诺。"
+          },
+          "article2": {
+            "title": "用回收材料制作植物篮的完成流程",
+            "category": "制造",
+            "excerpt": "用回收材料制作美丽植物篮的分步流程。"
+          },
+          "article3": {
+            "title": "手工艺行业的可持续制造",
+            "category": "可持续性",
+            "excerpt": "传统手工艺如何采用现代可持续实践。"
+          }
+        },
+        "growth": {
+          "article1": {
+            "title": "手工艺企业的市场扩展策略",
+            "category": "策略",
+            "excerpt": "在竞争激烈的市场中扩展手工艺企业的有效方法。"
+          },
+          "article2": {
+            "title": "传统手工艺中的数字化转型",
+            "category": "技术",
+            "excerpt": "利用技术保护和促进传统手工艺。"
+          },
+          "article3": {
+            "title": "数字时代的客户体验",
+            "category": "客户服务",
+            "excerpt": "在日益数字化的世界中建立有意义的客户关系。"
+          }
+        },
+        "society": {
+          "article1": {
+            "title": "通过手工艺培训增强社区能力",
+            "category": "社区",
+            "excerpt": "我们的培训计划如何为当地社区赋能并保护传统技能。"
+          },
+          "article2": {
+            "title": "可持续设计的环境影响",
+            "category": "环境",
+            "excerpt": "了解可持续设计实践如何为企业和环境带来好处。"
+          },
+          "article3": {
+            "title": "通过现代手工艺保护文化遗产",
+            "category": "文化",
+            "excerpt": "连接传统文化实践与现代设计感。"
+          }
+        }
+      }
+    }
   }
 }

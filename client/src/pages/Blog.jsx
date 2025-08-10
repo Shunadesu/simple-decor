@@ -1,20 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Tag, ArrowRight, Clock, Eye, Search } from 'lucide-react';
+import useBlogStore from '../stores/blogStore';
 import blogApi from '../services/blogApi';
 
 const Blog = () => {
   const { t, i18n } = useTranslation();
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [posts, setPosts] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  
   const currentLanguage = i18n.language || 'vi';
+  
+  const {
+    posts,
+    categories,
+    loading,
+    error,
+    selectedCategory,
+    searchTerm,
+    currentPage,
+    totalPages,
+    fetchData,
+    fetchPosts,
+    handleCategoryChange,
+    handleSearch,
+    handlePageChange
+  } = useBlogStore();
 
   useEffect(() => {
     fetchData();
@@ -23,66 +32,6 @@ const Blog = () => {
   useEffect(() => {
     fetchPosts();
   }, [selectedCategory, searchTerm, currentPage]);
-
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      
-      // Fetch categories and posts in parallel
-      const [categoriesResponse, postsResponse] = await Promise.all([
-        blogApi.getCategories(),
-        blogApi.getPosts({ status: 'published', limit: 12 })
-      ]);
-
-      if (categoriesResponse.success) {
-        const categoriesWithAll = [
-          { id: 'all', name: 'Tất cả', count: postsResponse.data?.total || 0 },
-          ...categoriesResponse.data.map(cat => ({
-            id: cat.id || cat._id,
-            name: cat.name,
-            count: cat.count || 0
-          }))
-        ];
-        setCategories(categoriesWithAll);
-      }
-
-      if (postsResponse.success) {
-        setPosts(postsResponse.data.posts || []);
-        setTotalPages(postsResponse.data.totalPages || 1);
-      }
-    } catch (error) {
-      console.error('Error fetching blog data:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchPosts = async () => {
-    try {
-      const params = {
-        status: 'published',
-        limit: 12,
-        page: currentPage
-      };
-
-      if (selectedCategory !== 'all') {
-        params.category = selectedCategory;
-      }
-
-      if (searchTerm) {
-        params.search = searchTerm;
-      }
-
-      const response = await blogApi.getPosts(params);
-      
-      if (response.success) {
-        setPosts(response.data.posts || []);
-        setTotalPages(response.data.totalPages || 1);
-      }
-    } catch (error) {
-      console.error('Error fetching posts:', error);
-    }
-  };
 
   const getCategoryLabel = (category) => {
     const categoryMap = {
@@ -116,7 +65,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-              <section className="bg-primary-50 text-primary-600 py-20 mt-24">
+      <section className="bg-primary-50 text-primary-600 py-20 mt-32">
         <div className="container-custom text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">
             {t('nav.blog')}
@@ -138,7 +87,7 @@ const Blog = () => {
                 type="text"
                 placeholder="Tìm kiếm bài viết..."
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e) => handleSearch(e.target.value)}
                 className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
               />
             </div>
@@ -153,10 +102,7 @@ const Blog = () => {
               {categories.map((category) => (
                 <button
                   key={category.id}
-                  onClick={() => {
-                    setSelectedCategory(category.id);
-                    setCurrentPage(1);
-                  }}
+                  onClick={() => handleCategoryChange(category.id)}
                   className={`px-6 py-3 rounded-lg font-medium transition-colors ${
                     selectedCategory === category.id
                       ? 'bg-primary-600 text-white'
@@ -311,7 +257,7 @@ const Blog = () => {
             {totalPages > 1 && (
               <div className="flex items-center justify-center space-x-4 mt-12">
                 <button
-                  onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                  onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
                   disabled={currentPage === 1}
                   className="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
@@ -324,7 +270,7 @@ const Blog = () => {
                     return (
                       <button
                         key={page}
-                        onClick={() => setCurrentPage(page)}
+                        onClick={() => handlePageChange(page)}
                         className={`px-3 py-2 rounded-lg ${
                           currentPage === page
                             ? 'bg-primary-600 text-white'
@@ -339,7 +285,7 @@ const Blog = () => {
                     <>
                       <span className="text-gray-400">...</span>
                       <button
-                        onClick={() => setCurrentPage(totalPages)}
+                        onClick={() => handlePageChange(totalPages)}
                         className={`px-3 py-2 rounded-lg ${
                           currentPage === totalPages
                             ? 'bg-primary-600 text-white'
@@ -353,7 +299,7 @@ const Blog = () => {
                 </div>
                 
                 <button
-                  onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                  onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
                   disabled={currentPage === totalPages}
                   className="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
@@ -365,7 +311,7 @@ const Blog = () => {
         )}
 
         {/* Newsletter Subscription */}
-        <div className="mt-24 bg-white rounded-xl shadow-lg p-8">
+        <div className=" bg-white rounded-xl shadow-lg p-8">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Đăng Ký Nhận Tin Tức

@@ -1,138 +1,310 @@
 import React from 'react';
-import { Shield, Truck, HeartHandshake, Award, Clock, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { CheckCircle, ArrowRight, Award, Users, Star } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const WhyChooseUs = () => {
-  const features = [
+  const { t } = useTranslation();
+
+  const features = React.useMemo(() => [
     {
-      icon: Shield,
-      title: 'Chất Lượng Đảm Bảo',
-      description: 'Sản phẩm được kiểm tra nghiêm ngặt, đảm bảo chất lượng cao nhất trước khi đến tay khách hàng.'
+      icon: CheckCircle,
+      title: t('home.whyChooseUs.features.quality.title'),
+      description: t('home.whyChooseUs.features.quality.description')
     },
     {
-      icon: Truck,
-      title: 'Giao Hàng Nhanh Chóng',
-      description: 'Giao hàng toàn quốc với dịch vụ nhanh chóng, an toàn và theo dõi đơn hàng 24/7.'
+      icon: CheckCircle,
+      title: t('home.whyChooseUs.features.shipping.title'),
+      description: t('home.whyChooseUs.features.shipping.description')
     },
     {
-      icon: HeartHandshake,
-      title: 'Dịch Vụ Tận Tâm',
-      description: 'Đội ngũ chuyên viên tư vấn nhiệt tình, hỗ trợ khách hàng từ khâu chọn lựa đến sau bán hàng.'
+      icon: CheckCircle,
+      title: t('home.whyChooseUs.features.service.title'),
+      description: t('home.whyChooseUs.features.service.description')
     },
     {
-      icon: Award,
-      title: 'Thiết Kế Độc Đáo',
-      description: 'Các sản phẩm được thiết kế độc quyền, mang tính thẩm mỹ cao và phù hợp với không gian Việt Nam.'
+      icon: CheckCircle,
+      title: t('home.whyChooseUs.features.design.title'),
+      description: t('home.whyChooseUs.features.design.description')
     },
     {
-      icon: Clock,
-      title: 'Bảo Hành Dài Hạn',
-      description: 'Chế độ bảo hành và đổi trả linh hoạt, đảm bảo quyền lợi tối đa cho khách hàng.'
+      icon: CheckCircle,
+      title: t('home.whyChooseUs.features.warranty.title'),
+      description: t('home.whyChooseUs.features.warranty.description')
     },
     {
-      icon: Users,
-      title: 'Cộng Đồng Lớn',
-      description: 'Hơn 10,000 khách hàng tin tưởng và lựa chọn, tạo nên cộng đồng yêu thích trang trí nội thất.'
+      icon: CheckCircle,
+      title: t('home.whyChooseUs.features.community.title'),
+      description: t('home.whyChooseUs.features.community.description')
     }
-  ];
+  ], [t]);
+
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const headerVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const contentVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: 50, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const featureVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const statsVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: 0.6
+      }
+    }
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: 0.8
+      }
+    },
+    hover: {
+      scale: 1.05,
+      transition: {
+        duration: 0.2
+      }
+    }
+  };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content - Left Side */}
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Tại Sao Chọn 
-                <span className="text-primary-600"> Simple Decor?</span>
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Chúng tôi không chỉ cung cấp sản phẩm mà còn mang đến trải nghiệm mua sắm 
-                tuyệt vời với những giá trị vượt trội mà bạn khó có thể tìm thấy ở nơi khác.
-              </p>
-            </div>
+        <motion.div 
+          className="text-center mb-16"
+          variants={headerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            {t('home.whyChooseUs.title')}{' '}
+            <span className="text-primary-600">{t('home.whyChooseUs.titleHighlight')}</span>
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            {t('home.whyChooseUs.description')}
+          </p>
+        </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Content */}
+          <motion.div
+            variants={contentVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            <motion.div 
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              variants={containerVariants}
+            >
               {features.map((feature, index) => (
-                <div 
+                <motion.div
                   key={index}
-                  className="flex items-start space-x-4 p-4 rounded-lg hover:bg-white hover:shadow-md transition-all duration-300"
+                  className="flex items-start space-x-3"
+                  variants={featureVariants}
+                  whileHover={{ 
+                    x: 5,
+                    transition: { duration: 0.2 }
+                  }}
                 >
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                      <feature.icon className="w-6 h-6 text-primary-600" />
-                    </div>
+                  <div className="flex-shrink-0 mt-1">
+                    <feature.icon className="w-5 h-5 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-1">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-sm text-gray-600">
                       {feature.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
+
+            {/* Stats */}
+            <motion.div 
+              className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200"
+              variants={statsVariants}
+            >
+              <div className="text-center">
+                <div className="flex items-center justify-center mb-2">
+                  <Users className="w-6 h-6 text-primary-600 mr-2" />
+                  <span className="text-2xl font-bold text-gray-900">10K+</span>
+                </div>
+                <p className="text-sm text-gray-600">{t('home.whyChooseUs.stats.satisfaction')}</p>
+              </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center mb-2">
+                  <Award className="w-6 h-6 text-primary-600 mr-2" />
+                  <span className="text-2xl font-bold text-gray-900">24/7</span>
+                </div>
+                <p className="text-sm text-gray-600">{t('home.whyChooseUs.stats.support')}</p>
+              </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center mb-2">
+                  <Star className="w-6 h-6 text-primary-600 mr-2" />
+                  <span className="text-2xl font-bold text-gray-900">4.9</span>
+                </div>
+                <p className="text-sm text-gray-600">{t('home.whyChooseUs.stats.rating')}</p>
+              </div>
+            </motion.div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <button className="px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-300">
-                Khám Phá Ngay
-              </button>
-              <button className="px-8 py-3 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition-colors duration-300">
-                Liên Hệ Tư Vấn
-              </button>
-            </div>
-          </div>
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 mt-8"
+              variants={buttonVariants}
+            >
+              <motion.div whileHover="hover">
+                <Link
+                  to="/products"
+                  className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-300"
+                >
+                  {t('home.whyChooseUs.cta.explore')}
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </motion.div>
+              <motion.div whileHover="hover">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center px-6 py-3 border border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-600 hover:text-white transition-colors duration-300"
+                >
+                  {t('home.whyChooseUs.cta.consult')}
+                </Link>
+              </motion.div>
+            </motion.div>
 
-          {/* Image - Right Side */}
-          <div className="relative">
+            {/* Certification */}
+            <motion.div 
+              className="mt-8 p-4 bg-white rounded-lg shadow-sm border border-gray-200"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
+            >
+              <div className="flex items-center">
+                <Award className="w-8 h-8 text-primary-600 mr-3" />
+                <div>
+                  <p className="text-sm font-medium text-gray-900">{t('home.whyChooseUs.certification.title')}</p>
+                  <p className="text-xs text-gray-600">{t('home.whyChooseUs.certification.iso')}</p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Right Side - Image */}
+          <motion.div
+            variants={imageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="relative"
+          >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Why Choose Us"
-                className="w-full h-[500px] object-cover"
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Why Choose Simple Decor"
+                className="w-full h-96 object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
               
-              {/* Overlay with Stats */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
-                <div className="absolute bottom-8 left-8 right-8">
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
-                      <div className="text-2xl font-bold text-white">98%</div>
-                      <div className="text-sm text-white/90">Hài lòng</div>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
-                      <div className="text-2xl font-bold text-white">24/7</div>
-                      <div className="text-sm text-white/90">Hỗ trợ</div>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
-                      <div className="text-2xl font-bold text-white">5⭐</div>
-                      <div className="text-sm text-white/90">Đánh giá</div>
-                    </div>
+              {/* Floating Elements */}
+              <motion.div
+                className="absolute top-6 left-6 bg-white rounded-lg p-4 shadow-lg"
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: 1.2, duration: 0.5 }}
+              >
+                <div className="flex items-center">
+                  <Star className="w-5 h-5 text-yellow-500 mr-2" />
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">4.9/5</p>
+                    <p className="text-xs text-gray-600">Customer Rating</p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </motion.div>
 
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary-200 rounded-full opacity-70 animate-pulse"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-yellow-200 rounded-full opacity-50"></div>
-            
-            {/* Floating Card */}
-            <div className="absolute top-8 -left-8 bg-white rounded-xl shadow-xl p-6 max-w-48">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-green-600" />
+              <motion.div
+                className="absolute bottom-6 right-6 bg-white rounded-lg p-4 shadow-lg"
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: 1.4, duration: 0.5 }}
+              >
+                <div className="flex items-center">
+                  <Users className="w-5 h-5 text-primary-600 mr-2" />
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">10K+</p>
+                    <p className="text-xs text-gray-600">Happy Customers</p>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-sm font-semibold text-gray-900">Chứng nhận</div>
-                  <div className="text-xs text-gray-600">ISO 9001:2015</div>
-                </div>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

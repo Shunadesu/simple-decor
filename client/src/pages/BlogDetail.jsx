@@ -182,7 +182,7 @@ const BlogDetail = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 mt-24">
+      <section className="relative bg-gray-900 ">
         {featuredImageUrl && (
           <div className="absolute inset-0">
             <img

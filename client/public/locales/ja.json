@@ -10,18 +10,83 @@
     "enquiry": "見積もりカート"
   },
   "cart": {
-    "title": "カート"
+    "title": "カート",
+    "items": "商品",
+    "empty": "カートが空です",
+    "emptyDescription": "カートを開始するためにいくつかの商品を追加してください",
+    "continueShopping": "ショッピングを続ける",
+    "subtotal": "小計",
+    "total": "合計",
+    "checkout": "チェックアウト",
+    "remove": "削除",
+    "quantity": "数量"
   },
   "auth": {
     "login": "ログイン"
   },
   "partners": {
     "title": "私たちのパートナー",
-    "subtitle": "世界中の信頼できるパートナーとの強固な関係を構築"
+    "subtitle": "世界中の信頼できるパートナーとの強固な関係を構築",
+    "strategicPartnersTitle": "戦略的パートナー",
+    "strategicPartnersSubtitle": "世界中で協力している一流企業",
+    "benefitsTitle": "パートナーシップの利点",
+    "benefitsSubtitle": "私たちが貴重なパートナーに提供するもの",
+    "becomePartnerTitle": "パートナーになる",
+    "becomePartnerSubtitle": "私たちの信頼できるグローバルパートナーネットワークに参加",
+    "contactNow": "今すぐ連絡",
+    "downloadBrochure": "パンフレットをダウンロード",
+    "globalNetworkTitle": "グローバルネットワーク",
+    "globalNetworkSubtitle": "私たちのパートナーは世界中に広がっています",
+    "mapPlaceholder": "グローバルパートナーネットワークを表示するインタラクティブマップ",
+    "mapDescription": "世界中のパートナーとつながり、最高の製品とサービスを提供",
+    "list": {
+      "globalImport": {
+        "name": "グローバルインポート株式会社",
+        "country": "国際貿易",
+        "description": "持続可能な製品に特化した主要な国際貿易パートナー",
+        "years": "5年以上の協力"
+      },
+      "europeanDecor": {
+        "name": "European Decor Ltd.",
+        "country": "ヨーロッパ市場",
+        "description": "広範囲なネットワークを持つ高級ヨーロッパインテリア装飾ディストリビューター",
+        "years": "3年以上の協力"
+      },
+      "asiaPacific": {
+        "name": "Asia Pacific Trading",
+        "country": "アジア太平洋地域",
+        "description": "主要なアジア市場をカバーする地域ディストリビューター",
+        "years": "4年以上の協力"
+      },
+      "nordicHome": {
+        "name": "Nordic Home Design",
+        "country": "北欧諸国",
+        "description": "高級小売ネットワークを持つスカンジナビアデザイン専門家",
+        "years": "2年以上の協力"
+      }
+    },
+    "benefits": {
+      "longTerm": {
+        "title": "長期的なパートナーシップ",
+        "description": "独占的な利益と優先サポートで持続可能な関係を構築"
+      },
+      "globalNetwork": {
+        "title": "グローバルネットワークへのアクセス",
+        "description": "世界中のサプライヤーとディストリビューターのネットワークに接続"
+      },
+      "qualityAssurance": {
+        "title": "品質保証",
+        "description": "包括的な検査と認証による製品品質保証"
+      },
+      "support": {
+        "title": "24/7サポート",
+        "description": "専用アカウント管理と24時間技術サポート"
+      }
+    }
   },
   "products": {
     "title": "私たちの製品",
-    "subtitle": "天然ホームデコ製品のコレクションをご覧ください",
+    "subtitle": "天然素材のホームデコレーション製品コレクションをご覧ください",
     "showing": "{{total}}件中{{count}}件の製品を表示",
     "viewDetails": "詳細を見る",
     "addToCart": "カートに追加",
@@ -32,6 +97,464 @@
     "categories": "カテゴリー",
     "priceRange": "価格帯",
     "inStock": "在庫あり",
-    "outOfStock": "在庫切れ"
+    "outOfStock": "在庫切れ",
+    "hero": {
+      "badge": "高品質製品",
+      "title": "コレクションを探索",
+      "titleHighlight": "天然製品",
+      "description": "慎重に選ばれた天然素材から、あなたの生活空間にユニークで持続可能なインテリア装飾製品を提供します。",
+      "cta": {
+        "explore": "製品を探索",
+        "contact": "相談に連絡"
+      }
+    },
+    "stats": {
+      "customers": "満足した顧客",
+      "countries": "輸出先国",
+      "satisfaction": "満足度",
+      "natural": "天然素材"
+    },
+    "features": {
+      "title": "なぜ私たちの製品を選ぶのか",
+      "subtitle": "私たちがあなたに提供する卓越した利点",
+      "quality": {
+        "title": "高品質",
+        "description": "各製品は卓越性と耐久性を確保するために厳格な品質管理を経ています。"
+      },
+      "shipping": {
+        "title": "グローバル配送",
+        "description": "世界中のどこへでも迅速で安全な配送サービス。"
+      },
+      "support": {
+        "title": "24/7サポート",
+        "description": "いつでもどこでもあなたをサポートする準備ができている専門チーム。"
+      },
+      "warranty": {
+        "title": "信頼できる保証",
+        "description": "透明性のある保証ポリシーと献身的なアフターサービス。"
+      }
+    },
+    "categories": {
+      "title": "製品カテゴリー",
+      "subtitle": "私たちの多様な製品カテゴリーを探索",
+      "products": "製品",
+      "fallbackDescription": "多様で高品質な製品コレクションを探索",
+      "viewProducts": "製品を見る",
+      "viewAllProducts": "すべての製品を見る"
+    },
+    "search": {
+      "placeholder": "製品を検索..."
+    },
+    "sort": {
+      "newest": "最新",
+      "name": "名前A-Z",
+      "priceLow": "価格低から高",
+      "rating": "評価高"
+    },
+    "backToCategories": "カテゴリーに戻る",
+    "details": {
+      "material": "素材",
+      "dimensions": "サイズ",
+      "moisture": "湿度"
+    },
+    "price": {
+      "contact": "連絡"
+    },
+    "addedToCart": "追加されました",
+    "wishlist": {
+      "loginRequired": "お気に入りリストに製品を追加するにはログインしてください"
+    },
+    "noProducts": {
+      "title": "製品が見つかりません",
+      "description": "検索条件に一致する製品がありません。",
+      "backToCategories": "カテゴリーに戻る"
+    },
+    "testimonials": {
+      "title": "お客様の声",
+      "subtitle": "私たちの製品を使用したお客様からの正直なレビュー",
+      "sarah": {
+        "role": "インテリアデザイナー",
+        "content": "Simple Decorの製品は本当に素晴らしいです！品質とデザインの両方が優れています。私のクライアントはこれらの製品に非常に満足しています。"
+      },
+      "michael": {
+        "role": "レストランオーナー",
+        "content": "レストランで彼らの製品を使用しています。品質が非常に良く、私の空間に適したデザインです。"
+      },
+      "emma": {
+        "role": "建築家",
+        "content": "建築家として、製品の持続可能性と美学を高く評価しています。Simple Decorは持続可能なデザインを本当に理解しています。"
+      }
+    },
+    "cta": {
+      "title": "私たちのコレクションを探索する準備はできていますか？",
+      "description": "今すぐお問い合わせいただき、専門的なアドバイスとサポートを受けてください",
+      "contact": "今すぐ連絡",
+      "learnMore": "詳細を見る"
+    }
+  },
+  "about": {
+    "title": "会社概要",
+    "subtitle": "Simple Decorのストーリーとミッションを探索",
+    "stories": "私たちのストーリー",
+    "solutions": "私たちのソリューション",
+    "careers": "採用情報",
+    "story": {
+      "description1": "Simple Decorは、現代生活に美的価値と実用的価値をもたらす天然素材の製品を作り出すというビジョンで設立されました。",
+      "description2": "ミニマルデザインは単なるトレンドではなく、自然を尊重し、意味のある製品を作り出す持続可能なライフスタイルだと信じています。",
+      "description3": "小さなワークショップから始まり、現在では世界中のお客様にサービスを提供する輸出企業に成長しました。"
+    },
+    "stats": {
+      "experience": "年の経験",
+      "countries": "輸出先国",
+      "customers": "満足した顧客",
+      "naturalProducts": "天然製品"
+    },
+    "values": {
+      "sustainability": {
+        "title": "持続可能性",
+        "description": "天然素材と環境に優しい素材の使用へのコミットメント"
+      },
+      "quality": {
+        "title": "品質",
+        "description": "すべての製品で最高品質を保証"
+      },
+      "customer": {
+        "title": "お客様",
+        "description": "お客様の利益を最優先に"
+      },
+      "global": {
+        "title": "グローバル",
+        "description": "世界中のお客様にサービスを提供"
+      }
+    }
+  },
+  "customerSatisfaction": {
+    "title": "お客様の満足度が最優先",
+    "subtitle": "最高の製品とサービスを提供することを約束します",
+    "features": {
+      "qualityControl": {
+        "title": "品質管理",
+        "subtitle": "高品質",
+        "description": "各製品は卓越性と耐久性を確保するために厳格な品質管理プロセスを経ています。"
+      },
+      "shippingOptimization": {
+        "title": "配送最適化",
+        "subtitle": "迅速＆安全",
+        "description": "製品が安全で時間通りにお客様の手元に届くよう、慎重な包装による最適化された配送プロセス。"
+      },
+      "productRange": {
+        "title": "多様な製品",
+        "subtitle": "豊富な選択肢",
+        "description": "あなたのすべてのデザインニーズに対応する天然素材の多様なインテリア装飾製品。"
+      }
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "相談のためにお問い合わせください",
+    "form": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "whatsapp": "WhatsApp番号",
+      "country": "国",
+      "interestedProduct": "興味のある製品",
+      "message": "メッセージ内容",
+      "submit": "メッセージを送信"
+    },
+    "info": {
+      "phone": "電話番号",
+      "email": "メールアドレス",
+      "address": "オフィス住所",
+      "workingHours": "営業時間",
+      "support247": "24/7サポート",
+      "responseTime": "24時間以内に返信"
+    }
+  },
+  "footer": {
+    "followUs": "フォローする",
+    "contactUs": "お問い合わせ",
+    "companyDescription": "環境に優しい天然素材のインテリア装飾製品を専門に提供。私たちは手頃な価格で高品質な製品を提供することを約束します。",
+    "newsletter": {
+      "title": "ニュースレター登録",
+      "description": "新製品、特別オファー、グリーンインテリアデザイントレンドの情報を受け取る",
+      "placeholder": "メールアドレスを入力...",
+      "subscribe": "登録",
+      "subscribing": "処理中...",
+      "success": "ニュースレター登録ありがとうございます！",
+      "error": "エラーが発生しました。もう一度お試しください！"
+    },
+    "quickLinks": "クイックリンク",
+    "aboutUs": "会社概要",
+    "ourStory": "ストーリー",
+    "ourSolutions": "ソリューション",
+    "careers": "採用情報",
+    "wishlist": "お気に入り",
+    "partners": "パートナー",
+    "connectWithUs": "つながる",
+    "hotline": "ホットライン",
+    "support247": "24/7サポート",
+    "customerService": "カスタマーサービス",
+    "address": "住所",
+    "addressDetails": "ヴァンボイ村、ニャットトゥー村<br />キムバン県、ハナム省<br />ベトナム",
+    "ourLocation": "私たちの場所",
+    "mapPlaceholder": "オフィスの場所を表示するインタラクティブマップ",
+    "getDirections": "道順",
+    "madeWithLove": "愛を込めて作られました",
+    "inVietnam": "ベトナムで",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "shippingPolicy": "配送ポリシー",
+    "returnPolicy": "返品ポリシー"
+  },
+  "checkout": {
+    "firstName": "名",
+    "lastName": "姓",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "address": "住所",
+    "city": "市区町村",
+    "state": "都道府県",
+    "zipCode": "郵便番号",
+    "country": "国",
+    "steps": {
+      "shipping": "配送情報",
+      "payment": "支払い",
+      "review": "注文確認"
+    },
+    "orderPlaced": "注文が完了しました！",
+    "orderError": "注文できませんでした。もう一度お試しください。"
+  },
+  "productDetail": {
+    "backToProducts": "製品に戻る",
+    "productNotFound": "製品が見つかりません",
+    "productNotFoundDesc": "お探しの製品は存在しません。",
+    "untitledProduct": "タイトルのない製品",
+    "addToCart": "カートに追加",
+    "addedToCart": "カートに追加されました！",
+    "addedToWishlist": "お気に入りに追加されました！",
+    "removedFromWishlist": "お気に入りから削除されました！",
+    "quantity": "数量",
+    "inStock": "在庫あり",
+    "outOfStock": "在庫切れ",
+    "specifications": "仕様",
+    "material": "素材",
+    "dimensions": "サイズ",
+    "weight": "重量",
+    "color": "色",
+    "moisture": "湿度",
+    "packaging": "包装",
+    "imageGallery": "画像ギャラリー",
+    "noImages": "画像がありません",
+    "reviews": "お客様レビュー",
+    "rating": "評価",
+    "writeReview": "レビューを書く",
+    "reviewTitle": "レビュータイトル",
+    "reviewComment": "レビュー内容",
+    "submitReview": "レビューを送信",
+    "updateReview": "レビューを更新",
+    "editReview": "レビューを編集",
+    "cancel": "キャンセル",
+    "saving": "保存中...",
+    "reviewSubmitted": "レビューが送信されました！",
+    "reviewUpdated": "レビューが更新されました！",
+    "reviewDeleted": "レビューが削除されました！",
+    "noReviews": "レビューがありません",
+    "beFirstToReview": "この製品の最初のレビューを書いてください",
+    "loginRequired": "ログインが必要です",
+    "helpful": "このレビューは役立ちましたか？",
+    "helpfulUpdated": "フィードバックありがとうございます！",
+    "relatedProducts": "関連製品",
+    "viewAll": "すべて見る",
+    "error": "エラーが発生しました"
+  },
+  "home": {
+    "heroSwiper": {
+      "slide1": {
+        "title": "シンプルデコールへようこそ",
+        "subtitle": "エレガントなデザインでリビングスペースを変革",
+        "description": "あなたの空間を特別にする美しいホームデコレーションアイテムのコレクションをご覧ください。",
+        "ctaPrimary": "製品を探索",
+        "ctaSecondary": "無料相談"
+      },
+      "slide2": {
+        "title": "プレミアム品質の家具",
+        "subtitle": "細部まで丁寧に作られた",
+        "description": "私たちの家具は長持ちするように設計されており、スタイルと機能性を組み合わせて完璧な家を実現します。",
+        "ctaPrimary": "コレクションを見る",
+        "ctaSecondary": "今すぐ連絡"
+      },
+      "slide3": {
+        "title": "モダンなインテリアソリューション",
+        "subtitle": "現代生活のためのコンテンポラリーデザイン",
+        "description": "ミニマルからラグジュアリーまで、あなたのスタイルに合わせた幅広いインテリアソリューションを提供します。",
+        "ctaPrimary": "今すぐ探索",
+        "ctaSecondary": "予約する"
+      },
+      "slide4": {
+        "title": "専門的なデザイン相談",
+        "subtitle": "あなたのプロジェクトのための専門的なガイダンス",
+        "description": "私たちの専門家チームは、あなたの個性を反映した完璧な空間を作成するお手伝いをします。",
+        "ctaPrimary": "今すぐ相談",
+        "ctaSecondary": "プロジェクトを見る"
+      },
+      "loading": "読み込み中..."
+    },
+    "heroImage": {
+      "badge": "プレミアム品質",
+      "title": "あなたの家を",
+      "titleHighlight": "芸術作品に",
+      "description": "愛と細心の注意を払って手作りされたプレミアムホームデコレーションアイテムのコレクションを探索し、あなたの家族に完璧な生活空間をもたらします。",
+      "ctaPrimary": "製品を探索",
+      "ctaSecondary": "無料相談",
+      "stats": {
+        "rating": "顧客評価",
+        "customers": "満足した顧客",
+        "products": "高品質製品"
+      }
+    },
+    "featuredCategories": {
+      "title": "注目カテゴリー",
+      "subtitle": "最も人気のある製品カテゴリーを探索",
+      "viewProducts": "製品を見る",
+      "viewAllCategories": "すべてのカテゴリーを見る",
+      "noCategories": "現在注目カテゴリーはありません。",
+      "products": "製品",
+      "fallbackDescription": "卓越した品質の多様なコレクションを探索"
+    },
+    "featuredProducts": {
+      "title": "注目製品",
+      "subtitle": "品質とデザインの卓越性への私たちのコミットメントを示す厳選された製品。",
+      "viewAllProducts": "すべての製品を見る",
+      "noProducts": "現在注目製品はありません。"
+    },
+    "addedToCart": "「{{productName}}」がカートに追加されました！",
+    "whyChooseUs": {
+      "title": "なぜ",
+      "titleHighlight": "シンプルデコールを選ぶのか？",
+      "description": "私たちは製品を提供するだけでなく、他の場所では見つけられない卓越した価値を持つ素晴らしいショッピング体験を提供します。",
+      "features": {
+        "quality": {
+          "title": "品質保証",
+          "description": "製品は顧客の手に届く前に最高品質を確保するために厳格にテストされています。"
+        },
+        "shipping": {
+          "title": "迅速配送",
+          "description": "迅速で安全なサービスと24/7注文追跡による全国配送。"
+        },
+        "service": {
+          "title": "献身的なサービス",
+          "description": "選択からアフターサービスまでお客様をサポートする熱心なコンサルティングチーム。"
+        },
+        "design": {
+          "title": "ユニークなデザイン",
+          "description": "ベトナムの空間に適した高い美学を持つ独占製品。"
+        },
+        "warranty": {
+          "title": "長期保証",
+          "description": "お客様の最大の利益を確保する柔軟な保証と返品ポリシー。"
+        },
+        "community": {
+          "title": "大きなコミュニティ",
+          "description": "インテリア装飾に情熱を持つコミュニティを作る10,000人以上の信頼できるお客様。"
+        }
+      },
+      "cta": {
+        "explore": "今すぐ探索",
+        "consult": "相談に連絡"
+      },
+      "stats": {
+        "satisfaction": "満足度",
+        "support": "サポート",
+        "rating": "評価"
+      },
+      "certification": {
+        "title": "認証",
+        "iso": "ISO 9001:2015"
+      }
+    },
+    "articlesGrid": {
+      "title": "ニュース＆記事",
+      "subtitle": "インテリア装飾とデザイントレンドに関する最新ニュースを更新",
+      "readTime": "分で読む",
+      "viewAllArticles": "すべての記事を見る",
+      "noArticles": "現在記事はありません。"
+    },
+    "insights": {
+      "title": "インサイト",
+      "subtitle": "ここで私たちのすべての記事を探索...",
+      "tabs": {
+        "business": "ビジネス向け",
+        "growth": "成長向け",
+        "society": "社会向け"
+      },
+      "tabContent": {
+        "business": {
+          "title": "ビジネス向け",
+          "subtitle": "製造プロセス、コンサルティングから手工芸業界のニュースと情報まで、最新のビジネスインサイトを閲覧..."
+        },
+        "growth": {
+          "title": "成長向け",
+          "subtitle": "持続可能なビジネス発展を推進する成長戦略と市場インサイトを発見..."
+        },
+        "society": {
+          "title": "社会向け",
+          "subtitle": "社会的責任とコミュニティへの影響イニシアチブへの私たちの約束を探索..."
+        }
+      },
+      "exploreMore": "もっと探索",
+      "sampleData": {
+        "business": {
+          "article1": {
+            "title": "ハナム：シンプルデコールのインスピレーションの旅の起源",
+            "category": "ビジネスの旅",
+            "excerpt": "私たちの旅がハナム省でどのように始まり、持続可能な手工芸への私たちの約束をどのように形作ったかを探索。"
+          },
+          "article2": {
+            "title": "リサイクル素材から植物用バスケットを作る完成プロセス",
+            "category": "製造",
+            "excerpt": "リサイクル素材から美しい植物用バスケットを作る段階的なプロセス。"
+          },
+          "article3": {
+            "title": "手工芸業界における持続可能な製造",
+            "category": "持続可能性",
+            "excerpt": "伝統的な手工芸が現代の持続可能な実践をどのように採用できるか。"
+          }
+        },
+        "growth": {
+          "article1": {
+            "title": "手工芸企業の市場拡大戦略",
+            "category": "戦略",
+            "excerpt": "競争の激しい市場で手工芸企業を拡大する効果的な方法。"
+          },
+          "article2": {
+            "title": "伝統手工芸におけるデジタル変革",
+            "category": "テクノロジー",
+            "excerpt": "伝統的な手工芸を保存し促進するためのテクノロジーの活用。"
+          },
+          "article3": {
+            "title": "デジタル時代の顧客体験",
+            "category": "カスタマーサービス",
+            "excerpt": "ますますデジタル化する世界で意味のある顧客関係を構築。"
+          }
+        },
+        "society": {
+          "article1": {
+            "title": "手工芸訓練を通じたコミュニティエンパワーメント",
+            "category": "コミュニティ",
+            "excerpt": "私たちの訓練プログラムが地域コミュニティに力を与え、伝統的なスキルを保存する方法。"
+          },
+          "article2": {
+            "title": "持続可能なデザインの環境への影響",
+            "category": "環境",
+            "excerpt": "持続可能なデザイン実践が企業と環境の両方に利益をもたらす方法を理解。"
+          },
+          "article3": {
+            "title": "現代手工芸を通じた文化的遺産の保存",
+            "category": "文化",
+            "excerpt": "伝統的な文化的実践と現代的なデザイン感覚の接続。"
+          }
+        }
+      }
+    }
   }
 }

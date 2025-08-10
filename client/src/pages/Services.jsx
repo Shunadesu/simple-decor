@@ -1,19 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Users, FileText, Ship, Shield, Headphones, Settings, Truck, Heart, Award, Zap, Globe, Wrench, CheckCircle, Package, Search, Clock, Star, Target, Layers, Database, Loader } from 'lucide-react';
+import useServicesStore from '../stores/servicesStore';
 import servicesApi from '../services/servicesApi';
 import ConsultationModal from '../components/ConsultationModal';
 
 const Services = () => {
   const { t, i18n } = useTranslation();
-  const [services, setServices] = useState([]);
-  const [featuredServices, setFeaturedServices] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [searchTerm, setSearchTerm] = useState('');
-  const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState(null);
+  
+  // Services store
+  const {
+    services,
+    featuredServices,
+    categories,
+    loading,
+    error,
+    selectedCategory,
+    searchTerm,
+    isConsultationModalOpen,
+    selectedService,
+    fetchData,
+    handleCategoryChange,
+    handleSearch,
+    handleInquiry,
+    closeConsultationModal
+  } = useServicesStore();
   
   const currentLanguage = i18n.language || 'vi';
 
@@ -25,88 +36,18 @@ const Services = () => {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  useEffect(() => {
-    fetchServices();
-  }, [selectedCategory, searchTerm]);
-
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      
-      // Fetch categories, featured services, and all services
-      const [categoriesResponse, featuredResponse, servicesResponse] = await Promise.all([
-        servicesApi.getServiceCategories(),
-        servicesApi.getFeaturedServices(6),
-        servicesApi.getServices({ status: 'active', limit: 50 })
-      ]);
-
-      if (categoriesResponse.success) {
-        setCategories(categoriesResponse.data);
-      }
-
-      if (featuredResponse.success) {
-        setFeaturedServices(featuredResponse.data);
-      }
-
-      if (servicesResponse.success) {
-        setServices(servicesResponse.data.services);
-      }
-    } catch (error) {
-      console.error('Error fetching services data:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchServices = async () => {
-    try {
-      const params = {
-        status: 'active',
-        limit: 50
-      };
-
-      if (selectedCategory !== 'all') {
-        params.category = selectedCategory;
-      }
-
-      if (searchTerm) {
-        params.search = searchTerm;
-      }
-
-      const response = await servicesApi.getServices(params);
-      
-      if (response.success) {
-        setServices(response.data.services);
-      }
-    } catch (error) {
-      console.error('Error fetching services:', error);
-    }
-  };
 
   const renderIcon = (iconName) => {
     const IconComponent = iconComponents[iconName] || Settings;
     return <IconComponent size={32} className="text-primary-600" />;
   };
 
-  const handleInquiry = (service) => {
-    setSelectedService({
-      id: service._id,
-      name: servicesApi.getLocalizedTitle(service, currentLanguage)
-    });
-    setIsConsultationModalOpen(true);
-  };
-
-  const closeConsultationModal = () => {
-    setIsConsultationModalOpen(false);
-    setSelectedService(null);
-  };
-
   return (
     <div className="min-h-screen">
       {/* Header */}
-              <section className="bg-primary-50 text-primary-600 py-20 mt-24">
+      <section className="bg-primary-50 text-primary-600 py-20 mt-32  ">
         <div className="container-custom text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">
             {t('nav.services')}
@@ -203,7 +144,7 @@ const Services = () => {
                         )}
                       </div>
                       <button
-                        onClick={() => handleInquiry(service)}
+                        onClick={() => handleInquiry(service, currentLanguage)}
                         className="px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors"
                       >
                         Tư vấn
